@@ -29,7 +29,7 @@ def display_instructions():
     print("[black on violet] Welcome the DCC Quickstart Command Line Tool! [/black on violet]")
     print("[black on violet] +++++++++++++++++++++++++++++++++++++++++++++ [/black on violet]")
     print(" ")
-    print("Available commands: [yellow]help[/yellow], [red]tables[/red], [violet]roll[/violet], [green]quit[/green]")
+    print("Available commands: [yellow]help[/yellow], [blue]rolltable[/blue], [red]tables[/red], [violet]roll[/violet], [green]quit[/green]")
 
 class FirstApp(cmd2.Cmd):
     def __init__(self):
@@ -40,8 +40,8 @@ class FirstApp(cmd2.Cmd):
         super().__init__()
 
         # Make maxrepeats settable at runtime
-        self.maxrepeats = 3
-        self.add_settable(cmd2.Settable('maxrepeats', int, 'max repetitions for speak command', self))
+        # self.maxrepeats = 3
+        # self.add_settable(cmd2.Settable('maxrepeats', int, 'max repetitions for speak command', self))
         ascii_art = load_ascii_art()
         # print(ascii_art)
         text = Text(ascii_art)
@@ -59,24 +59,26 @@ class FirstApp(cmd2.Cmd):
     @cmd2.with_argparser(roll_parser)
     def do_roll(self, args):
         """Rolls the dice you enter (3d6)."""
-        rolls = {}
+        # takes in a a list of rolls like: d20 3d6 1d4
         total = 0
-        for die in args.dice:
+        for dieroll in args.dice: # loops through each argument
+            roll = roll_multiple(dieroll) # sends the roll to roll_multiple()
             # making a definition list in rolls of the dice the put in and the rolled value
-            rolls[die] = 0
-            for n in range(0,parse_numbers(die)[0]):
-                rolls[die] = rolls[die] + roll_single(parse_numbers(die)[1])
-                # rolls[die] = rolls[die] + roll_single(parse_numbers(die)[1])
-            total = total + rolls[die]
-            print(f"[yellow]{die}:[/yellow][yellow][/yellow]\t[red]{rolls[die]}[/red]")
-        print(f"Total\t{total}")
+            total += roll # adds to the total
+            print(f"[yellow]{dieroll}:[/yellow][yellow][/yellow]\t[red]{roll}[/red]") # prints roll
+        print(f"Total\t{total}") #prints total
         # self.poutput(' '.join(rolls))
+
+    roll_table = cmd2.Cmd2ArgumentParser()
+    @cmd2.with_argparser(roll_table)
+    def do_rolltable(self, args):
+        """Roll on a table."""
+        print(self)
 
     table_parser = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(table_parser)
     def do_tables(self, args):
-        """Repeats what you tell me to."""
-        print("tables")
+        """View a table."""
         try:
             with open(SYSTEM_TABLES_FILE_PATH) as file:
                 tables = json.load(file)
@@ -127,8 +129,13 @@ def parse_numbers(input_string):
     # If no numbers are found, return 0
     else:
         return 0
-def roll_single(myDie):
-    return random.randint(1,int(myDie))
+def roll_single(sides):
+    return random.randint(1,int(sides))
+def roll_multiple(dice): # takes a roll like 3d6
+    rolls = 0
+    for n in range(0,parse_numbers(dice)[0]): # parse_numbers turns 3d6 into [3,6]
+        rolls += roll_single(parse_numbers(dice)[1]) # sends the second number in parse_numbers and gets a random
+    return rolls
 def display_table(table_name, table_data, tables):
     # print('tablename: ',table_name,'\ntable_data: ',table_data,'\ntables: ',tables)
     table = Table(show_header=True, header_style="bold magenta")

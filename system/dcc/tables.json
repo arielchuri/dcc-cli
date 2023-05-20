@@ -1,0 +1,1149 @@
+{
+   "Table 1-1: Ability Score Modifiers":{
+      "table":[
+         [
+            "Ability Score Modifier",
+            "Wizard Spells Known",
+            "Max Spell Level**"
+         ],
+         [
+            "3",
+            "-3",
+            "No spellcasting possible"
+         ],
+         [
+            "4",
+            "-2",
+            "-2 spells*"
+         ],
+         [
+            "5",
+            "-2",
+            "-2 spells*"
+         ],
+         [
+            "6",
+            "-1",
+            "-1 spell*"
+         ],
+         [
+            "7",
+            "-1",
+            "-1 spell*"
+         ],
+         [
+            "8",
+            "-1",
+            "No adjustment"
+         ],
+         [
+            "9",
+            "None",
+            "No adjustment"
+         ],
+         [
+            "10",
+            "None",
+            "No adjustment"
+         ],
+         [
+            "11",
+            "None",
+            "No adjustment"
+         ],
+         [
+            "12",
+            "None",
+            "No adjustment"
+         ],
+         [
+            "13",
+            "+1",
+            "No adjustment"
+         ],
+         [
+            "14",
+            "+1",
+            "+1 spell"
+         ],
+         [
+            "15",
+            "+1",
+            "+1 spell"
+         ],
+         [
+            "16",
+            "+2",
+            "+1 spell"
+         ],
+         [
+            "17",
+            "+2",
+            "+2 spells"
+         ],
+         [
+            "18",
+            "+3",
+            "+2 spells"
+         ]
+      ],
+      "footnotes":[
+         "* Minimum of 1 spell.",
+         "** Based on Intelligence for wizards and Personality for clerics."
+      ]
+   },
+   "Table 1-2: Luck Score":{
+      "table":[
+         [
+            "d30",
+            "Birth Augur and Lucky Roll"
+         ],
+         [
+            "1",
+            "Harsh winter: All attack rolls"
+         ],
+         [
+            "2",
+            "The bull: Melee attack rolls"
+         ],
+         [
+            "3",
+            "Fortunate date: Missile fire attack rolls"
+         ],
+         [
+            "4",
+            "Raised by wolves: Unarmed attack rolls"
+         ],
+         [
+            "5",
+            "Conceived on horseback: Mounted attack rolls"
+         ],
+         [
+            "6",
+            "Born on the battlefield: Damage rolls"
+         ],
+         [
+            "7",
+            "Path of the bear: Melee damage rolls"
+         ],
+         [
+            "8",
+            "Hawkeye: Missile fire damage rolls"
+         ],
+         [
+            "9",
+            "Pack hunter: Attack and damage rolls for 0-level starting weapon"
+         ],
+         [
+            "10",
+            "Born under the loom: Skill checks (including thief skills)"
+         ],
+         [
+            "11",
+            "Fox’s cunning: Find/disable traps"
+         ],
+         [
+            "12",
+            "Four-leafed clover: Find secret doors"
+         ],
+         [
+            "13",
+            "Seventh son: Spell checks"
+         ],
+         [
+            "14",
+            "The raging storm: Spell damage"
+         ],
+         [
+            "15",
+            "Righteous heart: Turn unholy checks"
+         ],
+         [
+            "16",
+            "Survived the plague: Magical healing*"
+         ],
+         [
+            "17",
+            "Lucky sign: Saving throws"
+         ],
+         [
+            "18",
+            "Guardian angel: Savings throws to escape traps"
+         ],
+         [
+            "19",
+            "Survived a spider bite: Saving throws against poison"
+         ],
+         [
+            "20",
+            "Struck by lightning: Reflex saving throws"
+         ],
+         [
+            "21",
+            "Lived through famine: Fortitude saving throws"
+         ],
+         [
+            "22",
+            "Resisted temptation: Willpower saving throws"
+         ],
+         [
+            "23",
+            "Charmed house: Armor Class"
+         ],
+         [
+            "24",
+            "Speed of the cobra: Initiative"
+         ],
+         [
+            "25",
+            "Bountiful harvest: Hit points (applies at each level)"
+         ],
+         [
+            "26",
+            "Warrior’s arm: Critical hit tables**"
+         ],
+         [
+            "27",
+            "Unholy house: Corruption rolls"
+         ],
+         [
+            "28",
+            "The Broken Star: Fumbles**"
+         ],
+         [
+            "29",
+            "Birdsong: Number of languages"
+         ],
+         [
+            "30",
+            "Wild child: Speed (each +1/-1 = +5’/-5’ speed)"
+         ]
+      ]
+   },
+   "Table 1-3: Occupation":{
+      "table":[
+         [
+            "Roll",
+            "Occupation",
+            "Trained Weapon†",
+            "Trade Goods"
+         ],
+         [
+            "01",
+            "Alchemist",
+            "Staff",
+            "Oil, 1 flask"
+         ],
+         [
+            "02",
+            "Animal trainer",
+            "Club",
+            "Pony"
+         ],
+         [
+            "03",
+            "Armorer",
+            "Hammer (as club)",
+            "Iron helmet"
+         ],
+         [
+            "04",
+            "Astrologer",
+            "Dagger",
+            "Spyglass"
+         ],
+         [
+            "05",
+            "Barber",
+            "Razor (as dagger)",
+            "Scissors"
+         ],
+         [
+            "06",
+            "Beadle",
+            "Staff",
+            "Holy symbol"
+         ],
+         [
+            "07",
+            "Beekeeper",
+            "Staff",
+            "Jar of honey"
+         ],
+         [
+            "08",
+            "Blacksmith",
+            "Hammer (as club)",
+            "Steel tongs"
+         ],
+         [
+            "09",
+            "Butcher",
+            "Cleaver (as axe)",
+            "Side of beef"
+         ],
+         [
+            "10",
+            "Caravan guard",
+            "Short sword",
+            "Linen, 1 yard"
+         ],
+         [
+            "11",
+            "Cheesemaker",
+            "Cudgel (as staff)",
+            "Stinky cheese"
+         ],
+         [
+            "12",
+            "Cobbler",
+            "Awl (as dagger)",
+            "Shoehorn"
+         ],
+         [
+            "13",
+            "Confidence artist",
+            "Dagger",
+            "Quality cloak"
+         ],
+         [
+            "14",
+            "Cooper",
+            "Crowbar (as club)",
+            "Barrel"
+         ],
+         [
+            "15",
+            "Costermonger",
+            "Knife (as dagger)",
+            "Fruit"
+         ],
+         [
+            "16",
+            "Cutpurse",
+            "Dagger",
+            "Small chest"
+         ],
+         [
+            "17",
+            "Ditch digger",
+            "Shovel (as staff)",
+            "Fine dirt, 1 lb."
+         ],
+         [
+            "18",
+            "Dock worker",
+            "Pole (as staff)",
+            "1 late RPG book"
+         ],
+         [
+            "19",
+            "Dwarven apothecarist",
+            "Cudgel (as staff)",
+            "Steel vial"
+         ],
+         [
+            "20",
+            "Dwarven blacksmith",
+            "Hammer (as club)",
+            "Mithril, 1 oz."
+         ],
+         [
+            "21",
+            "Dwarven chest-maker",
+            "Chisel (as dagger)",
+            "Wood, 10 lbs."
+         ],
+         [
+            "22",
+            "Dwarven herder",
+            "Staff",
+            "Sow**"
+         ],
+         [
+            "23-24",
+            "Dwarven miner",
+            "Pick (as club)",
+            "Lantern"
+         ],
+         [
+            "25",
+            "Dwarven mushroom-farmer",
+            "Shovel (as staff)",
+            "Sack"
+         ],
+         [
+            "26",
+            "Dwarven rat-catcher",
+            "Club",
+            "Net"
+         ],
+         [
+            "27-28",
+            "Dwarven stonemason",
+            "Hammer",
+            "Fine stone, 10 lbs."
+         ],
+         [
+            "29",
+            "Elven artisan",
+            "Staff",
+            "Clay, 1 lb."
+         ],
+         [
+            "30",
+            "Elven barrister",
+            "Quill (as dart)",
+            "Book"
+         ],
+         [
+            "31",
+            "Elven chandler",
+            "Scissors (as dagger)",
+            "Candles, 20"
+         ],
+         [
+            "32",
+            "Elven falconer",
+            "Dagger",
+            "Falcon"
+         ],
+         [
+            "33-34",
+            "Elven forester",
+            "Staff",
+            "Herbs, 1 lb."
+         ],
+         [
+            "35",
+            "Elven glassblower",
+            "Hammer (as club)",
+            "Glass beads"
+         ],
+         [
+            "36",
+            "Elven navigator",
+            "Shortbow",
+            "Spyglass"
+         ],
+         [
+            "37-38",
+            "Elven sage",
+            "Dagger",
+            "Parchment and quill pen"
+         ],
+         [
+            "39-47",
+            "Farmer*",
+            "Pitchfork (as spear)",
+            "Hen**"
+         ],
+         [
+            "48",
+            "Fortune-teller",
+            "Dagger",
+            "Tarot deck"
+         ],
+         [
+            "49",
+            "Gambler",
+            "Club",
+            "Dice"
+         ],
+         [
+            "50",
+            "Gongfarmer",
+            "Trowel (as dagger)",
+            "Sack of night soil"
+         ],
+         [
+            "51-52",
+            "Grave digger",
+            "Shovel (as staff)",
+            "Trowel"
+         ],
+         [
+            "53-54",
+            "Guild beggar",
+            "Sling",
+            "Crutches"
+         ],
+         [
+            "55",
+            "Halfling chicken butcher",
+            "Hand axe",
+            "Chicken meat, 5 lbs."
+         ],
+         [
+            "56-57",
+            "Halfling dyer",
+            "Staff",
+            "Fabric, 3 yards"
+         ],
+         [
+            "58",
+            "Halfling glovemaker",
+            "Awl (as dagger)",
+            "Gloves, 4 pairs"
+         ],
+         [
+            "59",
+            "Halfling gypsy",
+            "Sling",
+            "Hex doll"
+         ],
+         [
+            "60",
+            "Halfling haberdasher",
+            "Scissors (as dagger)",
+            "Fine suits, 3 sets"
+         ],
+         [
+            "61",
+            "Halfling mariner",
+            "Knife (as dagger)",
+            "Sailcloth, 2 yards"
+         ],
+         [
+            "62",
+            "Halfling moneylender",
+            "Short sword",
+            "5 gp, 10 sp, 200 cp"
+         ],
+         [
+            "63",
+            "Halfling trader",
+            "Short sword",
+            "20 sp"
+         ],
+         [
+            "64",
+            "Halfling vagrant",
+            "Club",
+            "Begging bowl"
+         ],
+         [
+            "65",
+            "Healer",
+            "Club",
+            "Holy water, 1 vial"
+         ],
+         [
+            "66",
+            "Herbalist",
+            "Club",
+            "Herbs, 1 lb."
+         ],
+         [
+            "67",
+            "Herder",
+            "Staff",
+            "Herding dog**"
+         ],
+         [
+            "68-69",
+            "Hunter",
+            "Shortbow",
+            "Deer pelt"
+         ],
+         [
+            "70",
+            "Indentured servant",
+            "Staff",
+            "Locket"
+         ],
+         [
+            "71",
+            "Jester",
+            "Dart",
+            "Silk clothes"
+         ],
+         [
+            "72",
+            "Jeweler",
+            "Dagger",
+            "Gem worth 20 gp"
+         ],
+         [
+            "73",
+            "Locksmith",
+            "Dagger",
+            "Fine tools"
+         ],
+         [
+            "74",
+            "Mendicant",
+            "Club",
+            "Cheese dip"
+         ],
+         [
+            "75",
+            "Mercenary",
+            "Longsword",
+            "Hide armor"
+         ],
+         [
+            "76",
+            "Merchant",
+            "Dagger",
+            "4 gp, 14 sp, 27 cp"
+         ],
+         [
+            "77",
+            "Miller/baker",
+            "Club",
+            "Flour, 1 lb."
+         ],
+         [
+            "78",
+            "Minstrel",
+            "Dagger",
+            "Ukulele"
+         ],
+         [
+            "79",
+            "Noble",
+            "Longsword",
+            "Gold ring worth 10 gp"
+         ],
+         [
+            "80",
+            "Orphan",
+            "Club",
+            "Rag doll"
+         ],
+         [
+            "81",
+            "Ostler",
+            "Staff",
+            "Bridle"
+         ],
+         [
+            "82",
+            "Outlaw",
+            "Short sword",
+            "Leather armor"
+         ],
+         [
+            "83",
+            "Rope maker",
+            "Knife (as dagger)",
+            "Rope, 100'"
+         ],
+         [
+            "84",
+            "Scribe",
+            "Dart",
+            "Parchment, 10 sheets"
+         ],
+         [
+            "85",
+            "Shaman",
+            "Feathered bone club",
+            "Com badge"
+         ],
+         [
+            "86",
+            "Slave",
+            "Club",
+            "Strange-looking rock"
+         ],
+         [
+            "87",
+            "Smuggler",
+            "Sling",
+            "Waterproof sack"
+         ],
+         [
+            "88",
+            "Soldier",
+            "Spear",
+            "Shield"
+         ],
+         [
+            "89-90",
+            "Squire",
+            "Longsword",
+            "Steel helmet"
+         ],
+         [
+            "91",
+            "Tax collector",
+            "Longsword",
+            "100 cp"
+         ],
+         [
+            "92-93",
+            "Trapper",
+            "Sling",
+            "Badger pelt"
+         ],
+         [
+            "94",
+            "Urchin",
+            "Stick (as club)",
+            "Begging bowl"
+         ],
+         [
+            "95",
+            "Wainwright",
+            "Club",
+            "Pushcart***"
+         ],
+         [
+            "96",
+            "Weaver",
+            "Dagger",
+            "Fine suit of clothes"
+         ],
+         [
+            "97",
+            "Wizard’s apprentice",
+            "Dagger",
+            "Black grimoire"
+         ],
+         [
+            "98-100",
+            "Woodcutter",
+            "Handaxe",
+            "Bundle of wood"
+         ]
+      ],
+      "footnotes":[
+         "†   If a missile fire weapon (such as sling or dart), roll 1d6 to determine number of sling stones or darts.",
+         "*   Roll 1d8 to determine farmer type: (1) potato, (2) wheat, (3) turnip, (4) corn, (5) rice, (6) parsnip, (7) radish, (8) rutabaga.",
+         "**  Why did the chicken cross the hallway? To check for traps! In all seriousness, if the party includes more than one farmer or herder, randomly determine the second and subsequent farm animals for each duplicated profession with 1d6: (1) sheep, (2) goat, (3) cow, (4) duck, (5) goose, (6) mule.",
+         "*** Roll 1d6 to determine what’s in the cart: (1) tomatoes, (2) nothing, (3) straw, (4) your dead, (5) dirt, (6) rocks."
+      ]
+   },
+   "Another Table":{
+      "table":[
+         [
+            "Column 1",
+            "Column 2",
+            "Column 3"
+         ],
+         [
+            "Value 1",
+            "Value 2",
+            "Value 3"
+         ],
+         [
+            "Value 4",
+            "Value 5",
+            "Value 6"
+         ]
+      ],
+      "footnotes":[
+         "Additional footnote"
+      ]
+   },
+   "Table 3-1: Weapons":{
+      "table":[
+         {
+            "Weapon":"Battleaxe*",
+            "Damage":"1d10",
+            "Range":"-",
+            "Cost (gp)":"7"
+         },
+         {
+            "Weapon":"Blackjack†",
+            "Damage":"1d3/2d6***",
+            "Range":"-",
+            "Cost (gp)":"3"
+         },
+         {
+            "Weapon":"Blowgun†",
+            "Damage":"1d3/1d5",
+            "Range":"20/40/60",
+            "Cost (gp)":"6"
+         },
+         {
+            "Weapon":"Club",
+            "Damage":"1d4",
+            "Range":"-",
+            "Cost (gp)":"3"
+         },
+         {
+            "Weapon":"Crossbow*",
+            "Damage":"1d6",
+            "Range":"80/160/240",
+            "Cost (gp)":"30"
+         },
+         {
+            "Weapon":"Dagger†‡",
+            "Damage":"1d4/1d10",
+            "Range":"10/20/30**",
+            "Cost (gp)":"3"
+         },
+         {
+            "Weapon":"Dart",
+            "Damage":"1d4",
+            "Range":"20/40/60**",
+            "Cost (gp)":"5 sp"
+         },
+         {
+            "Weapon":"Flail",
+            "Damage":"1d6",
+            "Range":"-",
+            "Cost (gp)":"6"
+         },
+         {
+            "Weapon":"Garrote†",
+            "Damage":"1/3d4",
+            "Range":"-",
+            "Cost (gp)":"2"
+         },
+         {
+            "Weapon":"Handaxe",
+            "Damage":"1d6",
+            "Range":"10/20/30**",
+            "Cost (gp)":"4"
+         },
+         {
+            "Weapon":"Javelin",
+            "Damage":"1d6",
+            "Range":"30/60/90**",
+            "Cost (gp)":"1"
+         },
+         {
+            "Weapon":"Lance#",
+            "Damage":"1d12",
+            "Range":"-",
+            "Cost (gp)":"25"
+         },
+         {
+            "Weapon":"Longbow*",
+            "Damage":"1d6",
+            "Range":"70/140/210",
+            "Cost (gp)":"40"
+         },
+         {
+            "Weapon":"Longsword",
+            "Damage":"1d8",
+            "Range":"-",
+            "Cost (gp)":"10"
+         },
+         {
+            "Weapon":"Mace",
+            "Damage":"1d6",
+            "Range":"-",
+            "Cost (gp)":"5"
+         },
+         {
+            "Weapon":"Polearm*",
+            "Damage":"1d10",
+            "Range":"-",
+            "Cost (gp)":"7"
+         },
+         {
+            "Weapon":"Shortbow*",
+            "Damage":"1d6",
+            "Range":"50/100/150",
+            "Cost (gp)":"25"
+         },
+         {
+            "Weapon":"Short sword",
+            "Damage":"1d6",
+            "Range":"-",
+            "Cost (gp)":"7"
+         },
+         {
+            "Weapon":"Sling",
+            "Damage":"1d4",
+            "Range":"40/80/160**",
+            "Cost (gp)":"2"
+         },
+         {
+            "Weapon":"Spear#",
+            "Damage":"1d8",
+            "Range":"-",
+            "cost":"3 gp"
+         },
+         {
+            "Weapon":"Staff",
+            "Damage":"1d4",
+            "Range":"-",
+            "Cost":"5 sp"
+         },
+         {
+            "Weapon":"Two-handed sword*",
+            "Damage":"1d10",
+            "Range":"-",
+            "Cost":"15"
+         },
+         {
+            "Weapon":"Warhammer",
+            "Damage":"1d8",
+            "Range":"-",
+            "Cost":"5"
+         }
+      ],
+      "footnotes":[
+         "[bold yellow]*[/bold yellow]\tTwo-handed weapon. Characters using two-handed weapons use a d16 on initiative checks",
+         "**\tStrength modifier applies to damage with this weapon at close range only.",
+         "***\tDamage dealt is always subdual damage. † These weapons are particularly effective when used with the element of surprise. A thief who succeeds in a backstab attempt with one of these weapons uses the second damage value listed. All other classes and all other thief attacks use the first value.",
+         "‡\tCharacters generally purchase normal straight-edged daggers, but cultists, cave-dwellers, evil priests, alien worshipers, and other menacing villains carry curvy or ceremonial daggers known as athame, kris, or tumi.",
+         "#\tThese weapons inflict double damage on a mounted charge. A lance can only be used when mounted."
+      ]
+   },
+   "Table 3-2: Ammunition":{
+      "table":[
+         [
+            "Ammunition",
+            "Quantity",
+            "Cost in gp"
+         ],
+         [
+            "Arrows",
+            "20",
+            "5"
+         ],
+         [
+            "Arrow, silver-tipped",
+            "1",
+            "5"
+         ],
+         [
+            "Quarrels",
+            "30",
+            "10"
+         ],
+         [
+            "Sling stones",
+            "30",
+            "1"
+         ]
+      ]
+   },
+   "Table 3-3: Equipment":{
+      "table":[
+         [
+            "Roll*",
+            "Item",
+            "Cost"
+         ],
+         [
+            "1",
+            "Backpack",
+            "2 gp"
+         ],
+         [
+            "2",
+            "Candle",
+            "1cp"
+         ],
+         [
+            "3",
+            "Chain, 10'",
+            "30 gp"
+         ],
+         [
+            "4",
+            "Chalk, 1 piece",
+            "1 cp"
+         ],
+         [
+            "5",
+            "Chest, empty",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Crowbar",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Flask, empty",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Flint & steel",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Grappling hook",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Hammer, small",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Holy symbol",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Holy water, 1 vial**",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Iron spikes, each",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Lantern",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Mirror, hand-sized",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Oil, 1 flask***",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Pole, 10-foot",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Rations, per day",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Rope, 50’",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Sack, large",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Sack, small",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Thieves’ tools",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Torch, each",
+            "1 gp"
+         ],
+         [
+            "5",
+            "Waterskin",
+            "1 gp"
+         ]
+      ],
+      "footnotes":[
+         "*\tRoll 1d24 to randomly determine equipment for 0-level characters. Characters who purchase their equipment at a later level ignore this column.",
+         "**\tA half-pint vial of holy water inflicts 1d4 damage to any un-dead creature, as well as to some demons and devils.",
+         "***\tWhen ignited and thrown, oil causes 1d6 damage plus fire (DC 10 save vs. Reflex to put out or suffer additional 1d6 damage each round). One flask of oil burns for 6 hours in a lantern"
+      ]
+   },
+   "Table 3-4: Armor":{
+      "table":[
+        {
+            "Armor":"(Unarmored)",
+            "AC Bonus":"+0",
+            "Check Penalty":"–",
+            "Speed**":"–",
+            "Fumble die":"d4",
+            "Cost in gp":"Free"
+        },
+        {
+            "Armor":"Padded",
+            "AC Bonus":"+1",
+            "Check Penalty":"–",
+            "Speed**":"–",
+            "Fumble die":"d8",
+            "Cost in gp":"5"
+        },
+        {
+            "Armor":"Leather",
+            "AC Bonus":"+2",
+            "Check Penalty":"-1",
+            "Speed**":"–",
+            "Fumble die":"d8",
+            "Cost in gp":"20"
+        },
+        {
+            "Armor":"Studded leather",
+            "AC Bonus":"+3",
+            "Check Penalty":"-2",
+            "Speed**":"–",
+            "Fumble die":"d8",
+            "Cost in gp":"45"
+        },
+        {
+            "Armor":"Hide",
+            "AC Bonus":"+3",
+            "Check Penalty":"-3",
+            "Speed**":"–",
+            "Fumble die":"d12",
+            "Cost in gp":"30"
+        },
+        {
+            "Armor":"Scale mail",
+            "AC Bonus":"+4",
+            "Check Penalty":"-4",
+            "Speed**":"-5’",
+            "Fumble die":"d12",
+            "Cost in gp":"80"
+        },
+        {
+            "Armor":"Chainmail",
+            "AC Bonus":"+5",
+            "Check Penalty":"-5",
+            "Speed**":"-5’",
+            "Fumble die":"d12",
+            "Cost in gp":"150"
+        },
+        {
+            "Armor":"Banded mail",
+            "AC Bonus":"+6",
+            "Check Penalty":"-6",
+            "Speed**":"-5’",
+            "Fumble die":"d16",
+            "Cost in gp":"250"
+        },
+        {
+            "Armor":"Half-plate",
+            "AC Bonus":"+7",
+            "Check Penalty":"-7",
+            "Speed**":"-10’",
+            "Fumble die":"d16",
+            "Cost in gp":"550"
+        },
+        {
+            "Armor":"Full plate",
+            "AC Bonus":"+8",
+            "Check Penalty":"-8",
+            "Speed**":"-10’",
+            "Fumble die":"d16",
+            "Cost in gp":"1,200"
+        },
+        {
+            "Armor":"Shield*",
+            "AC Bonus":"+1",
+            "Check Penalty":"-1",
+            "Speed**":"–",
+            "Fumble die":"d8",
+            "Cost in gp":"10"
+         }
+      ],
+      "footnotes":[
+         "* Shields cannot be used with two-handed weapons.",
+         "** Human and elf base speed is 30’. Dwarf and halfling base speed is 20’."
+      ]
+   }
+}

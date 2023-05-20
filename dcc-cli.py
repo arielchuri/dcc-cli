@@ -25,9 +25,11 @@ def load_ascii_art():
 
 def display_instructions():
     """Display the initial instructions with available commands."""
-    print("++++++++++++++++++++++++++++++++++++++++++++++++")
-    print("Welcome the DCC Quickstart Command Line Tool!")
-    print("Available commands: help, tables, quit")
+    print("[black on violet] +++++++++++++++++++++++++++++++++++++++++++++ [/black on violet]")
+    print("[black on violet] Welcome the DCC Quickstart Command Line Tool! [/black on violet]")
+    print("[black on violet] +++++++++++++++++++++++++++++++++++++++++++++ [/black on violet]")
+    print(" ")
+    print("Available commands: [yellow]help[/yellow], [red]tables[/red], [violet]roll[/violet], [green]quit[/green]")
 
 class FirstApp(cmd2.Cmd):
     def __init__(self):
@@ -49,24 +51,26 @@ class FirstApp(cmd2.Cmd):
 
     """A simple cmd2 application."""
     roll_parser = cmd2.Cmd2ArgumentParser()
-    roll_parser.add_argument('-p', '--piglatin', action='store_true', help='atinLay')
-    roll_parser.add_argument('-s', '--shout', action='store_true', help='N00B EMULATION MODE')
-    roll_parser.add_argument('-r', '--repeat', type=int, help='output [n] times')
+    # roll_parser.add_argument('-p', '--piglatin', action='store_true', help='atinLay')
+    # roll_parser.add_argument('-s', '--shout', action='store_true', help='N00B EMULATION MODE')
+    # roll_parser.add_argument('-r', '--repeat', type=int, help='output [n] times')
     roll_parser.add_argument('dice', nargs='+', help='Dice to roll (e.g. 3d6)')
 
     @cmd2.with_argparser(roll_parser)
     def do_roll(self, args):
         """Rolls the dice you enter (3d6)."""
         rolls = {}
+        total = 0
         for die in args.dice:
             # making a definition list in rolls of the dice the put in and the rolled value
             rolls[die] = 0
             for n in range(0,parse_numbers(die)[0]):
                 rolls[die] = rolls[die] + roll_single(parse_numbers(die)[1])
                 # rolls[die] = rolls[die] + roll_single(parse_numbers(die)[1])
-            print(f"{die}:\t{rolls[die]}")
+            total = total + rolls[die]
+            print(f"[yellow]{die}:[/yellow][yellow][/yellow]\t[red]{rolls[die]}[/red]")
+        print(f"Total\t{total}")
         # self.poutput(' '.join(rolls))
-
 
     table_parser = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(table_parser)
@@ -99,11 +103,18 @@ class FirstApp(cmd2.Cmd):
                         # print(tables[table_name]["table"])
                         break
                 except ValueError:
-                    print("Invalid choice. Try again.")
+                    print("[red]Cancel[/red]")
+                    return
 
         except FileNotFoundError:
             print(f"Table file not found: {SYSTEM_TABLES_FILE_PATH}")
 
+class NoShellApp(cmd2.Cmd):
+    delattr(cmd2.Cmd, 'do_shell')
+class Norun_pyscriptApp(cmd2.Cmd):
+    delattr(cmd2.Cmd, 'do_run_pyscript')
+class Norun_scriptApp(cmd2.Cmd):
+    delattr(cmd2.Cmd, 'do_run_script')
 def parse_numbers(input_string):
     # Find all occurrences of one or more digits in the input string
     numbers = re.findall(r'\d+', input_string)

@@ -78,7 +78,25 @@ class FirstApp(cmd2.Cmd):
     def do_rolltable(self, args):
         """Roll on a table."""
         table_data = view_tables()
-        print(table_data[1])
+        print()
+        print(f"[black on violet bold]  {table_data[0]}  [/black on violet bold]")
+        print()
+        roll = random.randint(0, len(table_data[1]))
+        table = Table(show_header=True, header_style="bold green")
+        for n in table_data[1][0]:
+            table.add_column(n)
+        print(table_data[1][roll])
+        # table.add_row(table_data[1][roll])
+        table.add_row(*table_data[1][roll])
+        #     if isinstance(table_data[1][0], list):
+        #         print("list")
+        #         table.add_row(*i)
+        #     elif isinstance(table_data[1][0], dict):
+        #         print("dict")
+        #         table.add_row(*i.values())
+        console.print(table)
+        # print(table_data[1][1][0])
+        # print(table_data[1])
 
     table_parser = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(table_parser)
@@ -110,7 +128,8 @@ def view_tables():
             print("No tables found.")
             return
 
-        print("Available tables:")
+        print()
+        print("[bold] Available tables:[/bold]")
         for index, table_name in enumerate(table_names, start=1):
             print(f"{index}. {table_name}")
 
@@ -158,6 +177,7 @@ def display_table(table_name, table_data, tables):
     table = Table(show_header=True, header_style="bold magenta")
     for n in table_data[0]:
         table.add_column(n)
+    print(table_data)
     for i in table_data:
         if isinstance(table_data[0], list):
             table.add_row(*i)

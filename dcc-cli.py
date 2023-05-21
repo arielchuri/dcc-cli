@@ -22,14 +22,17 @@ def load_ascii_art():
     with open(ASCII_ART_FILE, "r") as file:
         ascii_art = file.read()
     return ascii_art
-
-def display_instructions():
-    """Display the initial instructions with available commands."""
+def display_welcome():
+    print(" ")
     print("[black on violet] +++++++++++++++++++++++++++++++++++++++++++++ [/black on violet]")
     print("[black on violet] Welcome the DCC Quickstart Command Line Tool! [/black on violet]")
     print("[black on violet] +++++++++++++++++++++++++++++++++++++++++++++ [/black on violet]")
     print(" ")
+def display_instructions():
+    """Display the initial instructions with available commands."""
+    print(" ")
     print("Available commands: [yellow]help[/yellow], [blue]rolltable[/blue], [red]tables[/red], [violet]roll[/violet], [green]quit[/green]")
+    print(" ")
 
 class FirstApp(cmd2.Cmd):
     def __init__(self):
@@ -47,6 +50,7 @@ class FirstApp(cmd2.Cmd):
         text = Text(ascii_art)
         text.stylize("yellow")
         console.print(text)
+        display_welcome()
         display_instructions()
 
     """A simple cmd2 application."""
@@ -73,16 +77,20 @@ class FirstApp(cmd2.Cmd):
     @cmd2.with_argparser(roll_table)
     def do_rolltable(self, args):
         """Roll on a table."""
-        print(self)
+        table_data = view_tables()
+        print(table_data[1])
 
     table_parser = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(table_parser)
     def do_tables(self, args):
         """View a table."""
-        print(args)
         table_data = view_tables()
-        display_table(table_data[0], table_data[1], table_data[2])
-        # display_table(table_name, tables[table_name]['table'], tables)
+        if table_data != "cancel":
+            # print(table_data[0])
+            # print(table_data[1])
+            # print(table_data[2])
+            display_table(table_data[0], table_data[1], table_data[2])
+            # display_table(table_name, tables[table_name]['table'], tables)
 
 class NoShellApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_shell')
@@ -112,13 +120,13 @@ def view_tables():
                 if choice < 1 or choice > len(table_names):
                     print("Invalid choice. Try again.")
                 else:
-                    # table_name = table_names[choice - 1]
+                    table_name = table_names[choice - 1]
                     return table_name, tables[table_name]['table'], tables
                     # print(tables[table_name]["table"])
                     break
             except ValueError:
                 print("[red]Cancel[/red]")
-                return
+                return "cancel"
 
     except FileNotFoundError:
         print(f"Table file not found: {SYSTEM_TABLES_FILE_PATH}")
@@ -143,7 +151,10 @@ def roll_multiple(dice): # takes a roll like 3d6
         rolls += roll_single(parse_numbers(dice)[1]) # sends the second number in parse_numbers and gets a random
     return rolls
 def display_table(table_name, table_data, tables):
-    # print('tablename: ',table_name,'\ntable_data: ',table_data,'\ntables: ',tables)
+    print()
+    print(f"[black on yellow bold]  {table_name}  [/black on yellow bold]")
+    print()
+# print('tablename: ',table_name,'\ntable_data: ',table_data,'\ntables: ',tables)
     table = Table(show_header=True, header_style="bold magenta")
     for n in table_data[0]:
         table.add_column(n)

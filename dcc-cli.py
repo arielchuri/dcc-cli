@@ -79,37 +79,10 @@ class FirstApp(cmd2.Cmd):
     @cmd2.with_argparser(table_parser)
     def do_tables(self, args):
         """View a table."""
-        try:
-            with open(SYSTEM_TABLES_FILE_PATH) as file:
-                tables = json.load(file)
-
-            table_names = list(tables.keys())
-            # print('table_names', table_names)
-
-            if not table_names:
-                print("No tables found.")
-                return
-
-            print("Available tables:")
-            for index, table_name in enumerate(table_names, start=1):
-                print(f"{index}. {table_name}")
-
-            while True:
-                try:
-                    choice = int(input("Enter the table number to display: "))
-                    if choice < 1 or choice > len(table_names):
-                        print("Invalid choice. Try again.")
-                    else:
-                        table_name = table_names[choice - 1]
-                        display_table(table_name, tables[table_name]['table'], tables)
-                        # print(tables[table_name]["table"])
-                        break
-                except ValueError:
-                    print("[red]Cancel[/red]")
-                    return
-
-        except FileNotFoundError:
-            print(f"Table file not found: {SYSTEM_TABLES_FILE_PATH}")
+        print(args)
+        table_data = view_tables()
+        display_table(table_data[0], table_data[1], table_data[2])
+        # display_table(table_name, tables[table_name]['table'], tables)
 
 class NoShellApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_shell')
@@ -117,6 +90,39 @@ class Norun_pyscriptApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_run_pyscript')
 class Norun_scriptApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_run_script')
+def view_tables():
+    try:
+        with open(SYSTEM_TABLES_FILE_PATH) as file:
+            tables = json.load(file)
+
+        table_names = list(tables.keys())
+        # print('table_names', table_names)
+
+        if not table_names:
+            print("No tables found.")
+            return
+
+        print("Available tables:")
+        for index, table_name in enumerate(table_names, start=1):
+            print(f"{index}. {table_name}")
+
+        while True:
+            try:
+                choice = int(input("Enter the table number to display: "))
+                if choice < 1 or choice > len(table_names):
+                    print("Invalid choice. Try again.")
+                else:
+                    # table_name = table_names[choice - 1]
+                    return table_name, tables[table_name]['table'], tables
+                    # print(tables[table_name]["table"])
+                    break
+            except ValueError:
+                print("[red]Cancel[/red]")
+                return
+
+    except FileNotFoundError:
+        print(f"Table file not found: {SYSTEM_TABLES_FILE_PATH}")
+
 def parse_numbers(input_string):
     # Find all occurrences of one or more digits in the input string
     numbers = re.findall(r'\d+', input_string)

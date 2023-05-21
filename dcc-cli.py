@@ -78,25 +78,20 @@ class FirstApp(cmd2.Cmd):
     def do_rolltable(self, args):
         """Roll on a table."""
         table_data = view_tables()
-        print()
-        print(f"[black on violet bold]  {table_data[0]}  [/black on violet bold]")
-        print()
-        roll = random.randint(0, len(table_data[1]))
         table = Table(show_header=True, header_style="bold green")
         for n in table_data[1][0]:
             table.add_column(n)
-        print(table_data[1][roll])
-        # table.add_row(table_data[1][roll])
-        table.add_row(*table_data[1][roll])
-        #     if isinstance(table_data[1][0], list):
-        #         print("list")
-        #         table.add_row(*i)
-        #     elif isinstance(table_data[1][0], dict):
-        #         print("dict")
-        #         table.add_row(*i.values())
-        console.print(table)
-        # print(table_data[1][1][0])
-        # print(table_data[1])
+        if type(table_data[1][0]) is list:
+            roll = random.randint(1, len(table_data[1])-1)
+            table.add_row(*table_data[1][roll])
+        elif type(table_data[1][0]) is dict:
+            roll = random.randint(0, len(table_data[1])-1)
+            table.add_row(*table_data[1][roll].values())
+        if table_data != "cancel":
+            print()
+            print(f"[black on violet bold]  {table_data[0]}  [/black on violet bold]")
+            print()
+            console.print(table)
 
     table_parser = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(table_parser)
@@ -104,11 +99,7 @@ class FirstApp(cmd2.Cmd):
         """View a table."""
         table_data = view_tables()
         if table_data != "cancel":
-            # print(table_data[0])
-            # print(table_data[1])
-            # print(table_data[2])
             display_table(table_data[0], table_data[1], table_data[2])
-            # display_table(table_name, tables[table_name]['table'], tables)
 
 class NoShellApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_shell')
@@ -177,12 +168,12 @@ def display_table(table_name, table_data, tables):
     table = Table(show_header=True, header_style="bold magenta")
     for n in table_data[0]:
         table.add_column(n)
-    print(table_data)
-    for i in table_data:
+    # for i in table_data:
+    for i in range(1, len(table_data)):
         if isinstance(table_data[0], list):
-            table.add_row(*i)
+            table.add_row(*table_data[i])
         elif isinstance(table_data[0], dict):
-            table.add_row(*i.values())
+            table.add_row(*table_data[i].values())
     console.print(table)
     # Display footnotes
     if "footnotes" in tables[table_name]:

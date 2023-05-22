@@ -73,6 +73,102 @@ class FirstApp(cmd2.Cmd):
         print(f"Total\t{total}") #prints total
         # self.poutput(' '.join(rolls))
 
+    zero = cmd2.Cmd2ArgumentParser()
+    @cmd2.with_argparser(zero)
+    def do_zero(self, args):
+        """Generate zero levels"""
+        tables = load_tables()
+        char = {}
+        occupation_data = []
+        roll = random.randint(1, 100)
+        print(roll)
+        for i in range(1, len(tables['Table 1-3: Occupation']['table'])):
+            if '-' in tables['Table 1-3: Occupation']['table'][i][0]:
+                numbers = tables['Table 1-3: Occupation']['table'][i][0].split('-')
+                if roll in range(int(numbers[0]),int(numbers[1])+1):
+                    occupation_data = tables['Table 1-3: Occupation']['table'][i]
+                    break
+            elif int(tables['Table 1-3: Occupation']['table'][i][0]) == roll:
+                occupation_data = tables['Table 1-3: Occupation']['table'][i]
+                break
+        if roll in range(39,48):
+            occupation_data[3] = occupation_data[3].strip('*')
+            farmers = ['Potato','Wheat','Turnip','Corn','Rice','Parsnip','Radish','Rutabaga']
+            occupation_data[1] = farmers[random.randint(0,7)] + " " + occupation_data[1]
+            farm_animals = ['Hen','Sheep','Goat','Cow','duck','Goose','Mule']
+            occupation_data[3] = farm_animals[random.randint(0,6)]
+        if roll == 95:
+            occupation_data[3] = occupation_data[3].strip('*')
+            cart_load = ['Tomatoes','Nothing','Straw','Your dead','Dirt','Rocks']
+            occupation_data[3] = occupation_data[3] + ' of ' + cart_load[random.randint(0,5)]
+        char['Occupation'] = occupation_data[1]
+        char['Strength'] = roll_multiple('3d6')
+        char['Agility'] = roll_multiple('3d6')
+        char['Stamina'] = roll_multiple('3d6')
+        char['Personality'] = roll_multiple('3d6')
+        char['Intelligence'] = roll_multiple('3d6')
+        char['Luck'] = roll_multiple('3d6')
+        for i in tables['Table 1-1: Ability Score Modifiers']['table']:
+            if i[0] == str(char['Strength']):
+                if i[1] == 'None':
+                    i[1] = ''
+                char['Strength Modifier'] = i[1]
+            if i[0] == str(char['Agility']):
+                if i[1] == 'None':
+                    i[1] = ''
+                char['Agility Modifier'] = i[1]
+            if i[0] == str(char['Stamina']):
+                if i[1] == 'None':
+                    i[1] = ''
+                char['Stamina Modifier'] = i[1]
+            if i[0] == str(char['Personality']):
+                if i[1] == 'None':
+                    i[1] = ''
+                char['Personality Modifier'] = i[1]
+            if i[0] == str(char['Intelligence']):
+                if i[1] == 'None':
+                    i[1] = ''
+                char['Intelligence Modifier'] = i[1]
+            if i[0] == str(char['Luck']):
+                if i[1] == 'None':
+                    i[1] = ''
+                char['Luck Modifier'] = i[1]
+        char['AC'] = 10
+        if char['Agility Modifier'] != '':
+            char['AC'] += int(char['Agility Modifier'])
+        char['HP'] = random.randint(1,4)
+        if char['Stamina Modifier'] != '':
+            char['HP'] += int(char['Stamina Modifier'])
+            if char['HP'] < 1:
+                char['HP'] = 1
+        char['Trained Weapon'] = occupation_data[2]
+        char['Trade Goods'] = occupation_data[3]
+        if 'Dwarven' in char['Occupation'] or 'Halfling' in char['Occupation']:
+            char['Speed'] = '20'
+        else:
+            char['Speed'] = '30'
+        char['Initiative'] = '0'
+        if char['Agility Modifier'] != '':
+            char['Initiative'] = char['Agility Modifier']
+        char['Reflex'] = char['Agility Modifier']
+        char['Fortitude'] = char['Stamina Modifier']
+        char['Will'] = char['Personality Modifier']
+        char['Treasure'] = {}
+        char['Treasure']['cp'] = roll_multiple('5d12')
+        print(tables['Table 1-2: Luck Score']['table'][1])
+        char['Birth Auger'] = tables['Table 1-2: Luck Score']['table'][random.randint(1,30)][1]
+        if char['Luck Modifier'] != '':
+            print(char['Luck Modifier'])
+            char['Birth Auger'] += " " + char['Luck Modifier']
+        print(char)
+        teststr = 'hello'
+        with open('chartest.md', 'w') as f:
+            for i in char:
+                f.write(i)
+                f.write(' :\t\t\t')
+                f.write(str(char[i]))
+                f.write('\n')
+
     roll_table = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(roll_table)
     def do_rolltable(self, args):
@@ -107,39 +203,44 @@ class Norun_pyscriptApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_run_pyscript')
 class Norun_scriptApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_run_script')
-def view_tables():
+def load_tables():
     try:
         with open(SYSTEM_TABLES_FILE_PATH) as file:
             tables = json.load(file)
 
-        table_names = list(tables.keys())
+        # table_names = list(tables.keys())
+        return tables
         # print('table_names', table_names)
 
         if not table_names:
             print("No tables found.")
             return
 
-        print()
-        print("[bold] Available tables:[/bold]")
-        for index, table_name in enumerate(table_names, start=1):
-            print(f"{index}. {table_name}")
-
-        while True:
-            try:
-                choice = int(input("Enter the table number to display: "))
-                if choice < 1 or choice > len(table_names):
-                    print("Invalid choice. Try again.")
-                else:
-                    table_name = table_names[choice - 1]
-                    return table_name, tables[table_name]['table'], tables
-                    # print(tables[table_name]["table"])
-                    break
-            except ValueError:
-                print("[red]Cancel[/red]")
-                return "cancel"
-
     except FileNotFoundError:
         print(f"Table file not found: {SYSTEM_TABLES_FILE_PATH}")
+
+def view_tables():
+    tables = load_tables()
+    table_names = list(tables.keys())
+    print()
+    print("[bold] Available tables:[/bold]")
+    for index, table_name in enumerate(table_names, start=1):
+        print(f"{index}. {table_name}")
+
+    while True:
+        try:
+            choice = int(input("Enter the table number to display: "))
+            if choice < 1 or choice > len(table_names):
+                print("Invalid choice. Try again.")
+            else:
+                table_name = table_names[choice - 1]
+                return table_name, tables[table_name]['table'], tables
+                # print(tables[table_name]["table"])
+                break
+        except ValueError:
+            print("[red]Cancel[/red]")
+            return "cancel"
+
 
 def parse_numbers(input_string):
     # Find all occurrences of one or more digits in the input string

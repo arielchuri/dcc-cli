@@ -1,0 +1,60 @@
+
+{
+    "occTitle": "Beekeeper",
+    "strengthScore": "11",
+    "strengthMod": "0",
+    "agilityScore": "10",
+    "agilityMod": "0",
+    "staminaScore": "8",
+    "staminaMod": "-1",
+    "personalityScore": "14",
+    "personalityMod": "1",
+    "intelligenceScore": "9",
+    "intelligenceMod": "0",
+    "luckScore": "12",
+    "luckMod": "0",
+    "armorClass": "10",
+    "hitPoints": "3",
+    "weapon": "Staff",
+    "attackMod": "0",
+    "attackDamageMod": "0",
+    "attackDamage": "1d4",
+    "attackModMelee": "0",
+    "attackDamageMelee": "0",
+    "attackModRanged": "0",
+    "attackDamageRanged": "0",
+    "speed": "30",
+    "initiative": "0",
+    "saveReflex": "0",
+    "saveFort": "-1",
+    "saveWill": "1",
+    "equipment": "Thieves' tools (25 gp)",
+    "equipment2": "",
+    "equipment3": "Water skin",
+    "tradeGood": "Jar of honey",
+    "startingFunds": "32 cp",
+    "luckySign": "Warrior's arm (Critical hit tables) (+0)",
+    "languages": "Common",
+    "racialTraits": ""
+
+    Generator Settings
+Source: Rulebook | Roll Mode: 3d6 | HP: normal | Augur: normal
+
+0-level Occupation: Astrologer
+Strength: 15 (+1)
+Agility: 7 (-1)
+Stamina: 9 (0)
+Personality: 12 (0)
+Intelligence: 10 (0)
+Luck: 8 (-1)
+
+AC: 9; HP: 1
+Weapon: Dagger +1 (1d4+1)
+Speed: 30; Init: -1; Ref: -1; Fort: 0; Will: 0
+
+Equipment: Hammer - small (5 sp)
+Trade good: Spyglass
+Starting Funds: 37 cp
+Lucky sign: Birdsong (Number of languages) (-1)
+Languages: Common
+}

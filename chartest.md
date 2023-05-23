@@ -1,24 +1,24 @@
-Occupation :			Healer
-Strength :			14
-Agility :			9
+Occupation :			Squire
+Strength :			8
+Agility :			7
 Stamina :			12
-Personality :			9
-Intelligence :			8
-Luck :			13
-Intelligence Modifier :			-1
-Agility Modifier :			
-Personality Modifier :			
-Stamina Modifier :			
-Luck Modifier :			+1
-Strength Modifier :			+1
-AC :			10
+Personality :			6
+Intelligence :			12
+Luck :			16
+Personality Modifier :			-1
+Agility Modifier :			-1
+Strength Modifier :			-1
+Stamina Modifier :			0
+Intelligence Modifier :			0
+Luck Modifier :			2
+AC :			9
 HP :			4
-Trained Weapon :			Club
-Trade Goods :			Holy water, 1 vial
-Speed :			30
-Initiative :			0
-Reflex :			
-Fortitude :			
-Will :			
-Treasure :			{'cp': 22}
-Birth Auger :			Birdsong: Number of languages +1
+Trained Weapon :			Longsword
+Trade Goods :			Steel helmet
+Speed :			40
+Initiative :			-1
+Reflex :			-1
+Fortitude :			0
+Will :			-1
+Treasure :			{'cp': 19}
+Birth Auger :			Wild child: Speed (each +1/-1 = +5’/-5’ speed) 2

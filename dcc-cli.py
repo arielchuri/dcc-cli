@@ -6,6 +6,7 @@ from rich.console import Console
 from rich.text import Text
 from rich.table import Table
 from rich import print
+from rich.markdown import Markdown
 import json
 import re
 import random
@@ -81,7 +82,6 @@ class FirstApp(cmd2.Cmd):
         char = {}
         occupation_data = []
         roll = random.randint(1, 100)
-        print(roll)
         for i in range(1, len(tables['Table 1-3: Occupation']['table'])):
             if '-' in tables['Table 1-3: Occupation']['table'][i][0]:
                 numbers = tables['Table 1-3: Occupation']['table'][i][0].split('-')
@@ -111,43 +111,43 @@ class FirstApp(cmd2.Cmd):
         for i in tables['Table 1-1: Ability Score Modifiers']['table']:
             if i[0] == str(char['Strength']):
                 if i[1] == 'None':
-                    i[1] = ''
-                char['Strength Modifier'] = i[1]
+                    i[1] = '0'
+                char['Strength Modifier'] = int(i[1])
             if i[0] == str(char['Agility']):
                 if i[1] == 'None':
-                    i[1] = ''
-                char['Agility Modifier'] = i[1]
+                    i[1] = '0'
+                char['Agility Modifier'] = int(i[1])
             if i[0] == str(char['Stamina']):
                 if i[1] == 'None':
-                    i[1] = ''
-                char['Stamina Modifier'] = i[1]
+                    i[1] = '0'
+                char['Stamina Modifier'] = int(i[1])
             if i[0] == str(char['Personality']):
                 if i[1] == 'None':
-                    i[1] = ''
-                char['Personality Modifier'] = i[1]
+                    i[1] = '0'
+                char['Personality Modifier'] = int(i[1])
             if i[0] == str(char['Intelligence']):
                 if i[1] == 'None':
-                    i[1] = ''
-                char['Intelligence Modifier'] = i[1]
+                    i[1] = '0'
+                char['Intelligence Modifier'] = int(i[1])
             if i[0] == str(char['Luck']):
                 if i[1] == 'None':
-                    i[1] = ''
-                char['Luck Modifier'] = i[1]
+                    i[1] = '0'
+                char['Luck Modifier'] = int(i[1])
         char['AC'] = 10
-        if char['Agility Modifier'] != '':
+        if char['Agility Modifier'] != 0:
             char['AC'] += int(char['Agility Modifier'])
         char['HP'] = random.randint(1,4)
-        if char['Stamina Modifier'] != '':
+        if char['Stamina Modifier'] != 0:
             char['HP'] += int(char['Stamina Modifier'])
             if char['HP'] < 1:
                 char['HP'] = 1
         char['Trained Weapon'] = occupation_data[2]
         char['Trade Goods'] = occupation_data[3]
         if 'Dwarven' in char['Occupation'] or 'Halfling' in char['Occupation']:
-            char['Speed'] = '20'
+            char['Speed'] = 20
         else:
-            char['Speed'] = '30'
-        char['Initiative'] = '0'
+            char['Speed'] = 30
+        char['Initiative'] = 0
         if char['Agility Modifier'] != '':
             char['Initiative'] = char['Agility Modifier']
         char['Reflex'] = char['Agility Modifier']
@@ -155,19 +155,47 @@ class FirstApp(cmd2.Cmd):
         char['Will'] = char['Personality Modifier']
         char['Treasure'] = {}
         char['Treasure']['cp'] = roll_multiple('5d12')
-        print(tables['Table 1-2: Luck Score']['table'][1])
-        char['Birth Auger'] = tables['Table 1-2: Luck Score']['table'][random.randint(1,30)][1]
-        if char['Luck Modifier'] != '':
-            print(char['Luck Modifier'])
-            char['Birth Auger'] += " " + char['Luck Modifier']
-        print(char)
-        teststr = 'hello'
-        with open('chartest.md', 'w') as f:
+        birth_auger_roll = random.randint(1,30)
+        char['Birth Auger'] = tables['Table 1-2: Luck Score']['table'][birth_auger_roll][1]
+        if char['Luck Modifier'] != 0:
+            char['Birth Auger'] += " " + str(char['Luck Modifier'])
+            if birth_auger_roll == 30:
+                char['Speed'] += int(char['Luck Modifier']) * 5
+            elif birth_auger_roll == 29:
+                print('languages')
+            elif birth_auger_roll == 25:
+                char['HP'] += int(char['Luck Modifier'])
+                if char['HP'] < 1:
+                    char['HP'] = 1
+            elif birth_auger_roll == 24:
+                char['Initiative'] += int(char['Luck Modifier'])
+            elif birth_auger_roll == 23:
+                char['AC'] += int(char['Luck Modifier'])
+            elif birth_auger_roll == 22:
+                char['Will'] += int(char['Luck Modifier'])
+            elif birth_auger_roll == 21:
+                char['Fortitude'] += int(char['Luck Modifier'])
+            elif birth_auger_roll == 20:
+                char['Reflex'] += int(char['Luck Modifier'])
+            elif birth_auger_roll == 17:
+                char['Reflex'] += int(char['Luck Modifier'])
+                char['Fortitude'] += int(char['Luck Modifier'])
+                char['Will'] += int(char['Luck Modifier'])
+        # need do have campaign name set for file name.
+        with open('dcc-log.md', 'a') as f:
+            f.write('\n')
+            f.write('|one|two|\n')
+            f.write('|Name:________________________|Alignment:______________|\n')
+            f.write('|----|----|\n')
+            print(f"<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>")
             for i in char:
-                f.write(i)
-                f.write(' :\t\t\t')
-                f.write(str(char[i]))
+                f.write(f'|{i}')
+                f.write(f'|{str(char[i])}|')
                 f.write('\n')
+                # table.add_row(f"{i}",f"{str(char[i])}")
+        table = Table('Strength','Agility','Stamina','Personality','Intelligence','Luck', title="Character")
+        table.add_row(f"{char['Strength']} {char['Strength Modifier']}", f"{char['Agility']} {char['Agility Modifier']}", f"{char['Stamina']} {char['Stamina Modifier']}", f"{char['Personality']} {char['Personality Modifier']}", f"{char['Intelligence']} {char['Intelligence Modifier']}", f"{char['Luck']} {char['Luck Modifier']}")
+        console.print(table)
 
     roll_table = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(roll_table)

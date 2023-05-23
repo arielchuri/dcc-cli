@@ -158,7 +158,7 @@ class FirstApp(cmd2.Cmd):
         birth_auger_roll = random.randint(1,30)
         char['Birth Auger'] = tables['Table 1-2: Luck Score']['table'][birth_auger_roll][1]
         if char['Luck Modifier'] != 0:
-            char['Birth Auger'] += " " + str(char['Luck Modifier'])
+            char['Birth Auger'] += f" ({char['Luck Modifier']:+})"
             if birth_auger_roll == 30:
                 char['Speed'] += int(char['Luck Modifier']) * 5
             elif birth_auger_roll == 29:
@@ -184,17 +184,29 @@ class FirstApp(cmd2.Cmd):
         # need do have campaign name set for file name.
         with open('dcc-log.md', 'a') as f:
             f.write('\n')
-            f.write('|one|two|\n')
-            f.write('|Name:________________________|Alignment:______________|\n')
-            f.write('|----|----|\n')
-            print(f"<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>|<:>")
-            for i in char:
-                f.write(f'|{i}')
-                f.write(f'|{str(char[i])}|')
-                f.write('\n')
-                # table.add_row(f"{i}",f"{str(char[i])}")
-        table = Table('Strength','Agility','Stamina','Personality','Intelligence','Luck', title="Character")
-        table.add_row(f"{char['Strength']} {char['Strength Modifier']}", f"{char['Agility']} {char['Agility Modifier']}", f"{char['Stamina']} {char['Stamina Modifier']}", f"{char['Personality']} {char['Personality Modifier']}", f"{char['Intelligence']} {char['Intelligence Modifier']}", f"{char['Luck']} {char['Luck Modifier']}")
+            f.write('\n')
+            f.write('***\n')
+            f.write('## Peasant Created\n')
+            f.write(f"Occupation: {char['Occupation']}   \n")
+            f.write(f"Strength: {char['Strength']} ({char['Strength Modifier']:+})   \n")
+            f.write(f"Agility: {char['Agility']} ({char['Agility Modifier']:+})   \n")
+            f.write(f"Stamina: {char['Stamina']} ({char['Stamina Modifier']:+})   \n")
+            f.write(f"Personality: {char['Personality']} ({char['Personality Modifier']:+})   \n")
+            f.write(f"Intelligence: {char['Intelligence']} ({char['Intelligence Modifier']:+})   \n")
+            f.write(f"Luck: {char['Luck']} ({char['Luck Modifier']:+})   \n")
+            f.write('   \n')
+            f.write(f"AC: {char['AC']}; HP:{char['HP']}   \n")
+            f.write(f"Weapon: {char['Trained Weapon']}   \n")
+            f.write(f"Speed: {char['Speed']}; Init:{char['Initiative']}; Ref: {char['Reflex']:+}; Fort: {char['Fortitude']:+}; Will: {char['Will']:+}   \n")
+            # equipment
+            f.write(f"Trade good: {char['Trade Goods']}   \n")
+            f.write(f"Starting Funds: {char['Treasure']['cp']} cp   \n")
+            f.write(f"Lucky sign: {char['Birth Auger']}   \n")
+            f.write('***\n')
+            # languages
+        table = Table(title="Peasant", show_header=False)
+        for i in char:
+            table.add_row(f"{i}",f"{str(char[i])}")
         console.print(table)
 
     roll_table = cmd2.Cmd2ArgumentParser()

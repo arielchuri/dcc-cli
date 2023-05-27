@@ -218,6 +218,10 @@
             "30",
             "Wild child: Speed (each +1/-1 = +5’/-5’ speed)"
          ]
+      ],
+      "footnotes": [
+         " * If a cleric, applies to all healing the cleric performs. If not a cleric, applies to all magical healing received from other sources.",
+            "** Luck normally affects critical hits and fumbles. On this result, the modifier is doubled for purposes of crits or fumbles."
       ]
    },
    "Table 1-3: Occupation":{

@@ -10,6 +10,7 @@ from rich.markdown import Markdown
 import json
 import re
 import random
+from datetime import datetime
 
 console = Console()
 
@@ -29,19 +30,23 @@ def display_welcome():
     print("[black on violet] Welcome the DCC Quickstart Command Line Tool! [/black on violet]")
     print("[black on violet] +++++++++++++++++++++++++++++++++++++++++++++ [/black on violet]")
     print(" ")
+    print("Some commands write to a text file in the current folder.")
+    print("type 'tail dcc-log.md' in another terminal window to follow it.")
 def display_instructions():
     """Display the initial instructions with available commands."""
     print(" ")
-    print("Available commands: [yellow]help[/yellow], [blue]rolltable[/blue], [red]tables[/red], [violet]roll[/violet], [green]quit[/green]")
+    print("Available commands: [yellow]help[/yellow], [red]tables[/red], [violet]roll[/violet], [blue]rolltable[/blue], [green]zero[/green], [yellow]headline[/yellow], [red]timestamp[/red], [violet]note[/violet], [blue]quit[/blue]")
     print(" ")
 
 class FirstApp(cmd2.Cmd):
     def __init__(self):
-        self.debug = True
-        shortcuts = cmd2.DEFAULT_SHORTCUTS
-        shortcuts.update({'&': 'roll'})
-        # shortcuts.update({'t': 'tables'})
+        # self.debug = True
+        # shortcuts = cmd2.DEFAULT_SHORTCUTS
+        # shortcuts.update({'&': 'roll'})
+        # # shortcuts.update({'t': 'tables'})
         super().__init__()
+        self.prompt = ':>>> '
+        # self.prompt = u'\u2713'
 
         # Make maxrepeats settable at runtime
         # self.maxrepeats = 3
@@ -60,19 +65,52 @@ class FirstApp(cmd2.Cmd):
     # roll_parser.add_argument('-s', '--shout', action='store_true', help='N00B EMULATION MODE')
     # roll_parser.add_argument('-r', '--repeat', type=int, help='output [n] times')
     roll_parser.add_argument('dice', nargs='+', help='Dice to roll (e.g. 3d6)')
-
     @cmd2.with_argparser(roll_parser)
     def do_roll(self, args):
         """Rolls the dice you enter (3d6)."""
         # takes in a a list of rolls like: d20 3d6 1d4
         total = 0
-        for dieroll in args.dice: # loops through each argument
-            roll = roll_multiple(dieroll) # sends the roll to roll_multiple()
-            # making a definition list in rolls of the dice the put in and the rolled value
-            total += roll # adds to the total
-            print(f"[yellow]{dieroll}:[/yellow][yellow][/yellow]\t[red]{roll}[/red]") # prints roll
-        print(f"Total\t{total}") #prints total
+        with open('dcc-log.md', 'a') as f:
+            f.write('\n')
+            for dieroll in args.dice: # loops through each argument
+                roll = roll_multiple(dieroll) # sends the roll to roll_multiple()
+                # making a definition list in rolls of the dice the put in and the rolled value
+                total += roll # adds to the total
+                print(f"[yellow]{dieroll}:[/yellow][yellow][/yellow]\t[red]{roll}[/red]") # prints roll
+                f.write(f"{dieroll}:\t{roll}\n") # prints roll
+            if len(args.dice) > 1:
+                print(f"Total\t{total}") #prints total
+                f.write(f"Total\t{total}\n") #prints total
         # self.poutput(' '.join(rolls))
+
+    headline_content = cmd2.Cmd2ArgumentParser()
+    headline_content.add_argument('headline', nargs='+', help='Headline to add to log')
+    @cmd2.with_argparser(headline_content)
+    def do_headline(self, args):
+        """Text 'in quotes' written after the command will be a headline in the log file."""
+        print(f"[bold]{args.headline[0]}[/bold]")
+        with open('dcc-log.md', 'a') as f:
+            f.write('\n')
+            f.write(f"# {args.headline[0]}\n")
+
+    time = cmd2.Cmd2ArgumentParser()
+    @cmd2.with_argparser(time)
+    def do_time(self, args):
+        """Add a time stamp to the log file."""
+        print(f"[bold blue]{datetime.now().strftime('%d %B, %Y (%H:%M)')}[/bold blue]   ")
+        with open('dcc-log.md', 'a') as f:
+            f.write('\n')
+            f.write(f"**{datetime.now().strftime('%d %B, %Y (%H:%M)')}**")
+
+    note_content = cmd2.Cmd2ArgumentParser()
+    note_content.add_argument('note', nargs='+', help='Note to add to log')
+    @cmd2.with_argparser(note_content)
+    def do_note(self, args):
+        """Text 'in quotes' written after the command will be a paragraph in the log file."""
+        print(f"{args.note[0]}") #prints note
+        with open('dcc-log.md', 'a') as f:
+            f.write('\n')
+            f.write(f"{args.note[0]}   \n")
 
     zero = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(zero)
@@ -185,7 +223,7 @@ class FirstApp(cmd2.Cmd):
         with open('dcc-log.md', 'a') as f:
             f.write('\n')
             f.write('\n')
-            f.write('***\n')
+            f.write('---\n')
             f.write('## Peasant Created\n')
             f.write(f"Occupation: {char['Occupation']}   \n")
             f.write(f"Strength: {char['Strength']} ({char['Strength Modifier']:+})   \n")
@@ -202,12 +240,17 @@ class FirstApp(cmd2.Cmd):
             f.write(f"Trade good: {char['Trade Goods']}   \n")
             f.write(f"Starting Funds: {char['Treasure']['cp']} cp   \n")
             f.write(f"Lucky sign: {char['Birth Auger']}   \n")
-            f.write('***\n')
+            f.write('---\n')
             # languages
-        table = Table(title="Peasant", show_header=False)
+        # table = Table("one","two",title="Peasant", show_header=False, show_lines=True, show_edge=False)
+        print()
+        table = Table(title="Peasant", show_header=False, show_lines=True, show_edge=False, title_justify="left", title_style="red on white")
+        table.add_column("one", justify="right", style="cyan", no_wrap=True)
+        table.add_column("two", style="yellow")
         for i in char:
             table.add_row(f"{i}",f"{str(char[i])}")
         console.print(table)
+        display_instructions()
 
     roll_table = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(roll_table)
@@ -239,6 +282,8 @@ class FirstApp(cmd2.Cmd):
 
 class NoShellApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_shell')
+class NoEdit(cmd2.Cmd):
+    delattr(cmd2.Cmd, 'do_edit')
 class Norun_pyscriptApp(cmd2.Cmd):
     delattr(cmd2.Cmd, 'do_run_pyscript')
 class Norun_scriptApp(cmd2.Cmd):

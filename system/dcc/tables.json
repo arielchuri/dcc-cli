@@ -1302,6 +1302,332 @@
       "meta": {
          "Start at" : "1"
       }
-   }
-
+   },
+   "Crit Table I: All 0-Level Characters":{
+      "table":[
+         [
+            "Roll",
+            "Result"
+         ],
+         [
+            "0 or less",
+            "Force of blow shivers your weapon free of your grasp. Inflict +1d6 damage with this strike and you are disarmed."
+         ],
+         [
+            "1",
+            "Opportunistic strike. Inflict +1d3 damage with this strike."
+         ],
+         [
+            "2",
+            "Foe jabbed in the eye! Ugly bruising and inflict +1d4 damage with this strike."
+         ],
+         [
+            "3",
+            "Stunning crack to forehead. Inflict +1d3 damage with this strike, and the foe falls to the bottom of the initiative count next round."
+         ],
+         [
+            "4",
+            "Strike to foe’s kneecap. Inflict +1d4 damage with this strike and the foe suffers a -10’ penalty to speed until healed."
+         ],
+         [
+            "5",
+            "Solid strike to torso. Inflict +1d6 damage with this strike."
+         ],
+         [
+            "6",
+            "Lucky strike disarms foe. You gain a free attack if the enemy stoops to retrieve his weapon."
+         ],
+         [
+            "7",
+            "Smash foe’s hand. Inflict +2d3 damage with this strike. You break two of the enemy’s fingers."
+         ],
+         [
+            "8",
+            "Numbing strike! Cursing in agony, the foe is unable to attack next round."
+         ],
+         [
+            "9",
+            "Smash foe’s nose. Inflict +2d4 damage with this strike and blood streams down the enemy’s face."
+         ],
+         [
+            "10",
+            "Foe trips on his own feet and falls prone for the remainder of the round."
+         ],
+         [
+            "11",
+            "Piercing strike. Inflict +2d4 damage with this strike."
+         ],
+         [
+            "12",
+            "Strike to groin. The foe must make a DC 15 Fort save or spend the next two rounds retching."
+         ],
+         [
+            "13",
+            "Blow smashes foe’s ankle; his movement speed is reduced by half."
+         ],
+         [
+            "14",
+            "Strike grazes temple; blood blinds the foe for 1d3 rounds."
+         ],
+         [
+            "15",
+            "Stab enemy’s weapon hand. The weapon is lost and knocked 1d10+5 feet away."
+         ],
+         [
+            "16",
+            "Narrowly avoid foe’s counterstrike! Inflict normal damage and make another attack roll. If the second attack hits, you inflict an additional +1d6 damage."
+         ],
+         [
+            "17",
+            "Blow to throat. Foe staggers around for 2 rounds and is unable to speak, cast spells, or attack."
+         ],
+         [
+            "18",
+            "Foe falls into your attack. He takes +2d6 damage from the strike and curses your luck."
+         ],
+         [
+            "19",
+            "Miracle strike. The foe must make a DC 20 Fort save or fall unconscious."
+         ],
+         [
+            "20+",
+            "Lucky blow dents foe’s skull! Inflict +2d6 damage with this strike. If the foe has no helm, he suffers a permanent loss of 1d4 Int."
+         ]
+      ],
+      "footnotes":[
+         "* Magical weapons never break due to critical fumbles. The target is disarmed instead, the weapon landing 1d10+5 feet away.",
+         "** A PC overcome by battle rage may temporarily expend points of his Personality or Intelligence score to enhance the damage on his critical hit. For every ability point he expends, he adds +1d12 to his damage roll.",
+         "Ability scores lost in this way return as the warrior heals. Each day thereafter where he does not succumb to battle rage, he recovers 1 point of the affected ability score. This rate is doubled if the character rests."
+      ],
+      "meta": {
+         "Start at" : "1"
+      }
+   },
+   "Crit Table II: All Thieves and Elves":{
+      "table":[
+         [
+            "Roll",
+            "Result"
+         ],
+         [
+            "0 or less",
+            "Miss! Hesitation costs you the perfect strike! Strike misses critical organs. Inflict a paltry +2d3 damage with this strike."
+         ],
+         [
+            "1",
+            "Slashes to head removes foe’s ear. Inflict +1d6 damage with this strike and leave the enemy with a nasty scar."
+         ],
+         [
+            "2",
+            "Clean strike to back. Inflict +2d6 damage with this strike."
+         ],
+         [
+            "3",
+            "Blow to chest staggers foe. You can make an immediate free attack."
+         ],
+         [
+            "4",
+            "Blow pierces foe’s kidneys. Inflict +3d3 damage with this strike, and the foe is stunned for 1 round."
+         ],
+         [
+            "5",
+            "Foe dazed by ferocious attack; his speed and actions are reduced by half."
+         ],
+         [
+            "6",
+            "Strike to chest grazes vital organ. Inflict +3d4 damage with this strike."
+         ],
+         [
+            "7",
+            "Strike cuts a line down foe’s face. He is blinded by blood for 1d4 rounds."
+         ],
+         [
+            "8",
+            "Foe stumbles over his own limbs, falling prone. Make another attack."
+         ],
+         [
+            "9",
+            "Masterful strike! Inflict +2d6 damage with this strike."
+         ],
+         [
+            "10",
+            "Strike severs larynx. Foe is reduced to making wet fish noises."
+         ],
+         [
+            "11",
+            "Savage strike! Foe must succeed on a Fort save (DC 10 + PC level) or faint from the pain."
+         ],
+         [
+            "12",
+            "Foe disoriented by quick strikes. Foe suffers a -4 penalty to attack rolls for 1d4 rounds."
+         ],
+         [
+            "13",
+            "Strike to head. Foe must make a Fort save (DC 10 + PC level) or fall unconscious."
+         ],
+         [
+            "14",
+            "Blow drives foe to ground. Inflict +2d6 damage with this strike, and the enemy is knocked prone."
+         ],
+         [
+            "15",
+            "Lightning-fast shot to the face pops the foe’s eye like a grape. Foe is permanently blinded in one eye and can take no actions for 1d3 rounds."
+         ],
+         [
+            "16",
+            "Strike pierces lung. Inflict +2d6 damage with this strike, and the foe can take only one action on his next turn."
+         ],
+         [
+            "18",
+            "Devastating strike to back of head. Inflict +1d8 damage with this strike, and the foe must make a Fort save (DC 10 + PC level) or fall unconscious."
+         ],
+         [
+            "19",
+            "Attack severs major artery. Inflict +1d10 damage with this strike, and the foe must make a Fort save (DC 10 + PC level) or fall unconscious from shock and massive blood loss."
+         ],
+         [
+            "20",
+            "Throat slashed! Inflict +2d6 damage with this strike, and the foe must make a Fort save (DC 13 + PC level) or die in 1d4 rounds."
+         ],
+         [
+            "21",
+            "Strike pierces spinal column. Inflict +3d6 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or suffer paralysis."
+         ],
+         [
+            "22",
+            "Chest skewered, spearing a variety of organs. Inflict +2d6 damage with this strike, and the foe must make a Fort save (DC 13 + PC level) or die in 1d4 rounds."
+         ],
+         [
+            "23",
+            "Strike through ear canal enters the brain. Ear wax instantly removed, and the foe must make a Fort save (DC 15 + PC level) or die instantly. Inflict an extra +2d6 damage on successful save."
+         ],
+         [
+            "24+",
+            "Strike through heart! Inflict +3d6 damage with this strike, and the foe must make a Fort save (DC 20 + PC level) or die instantly."
+         ]
+      ],
+      "meta":{
+         "Start at" : "1"
+      }
+   },
+   "Crit Table III: Clerics, Halflings, Level 1-2 Warriors, and Level 1-3 Dwarves":{
+   "table":[
+      [
+         "0 or less",
+         "Battle rage makes friend and foe indistinguishable. Foe is hit for +1d12 damage, and the ally nearest him is also hit by a rebounding blow for 1d4 damage.**"
+      ],
+      [
+         "1",
+         "Savage attack! Inflict +1d6 damage with this strike."
+      ],
+      [
+         "2",
+         "Attack sweeps foe off his feet. Next round, the enemy is prone."
+      ],
+      [
+         "3",
+         "Foe steps into attack. Inflict +1d8 damage with this strike."
+      ],
+      [
+         "4",
+         "Powerful strike hammers foe to his knees. Make another attack."
+      ],
+      [
+         "5",
+         "Smash foe’s nose in an explosion of blood. Inflict +1d6 damage with this strike, and the foe loses his sense of smell for 1d4 hours."
+      ],
+      [
+         "6",
+         "Brutal strike to torso. Inflict +1d8 damage with this strike, and the foe suffers multiple broken ribs."
+      ],
+      [
+         "7",
+         "Strike to hand knocks weapon into the air. The weapon lands 1d20+5’ away."
+      ],
+      [
+         "8",
+         "Blow caroms off skull, deafening foe for 1d6 days. Inflict +1d6 damage with this strike."
+      ],
+      [
+         "9",
+         "Strike to leg splinters femur. Inflict +2d6 damage with this strike and foe loses 10’ of movement until healed."
+      ],
+      [
+         "10",
+         "Sunder foe’s weapon! Shards of metal fill the air.*"
+      ],
+      [
+         "11",
+         "Strike hammers foe’s belly causing massive internal bleeding. Unless he receives magical healing, the foe dies in 1d5 hours."
+      ],
+      [
+         "12",
+         "Blow to cranium staggers foe. The foe must make a Fort save (10 + PC level) or sink to floor, unconscious."
+      ],
+      [
+         "13",
+         "Strike breaks foe’s jaw. Blood and shattered teeth ooze down the foe’s face. Inflict +1d8 damage with this strike."
+      ],
+      [
+         "14",
+         "Attack hammers foe’s torso. Inflict +2d8 damage with this strike."
+      ],
+      [
+         "15",
+         "Strike dislocates shoulder! Inflict +1d8 damage and shield arm hangs loosely by muscle and skin; no AC bonus from shield."
+      ],
+      [
+         "16",
+         "Attack reduces foe’s attack hand to formless tissue; -4 penalty to future attacks."
+      ],
+      [
+         "17",
+         "Furious blows hammer target prone. Make another attack."
+      ],
+      [
+         "18",
+         "Blow hammers shards of bone into foe’s fore-brain; gray matter oozes out. Inflict +1d8 damage with this strike, and the foe suffers 1d4 points of Int and Per loss."
+      ],
+      [
+         "19",
+         "Devastating strike to the chest. Inflict +2d8 damage with this strike."
+      ],
+      [
+         "20",
+         "Chest strike stuns foe for 1d3 rounds. Inflict +1d8 damage with this strike"
+      ],
+      [
+         "21",
+         "Strike to leg shatters femur, knocking foe to the ground. Foe’s movement drops by half. Inflict +2d8 damage with this strike and make another attack."
+      ],
+      [
+         "22",
+         "Weapon arm sundered by strike. The weapon is lost along with any chance of making an attack with this arm."
+      ],
+      [
+         "23",
+         "Blow craters skull. Inflict +2d8 damage with this strike, and the target permanently loses 1d4 Int and Per."
+      ],
+      [
+         "24",
+         "Masterful strike to throat. Inflict +2d8 damage with this strike and the foe staggers about gasping for air for 1d4 rounds."
+      ],
+      [
+         "25",
+         "Attack punches shattered ribs through lungs. Foe loses 50% of his remaining hit points and vomits copious amounts of blood."
+      ],
+      [
+         "26",
+         "Attack shatters foe’s face, destroying both eyes. Inflict +2d8 damage with this strike, and the foe is permanently blinded."
+      ],
+      [
+         "27",
+         "Crushing blow hammers chest. Inflict +3d8 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or be knocked unconscious."
+      ],
+      [
+         "28+",
+         "Blow destroys spinal column. Inflict +3d8 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or suffer paralysis."
+      ]
+   ]
+}
 }

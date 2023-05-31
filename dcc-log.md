@@ -1323,3 +1323,72 @@ Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3
 
 Table 3-1: Weapons	Roll: 2
 Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Crit Table I: All 0-Level Characters	Roll: 2
+['1', 'Opportunistic strike. Inflict +1d3 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 2
+['1', 'Opportunistic strike. Inflict +1d3 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 2
+['1', 'Opportunistic strike. Inflict +1d3 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 2
+['1', 'Opportunistic strike. Inflict +1d3 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 1
+['0 or less', 'Force of blow shivers your weapon free of your grasp. Inflict +1d6 damage with this strike and you are disarmed.']
+
+Crit Table I: All 0-Level Characters	Roll: 1
+['0 or less', 'Force of blow shivers your weapon free of your grasp. Inflict +1d6 damage with this strike and you are disarmed.']
+
+Crit Table I: All 0-Level Characters	Roll: 2
+['1', 'Opportunistic strike. Inflict +1d3 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 3
+['2', 'Foe jabbed in the eye! Ugly bruising and inflict +1d4 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 4
+['3', 'Stunning crack to forehead. Inflict +1d3 damage with this strike, and the foe falls to the bottom of the initiative count next round.']
+
+Crit Table I: All 0-Level Characters	Roll: 3
+['2', 'Foe jabbed in the eye! Ugly bruising and inflict +1d4 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 4
+['3', 'Stunning crack to forehead. Inflict +1d3 damage with this strike, and the foe falls to the bottom of the initiative count next round.']
+
+Crit Table I: All 0-Level Characters	Roll: 3
+['2', 'Foe jabbed in the eye! Ugly bruising and inflict +1d4 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 2
+['1', 'Opportunistic strike. Inflict +1d3 damage with this strike.']
+
+Crit Table I: All 0-Level Characters	Roll: 4
+['3', 'Stunning crack to forehead. Inflict +1d3 damage with this strike, and the foe falls to the bottom of the initiative count next round.']
+
+Crit Table II: All Thieves and Elves	Roll: 2
+['1', 'Slashes to head removes foe’s ear. Inflict +1d6 damage with this strike and leave the enemy with a nasty scar.']
+
+Crit Table II: All Thieves and Elves	Roll: 4
+['3', 'Blow to chest staggers foe. You can make an immediate free attack.']
+
+Crit Table II: All Thieves and Elves	Roll: 4
+['3', 'Blow to chest staggers foe. You can make an immediate free attack.']
+
+Crit Table II: All Thieves and Elves	Roll: 2
+['1', 'Slashes to head removes foe’s ear. Inflict +1d6 damage with this strike and leave the enemy with a nasty scar.']
+
+Crit Table II: All Thieves and Elves	Roll: 4
+['3', 'Blow to chest staggers foe. You can make an immediate free attack.']
+
+Crit Table II: All Thieves and Elves	Roll: 4
+['3', 'Blow to chest staggers foe. You can make an immediate free attack.']
+
+Crit Table II: All Thieves and Elves	Roll: 3
+['2', 'Clean strike to back. Inflict +2d6 damage with this strike.']
+
+Crit Table II: All Thieves and Elves	Roll: 4
+['3', 'Blow to chest staggers foe. You can make an immediate free attack.']
+
+Crit Table II: All Thieves and Elves	Roll: 3
+['2', 'Clean strike to back. Inflict +2d6 damage with this strike.']

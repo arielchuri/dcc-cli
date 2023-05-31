@@ -7,3 +7,8 @@
 occupation has a first column with the roll that could be '22' or '23-24'
 
 - need to parse through the range '23-24'
+
+zero creation
+    - needs equipment and languages.
+
+need to add a lot of tables.

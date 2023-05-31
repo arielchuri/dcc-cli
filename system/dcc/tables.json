@@ -221,7 +221,7 @@
       ],
       "footnotes": [
          " * If a cleric, applies to all healing the cleric performs. If not a cleric, applies to all magical healing received from other sources.",
-            "** Luck normally affects critical hits and fumbles. On this result, the modifier is doubled for purposes of crits or fumbles."
+         "** Luck normally affects critical hits and fumbles. On this result, the modifier is doubled for purposes of crits or fumbles."
       ]
    },
    "Table 1-3: Occupation":{
@@ -862,25 +862,25 @@
             "Weapon":"Spear#",
             "Damage":"1d8",
             "Range":"-",
-            "cost":"3 gp"
+            "Cost (gp)":"3 gp"
          },
          {
             "Weapon":"Staff",
             "Damage":"1d4",
             "Range":"-",
-            "Cost":"5 sp"
+            "Cost (gp)":"5 sp"
          },
          {
             "Weapon":"Two-handed sword*",
             "Damage":"1d10",
             "Range":"-",
-            "Cost":"15"
+            "Cost (gp)":"15"
          },
          {
             "Weapon":"Warhammer",
             "Damage":"1d8",
             "Range":"-",
-            "Cost":"5"
+            "Cost (gp)":"5"
          }
       ],
       "footnotes":[
@@ -920,7 +920,103 @@
          ]
       ]
    },
-   "Table 3-3: Equipment":{
+   "Table 3-3: Armor":{
+      "table":[
+         {
+            "Armor":"(Unarmored)",
+            "AC Bonus":"+0",
+            "Check Penalty":"–",
+            "Speed**":"–",
+            "Fumble die":"d4",
+            "Cost in gp":"Free"
+         },
+         {
+            "Armor":"Padded",
+            "AC Bonus":"+1",
+            "Check Penalty":"–",
+            "Speed**":"–",
+            "Fumble die":"d8",
+            "Cost in gp":"5"
+         },
+         {
+            "Armor":"Leather",
+            "AC Bonus":"+2",
+            "Check Penalty":"-1",
+            "Speed**":"–",
+            "Fumble die":"d8",
+            "Cost in gp":"20"
+         },
+         {
+            "Armor":"Studded leather",
+            "AC Bonus":"+3",
+            "Check Penalty":"-2",
+            "Speed**":"–",
+            "Fumble die":"d8",
+            "Cost in gp":"45"
+         },
+         {
+            "Armor":"Hide",
+            "AC Bonus":"+3",
+            "Check Penalty":"-3",
+            "Speed**":"–",
+            "Fumble die":"d12",
+            "Cost in gp":"30"
+         },
+         {
+            "Armor":"Scale mail",
+            "AC Bonus":"+4",
+            "Check Penalty":"-4",
+            "Speed**":"-5’",
+            "Fumble die":"d12",
+            "Cost in gp":"80"
+         },
+         {
+            "Armor":"Chainmail",
+            "AC Bonus":"+5",
+            "Check Penalty":"-5",
+            "Speed**":"-5’",
+            "Fumble die":"d12",
+            "Cost in gp":"150"
+         },
+         {
+            "Armor":"Banded mail",
+            "AC Bonus":"+6",
+            "Check Penalty":"-6",
+            "Speed**":"-5’",
+            "Fumble die":"d16",
+            "Cost in gp":"250"
+         },
+         {
+            "Armor":"Half-plate",
+            "AC Bonus":"+7",
+            "Check Penalty":"-7",
+            "Speed**":"-10’",
+            "Fumble die":"d16",
+            "Cost in gp":"550"
+         },
+         {
+            "Armor":"Full plate",
+            "AC Bonus":"+8",
+            "Check Penalty":"-8",
+            "Speed**":"-10’",
+            "Fumble die":"d16",
+            "Cost in gp":"1,200"
+         },
+         {
+            "Armor":"Shield*",
+            "AC Bonus":"+1",
+            "Check Penalty":"-1",
+            "Speed**":"–",
+            "Fumble die":"d8",
+            "Cost in gp":"10"
+         }
+      ],
+      "footnotes":[
+         "* Shields cannot be used with two-handed weapons.",
+         "** Human and elf base speed is 30’. Dwarf and halfling base speed is 20’."
+      ]
+   },
+   "Table 3-4: Equipment":{
       "table":[
          [
             "Roll*",
@@ -1054,100 +1150,158 @@
          "***\tWhen ignited and thrown, oil causes 1d6 damage plus fire (DC 10 save vs. Reflex to put out or suffer additional 1d6 damage each round). One flask of oil burns for 6 hours in a lantern"
       ]
    },
-   "Table 3-4: Armor":{
+   "Table 4-1: Attack Roll Modifiers": {
       "table":[
-        {
-            "Armor":"(Unarmored)",
-            "AC Bonus":"+0",
-            "Check Penalty":"–",
-            "Speed**":"–",
-            "Fumble die":"d4",
-            "Cost in gp":"Free"
-        },
-        {
-            "Armor":"Padded",
-            "AC Bonus":"+1",
-            "Check Penalty":"–",
-            "Speed**":"–",
-            "Fumble die":"d8",
-            "Cost in gp":"5"
-        },
-        {
-            "Armor":"Leather",
-            "AC Bonus":"+2",
-            "Check Penalty":"-1",
-            "Speed**":"–",
-            "Fumble die":"d8",
-            "Cost in gp":"20"
-        },
-        {
-            "Armor":"Studded leather",
-            "AC Bonus":"+3",
-            "Check Penalty":"-2",
-            "Speed**":"–",
-            "Fumble die":"d8",
-            "Cost in gp":"45"
-        },
-        {
-            "Armor":"Hide",
-            "AC Bonus":"+3",
-            "Check Penalty":"-3",
-            "Speed**":"–",
-            "Fumble die":"d12",
-            "Cost in gp":"30"
-        },
-        {
-            "Armor":"Scale mail",
-            "AC Bonus":"+4",
-            "Check Penalty":"-4",
-            "Speed**":"-5’",
-            "Fumble die":"d12",
-            "Cost in gp":"80"
-        },
-        {
-            "Armor":"Chainmail",
-            "AC Bonus":"+5",
-            "Check Penalty":"-5",
-            "Speed**":"-5’",
-            "Fumble die":"d12",
-            "Cost in gp":"150"
-        },
-        {
-            "Armor":"Banded mail",
-            "AC Bonus":"+6",
-            "Check Penalty":"-6",
-            "Speed**":"-5’",
-            "Fumble die":"d16",
-            "Cost in gp":"250"
-        },
-        {
-            "Armor":"Half-plate",
-            "AC Bonus":"+7",
-            "Check Penalty":"-7",
-            "Speed**":"-10’",
-            "Fumble die":"d16",
-            "Cost in gp":"550"
-        },
-        {
-            "Armor":"Full plate",
-            "AC Bonus":"+8",
-            "Check Penalty":"-8",
-            "Speed**":"-10’",
-            "Fumble die":"d16",
-            "Cost in gp":"1,200"
-        },
-        {
-            "Armor":"Shield*",
-            "AC Bonus":"+1",
-            "Check Penalty":"-1",
-            "Speed**":"–",
-            "Fumble die":"d8",
-            "Cost in gp":"10"
-         }
+         [
+            "Condition",
+            "Melee",
+            "Missile Fire"
+         ],
+         [
+            "Missile fire range is...",
+            "",
+            ""
+         ],
+         [
+            "Short range",
+            "--",
+            "--"
+         ],
+         [
+            "Medium range",
+            "--",
+            "-2"
+         ],
+         [
+            "Long range",
+            "--",
+            "-1d"
+         ],
+         [
+            "Attacker is...",
+            "--",
+            "--"
+         ],
+         [
+            "Invisible",
+            "+2",
+            "--"
+         ],
+         [
+            "On higher ground",
+            "+1",
+            "--"
+         ],
+         [
+            "Squeezing through a tight space Entangled (in a net or otherwise)",
+            "-1d",
+            "-1d"
+         ],
+         [
+            "Using an untrained weapon",
+            "-1d",
+            "-1d"
+         ],
+         [
+            "Firing a missile weapon into melee*",
+            "--",
+            "-1"
+         ],
+         [
+            "Defender is...",
+            "--",
+            "--"
+         ],
+         [
+            "Behind cover",
+            "-2",
+            "-2"
+         ],
+         [
+            "Blinded",
+            "+2",
+            "+2"
+         ],
+         [
+            "Entangled",
+            "+1d",
+            "+1d"
+         ],
+         [
+            "Helpless (paralyzed, sleeping, bound)",
+            "+1d",
+            "+1d"
+         ],
+         [
+            "Kneeling, sitting, or prone",
+            "+2",
+            "-2"
+         ]
       ],
       "footnotes":[
-         "* Shields cannot be used with two-handed weapons.",
-         "** Human and elf base speed is 30’. Dwarf and halfling base speed is 20’."
+         "* And 50% chance of \"friendly fire\" if attack misses; see page 96."
       ]
+   },
+   "Table 4-2: Fumbles":{
+      "table":[
+         [
+            "Roll", "Result"
+         ],
+         [
+            "1.", "You miss wildly but miraculously cause no other damage."
+         ],
+         [
+            "2.", "Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage."
+         ],
+         [
+            "3.", "You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone."
+         ],
+         [
+            "4.", "Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll."
+         ],
+         [
+            "5.", "Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now."
+         ],
+         [
+            "6.", "You trip and fall, wasting this action. You are prone and must use an action to stand next round."
+         ],
+         [
+            "7.", "Your weapon becomes entangled in your armor. You must spend your next round untangling them. In addition, your armor bonus is reduced by 1 until you spend 10 minutes refitting the tangled buckles and straps."
+         ],
+         [
+            "8.", "You drop your weapon. You must retrieve it or draw a new one on your next action."
+         ],
+         [
+            "9.", "You accidentally smash your weapon against a solid, unyielding object (a rock, a wall, even the ground). Mundane weapons are ruined; magical weapons are not affected."
+         ],
+         [
+            "10.", "You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll."
+         ],
+         [
+            "11.", "You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected."
+         ],
+         [
+            "12.", "Your wild swing leaves you off balance. You take a -4 penalty to your next attack roll."
+         ],
+         [
+            "13.", "You inadvertently swing at one randomly determined ally within range. Make an attack roll against that ally using the same attack die you just attempted to use."
+         ],
+         [
+            "14.", "You trip badly. You fall hard, suffering 1d3 damage in the process. You are prone and must use your next round to stand."
+         ],
+         [
+            "15.", "Like a turtle on its back, you slip and land upside down, flailing about and unable to right yourself. You must fight from a prone position for the next round before you can recover your balance and rise."
+         ],
+         [
+            "16.", "You somehow manage to wound yourself, taking normal damage."
+         ],
+         [
+            "16+", "You accidentally strike yourself for normal damage plus an extra 1 point. In addition, you fall on your back and are unable to right yourself until you make a DC 16 Agility check."
+         ]
+      ],
+      "meta": {
+         "Start at" : "1"
+      }
    }
+
 }

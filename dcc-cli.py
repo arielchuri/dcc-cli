@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """A simple cmd2 application."""
 import cmd2
+from cmd2 import with_argument_list
 import argparse
 from rich.console import Console
 from rich.text import Text
@@ -35,7 +36,7 @@ def display_welcome():
 def display_instructions():
     """Display the initial instructions with available commands."""
     print(" ")
-    print("Available commands: [yellow]help[/yellow], [red]tables[/red], [violet]roll[/violet], [blue]rolltable[/blue], [green]zero[/green], [yellow]headline[/yellow], [red]timestamp[/red], [violet]note[/violet], [blue]quit[/blue]")
+    print("Available commands: [yellow]help[/yellow], [red]table[/red], [violet]roll[/violet], [blue]rolltable[/blue], [green]zero[/green], [yellow]headline[/yellow], [red]timestamp[/red], [violet]note[/violet], [blue]quit[/blue]")
     print(" ")
 
 class FirstApp(cmd2.Cmd):
@@ -45,7 +46,7 @@ class FirstApp(cmd2.Cmd):
         # shortcuts.update({'&': 'roll'})
         # # shortcuts.update({'t': 'tables'})
         super().__init__()
-        self.prompt = ':>>> '
+        self.prompt = ":>>>"
         # self.prompt = u'\u2713'
 
         # Make maxrepeats settable at runtime
@@ -100,7 +101,7 @@ class FirstApp(cmd2.Cmd):
         print(f"[bold blue]{datetime.now().strftime('%d %B, %Y (%H:%M)')}[/bold blue]   ")
         with open('dcc-log.md', 'a') as f:
             f.write('\n')
-            f.write(f"**{datetime.now().strftime('%d %B, %Y (%H:%M)')}**")
+            f.write(f"**{datetime.now().strftime('%d %B, %Y (%H:%M)')}**  ")
 
     note_content = cmd2.Cmd2ArgumentParser()
     note_content.add_argument('note', nargs='+', help='Note to add to log')
@@ -223,8 +224,8 @@ class FirstApp(cmd2.Cmd):
         with open('dcc-log.md', 'a') as f:
             f.write('\n')
             f.write('\n')
-            f.write('---\n')
-            f.write('## Peasant Created\n')
+            f.write('-------------------------------------------\n')
+            f.write('__Peasant Created__\n')
             f.write(f"Occupation: {char['Occupation']}   \n")
             f.write(f"Strength: {char['Strength']} ({char['Strength Modifier']:+})   \n")
             f.write(f"Agility: {char['Agility']} ({char['Agility Modifier']:+})   \n")
@@ -240,7 +241,7 @@ class FirstApp(cmd2.Cmd):
             f.write(f"Trade good: {char['Trade Goods']}   \n")
             f.write(f"Starting Funds: {char['Treasure']['cp']} cp   \n")
             f.write(f"Lucky sign: {char['Birth Auger']}   \n")
-            f.write('---\n')
+            f.write('-------------------------------------------\n')
             # languages
         # table = Table("one","two",title="Peasant", show_header=False, show_lines=True, show_edge=False)
         print()
@@ -252,29 +253,50 @@ class FirstApp(cmd2.Cmd):
         console.print(table)
         display_instructions()
 
-    roll_table = cmd2.Cmd2ArgumentParser()
-    @cmd2.with_argparser(roll_table)
+    # roll_table = cmd2.Cmd2ArgumentParser()
+    # roll_parser.add_argument('-p', '--piglatin', action='store_true', help='atinLay')
+    # roll_parser.add_argument('-s', '--shout', action='store_true', help='N00B EMULATION MODE')
+    # roll_parser.add_argument('-r', '--repeat', type=int, help='output [n] times')
+    # roll_table.add_argument('dice', help='Dice to roll (e.g. 3d6)')
+    # @cmd2.with_argparser(roll_table)
+    @with_argument_list
     def do_rolltable(self, args):
-        """Roll on a table."""
+        """Roll on a table. You can add a dice roll to the command but it rolls on the rows of the table which may be different then the entries."""
         table_data = view_tables()
-        table = Table(show_header=True, header_style="bold green")
+        print("")
+        if len(args) == 0:
+            roll = random.randint(1, len(table_data[1])-1)
+            print( f"Rolling (1-{len(table_data[1])-1}): {roll}" )
+        else:
+            roll = roll_multiple(args[0])
+            print( f"Rolling ({args[0]}): {roll}" )
+        print("")
+        table = Table(title= table_data[0], show_header=True, show_lines=True, show_edge=False, title_justify="left", title_style="black on violet")
         for n in table_data[1][0]:
             table.add_column(n)
         if type(table_data[1][0]) is list:
-            roll = random.randint(1, len(table_data[1])-1)
             table.add_row(*table_data[1][roll])
         elif type(table_data[1][0]) is dict:
             roll = random.randint(0, len(table_data[1])-1)
             table.add_row(*table_data[1][roll].values())
         if table_data != "cancel":
-            print()
-            print(f"[black on violet bold]  {table_data[0]}  [/black on violet bold]")
-            print()
             console.print(table)
+            with open('dcc-log.md', 'a') as f:
+                f.write('\n')
+                f.write(f"{table_data[0]}\tRoll: {roll}\n")
+                if type(table_data[1][0]) is list:
+                    f.write(f"{table_data[1][roll]}")
+                elif type(table_data[1][0]) is dict:
+                    for i in table_data[1][0]:
+                        f.write(i)
+                        f.write(': ')
+                        f.write(table_data[1][roll][i])
+                        f.write('\t')
+                f.write('\n')
 
     table_parser = cmd2.Cmd2ArgumentParser()
     @cmd2.with_argparser(table_parser)
-    def do_tables(self, args):
+    def do_table(self, args):
         """View a table."""
         table_data = view_tables()
         if table_data != "cancel":
@@ -348,10 +370,8 @@ def roll_multiple(dice): # takes a roll like 3d6
     return rolls
 def display_table(table_name, table_data, tables):
     print()
-    print(f"[black on yellow bold]  {table_name}  [/black on yellow bold]")
-    print()
 # print('tablename: ',table_name,'\ntable_data: ',table_data,'\ntables: ',tables)
-    table = Table(show_header=True, header_style="bold magenta")
+    table = Table(title= table_name, show_header=True, show_lines=True, show_edge=False, title_justify="left", title_style="black on violet")
     for n in table_data[0]:
         table.add_column(n)
     # for i in table_data:

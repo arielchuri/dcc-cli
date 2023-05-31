@@ -263,23 +263,27 @@ class FirstApp(cmd2.Cmd):
     def do_rolltable(self, args):
         """Roll on a table. You can add a dice roll to the command but it rolls on the rows of the table which may be different then the entries."""
         table_data = view_tables()
-        print("")
-        if len(args) == 0:
-            roll = random.randint(1, len(table_data[1])-1)
-            print( f"Rolling (1-{len(table_data[1])-1}): {roll}" )
-        else:
-            roll = roll_multiple(args[0])
-            print( f"Rolling ({args[0]}): {roll}" )
-        print("")
-        table = Table(title= table_data[0], show_header=True, show_lines=True, show_edge=False, title_justify="left", title_style="black on violet")
-        for n in table_data[1][0]:
-            table.add_column(n)
-        if type(table_data[1][0]) is list:
-            table.add_row(*table_data[1][roll])
-        elif type(table_data[1][0]) is dict:
-            roll = random.randint(0, len(table_data[1])-1)
-            table.add_row(*table_data[1][roll].values())
         if table_data != "cancel":
+            print("")
+            if 'meta' in table_data[2][table_data[0]].keys():
+                startRow = int(table_data[2][table_data[0]]['meta']['Start at'])
+            else:
+                startRow = 0
+            if len(args) == 0:
+                roll = random.randint(1, len(table_data[1])-startRow-1)
+                print( f"Rolling (1-{len(table_data[1])-startRow-1}): {roll}" )
+            else:
+                roll = roll_multiple(args[0])+startRow
+            print("")
+            table = Table(title= table_data[0], show_header=True, show_lines=True, show_edge=False, title_justify="left", title_style="black on violet")
+            for n in table_data[1][0]:
+                table.add_column(n)
+            if type(table_data[1][0]) is list:
+                table.add_row(*table_data[1][roll])
+                # print( f"Rolling ({args[0]}): {roll}" )
+            elif type(table_data[1][0]) is dict:
+                # roll = random.randint(0, len(table_data[1])-1)
+                table.add_row(*table_data[1][roll-1].values())
             console.print(table)
             with open('dcc-log.md', 'a') as f:
                 f.write('\n')
@@ -342,7 +346,7 @@ def view_tables():
             else:
                 table_name = table_names[choice - 1]
                 return table_name, tables[table_name]['table'], tables
-                # print(tables[table_name]["table"])
+                # print(table_name)
                 break
         except ValueError:
             print("[red]Cancel[/red]")
@@ -375,9 +379,10 @@ def display_table(table_name, table_data, tables):
     for n in table_data[0]:
         table.add_column(n)
     # for i in table_data:
-    for i in range(1, len(table_data)):
+    for i in range(0, len(table_data)):
         if isinstance(table_data[0], list):
-            table.add_row(*table_data[i])
+            if i != 0:
+                table.add_row(*table_data[i])
         elif isinstance(table_data[0], dict):
             table.add_row(*table_data[i].values())
     console.print(table)
@@ -386,6 +391,7 @@ def display_table(table_name, table_data, tables):
     # if table_name in tables and "footnotes" in tables[table_name]:
         footnotes = tables[table_name]["footnotes"]
         if footnotes:
+            print()
             for footnote in footnotes:
                 print(f"{footnote}")
     display_instructions()

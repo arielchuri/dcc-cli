@@ -642,3 +642,684 @@ Trade good: Sack of night soil
 Starting Funds: 33 cp   
 Lucky sign: Path of the bear: Melee damage rolls (+2)   
 -------------------------------------------
+
+Table 4-2: Fumbles	Roll: 9
+['9.', 'You accidentally smash your weapon against a solid, unyielding object (a rock, a wall, even the ground). Mundane weapons are ruined; magical weapons are not affected.']
+
+Table 4-2: Fumbles	Roll: 14
+['14.', 'You trip badly. You fall hard, suffering 1d3 damage in the process. You are prone and must use your next round to stand.']
+
+Table 4-2: Fumbles	Roll: 5
+['5.', 'Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now.']
+
+Table 4-2: Fumbles	Roll: 1
+['1.', 'You miss wildly but miraculously cause no other damage.']
+
+Table 4-2: Fumbles	Roll: 12
+['12.', 'Your wild swing leaves you off balance. You take a -4 penalty to your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 17
+['16+', 'You accidentally strike yourself for normal damage plus an extra 1 point. In addition, you fall on your back and are unable to right yourself until you make a DC 16 Agility check.']
+
+Table 4-1: Attack Roll Modifiers	Roll: 2
+['Short range', '--', '--']
+
+Table 4-2: Fumbles	Roll: 16
+['16.', 'You somehow manage to wound yourself, taking normal damage.']
+
+Table 4-2: Fumbles	Roll: 10
+['10.', 'You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll.']
+
+Table 4-2: Fumbles	Roll: 15
+['15.', 'Like a turtle on its back, you slip and land upside down, flailing about and unable to right yourself. You must fight from a prone position for the next round before you can recover your balance and rise.']
+
+Table 4-2: Fumbles	Roll: 7
+['7.', 'Your weapon becomes entangled in your armor. You must spend your next round untangling them. In addition, your armor bonus is reduced by 1 until you spend 10 minutes refitting the tangled buckles and straps.']
+
+Table 4-2: Fumbles	Roll: 13
+['13.', 'You inadvertently swing at one randomly determined ally within range. Make an attack roll against that ally using the same attack die you just attempted to use.']
+
+Table 4-2: Fumbles	Roll: 6
+['6.', 'You trip and fall, wasting this action. You are prone and must use an action to stand next round.']
+
+Table 4-2: Fumbles	Roll: 1
+['1.', 'You miss wildly but miraculously cause no other damage.']
+
+Table 4-1: Attack Roll Modifiers	Roll: 6
+['Invisible', '+2', '--']
+
+Table 1-3: Occupation	Roll: 76
+['94', 'Urchin', 'Stick (as club)', 'Begging bowl']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Another Table	Roll: 2
+['Value 4', 'Value 5', 'Value 6']
+
+Another Table	Roll: 2
+['Value 4', 'Value 5', 'Value 6']
+
+Another Table	Roll: 1
+['Value 1', 'Value 2', 'Value 3']
+
+Another Table	Roll: 1
+['Value 1', 'Value 2', 'Value 3']
+
+Another Table	Roll: 2
+['Value 4', 'Value 5', 'Value 6']
+
+Another Table	Roll: 2
+['Value 4', 'Value 5', 'Value 6']
+
+Another Table	Roll: 2
+['Value 4', 'Value 5', 'Value 6']
+
+Another Table	Roll: 1
+['Value 1', 'Value 2', 'Value 3']
+
+Another Table	Roll: 2
+['Value 4', 'Value 5', 'Value 6']
+
+Another Table	Roll: 1
+['Value 1', 'Value 2', 'Value 3']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 15
+['15.', 'Like a turtle on its back, you slip and land upside down, flailing about and unable to right yourself. You must fight from a prone position for the next round before you can recover your balance and rise.']
+
+Table 4-2: Fumbles	Roll: 5
+['5.', 'Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 8
+['8.', 'You drop your weapon. You must retrieve it or draw a new one on your next action.']
+
+Table 4-2: Fumbles	Roll: 6
+['6.', 'You trip and fall, wasting this action. You are prone and must use an action to stand next round.']
+
+Table 4-2: Fumbles	Roll: 11
+['11.', 'You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected.']
+
+Table 4-2: Fumbles	Roll: 11
+['11.', 'You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected.']
+
+Table 4-2: Fumbles	Roll: 7
+['7.', 'Your weapon becomes entangled in your armor. You must spend your next round untangling them. In addition, your armor bonus is reduced by 1 until you spend 10 minutes refitting the tangled buckles and straps.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 6
+['6.', 'You trip and fall, wasting this action. You are prone and must use an action to stand next round.']
+
+Table 4-2: Fumbles	Roll: 5
+['5.', 'Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now.']
+
+Table 4-2: Fumbles	Roll: 9
+['9.', 'You accidentally smash your weapon against a solid, unyielding object (a rock, a wall, even the ground). Mundane weapons are ruined; magical weapons are not affected.']
+
+Table 4-2: Fumbles	Roll: 6
+['6.', 'You trip and fall, wasting this action. You are prone and must use an action to stand next round.']
+
+Table 4-2: Fumbles	Roll: 15
+['15.', 'Like a turtle on its back, you slip and land upside down, flailing about and unable to right yourself. You must fight from a prone position for the next round before you can recover your balance and rise.']
+
+Table 4-2: Fumbles	Roll: 12
+['12.', 'Your wild swing leaves you off balance. You take a -4 penalty to your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 15
+['15.', 'Like a turtle on its back, you slip and land upside down, flailing about and unable to right yourself. You must fight from a prone position for the next round before you can recover your balance and rise.']
+
+Table 4-2: Fumbles	Roll: 11
+['11.', 'You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected.']
+
+Table 4-2: Fumbles	Roll: 8
+['8.', 'You drop your weapon. You must retrieve it or draw a new one on your next action.']
+
+Table 4-2: Fumbles	Roll: 15
+['15.', 'Like a turtle on its back, you slip and land upside down, flailing about and unable to right yourself. You must fight from a prone position for the next round before you can recover your balance and rise.']
+
+Table 4-2: Fumbles	Roll: 7
+['7.', 'Your weapon becomes entangled in your armor. You must spend your next round untangling them. In addition, your armor bonus is reduced by 1 until you spend 10 minutes refitting the tangled buckles and straps.']
+
+Table 4-2: Fumbles	Roll: 16
+['16.', 'You somehow manage to wound yourself, taking normal damage.']
+
+Table 4-2: Fumbles	Roll: 11
+['11.', 'You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 11
+['11.', 'You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 8
+['8.', 'You drop your weapon. You must retrieve it or draw a new one on your next action.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 9
+['9.', 'You accidentally smash your weapon against a solid, unyielding object (a rock, a wall, even the ground). Mundane weapons are ruined; magical weapons are not affected.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 1
+['1.', 'You miss wildly but miraculously cause no other damage.']
+
+Another Table	Roll: 1
+['Value 1', 'Value 2', 'Value 3']
+
+Another Table	Roll: 1
+['Value 1', 'Value 2', 'Value 3']
+
+Table 1-2: Luck Score	Roll: 23
+['23', 'Charmed house: Armor Class']
+
+Table 1-2: Luck Score	Roll: 8
+['8', 'Hawkeye: Missile fire damage rolls']
+
+Table 1-2: Luck Score	Roll: 11
+['11', 'Fox’s cunning: Find/disable traps']
+
+Table 4-2: Fumbles	Roll: 10
+['10.', 'You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll.']
+
+Table 4-2: Fumbles	Roll: 10
+['10.', 'You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll.']
+
+Table 4-2: Fumbles	Roll: 5
+['5.', 'Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now.']
+
+Table 4-2: Fumbles	Roll: 1
+['1.', 'You miss wildly but miraculously cause no other damage.']
+
+Table 4-2: Fumbles	Roll: 6
+['6.', 'You trip and fall, wasting this action. You are prone and must use an action to stand next round.']
+
+Table 4-2: Fumbles	Roll: 5
+['5.', 'Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 1-2: Luck Score	Roll: 4
+['4', 'Raised by wolves: Unarmed attack rolls']
+
+Table 1-2: Luck Score	Roll: 15
+['15', 'Righteous heart: Turn unholy checks']
+
+Table 1-2: Luck Score	Roll: 23
+['23', 'Charmed house: Armor Class']
+
+Table 1-2: Luck Score	Roll: 5
+['5', 'Conceived on horseback: Mounted attack rolls']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 12
+['12.', 'Your wild swing leaves you off balance. You take a -4 penalty to your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 12
+['12.', 'Your wild swing leaves you off balance. You take a -4 penalty to your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 10
+['10.', 'You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 9
+['9.', 'You accidentally smash your weapon against a solid, unyielding object (a rock, a wall, even the ground). Mundane weapons are ruined; magical weapons are not affected.']
+
+Table 4-2: Fumbles	Roll: 10
+['10.', 'You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 8
+['8.', 'You drop your weapon. You must retrieve it or draw a new one on your next action.']
+
+Table 4-2: Fumbles	Roll: 9
+['9.', 'You accidentally smash your weapon against a solid, unyielding object (a rock, a wall, even the ground). Mundane weapons are ruined; magical weapons are not affected.']
+
+Table 4-2: Fumbles	Roll: 7
+['7.', 'Your weapon becomes entangled in your armor. You must spend your next round untangling them. In addition, your armor bonus is reduced by 1 until you spend 10 minutes refitting the tangled buckles and straps.']
+
+Table 4-2: Fumbles	Roll: 11
+['11.', 'You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected.']
+
+Table 4-2: Fumbles	Roll: 10
+['10.', 'You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 13
+['13.', 'You inadvertently swing at one randomly determined ally within range. Make an attack roll against that ally using the same attack die you just attempted to use.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 3
+['3', 'Fortunate date: Missile fire attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 3
+['3', 'Fortunate date: Missile fire attack rolls']
+
+Table 1-2: Luck Score	Roll: 3
+['3', 'Fortunate date: Missile fire attack rolls']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 1-2: Luck Score	Roll: 10
+['10', 'Born under the loom: Skill checks (including thief skills)']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 3
+Weapon: Club	Damage: 1d4	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 3
+Weapon: Club	Damage: 1d4	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Table 1-2: Luck Score	Roll: 10
+['10', 'Born under the loom: Skill checks (including thief skills)']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 3
+['3', 'Fortunate date: Missile fire attack rolls']
+
+Table 1-2: Luck Score	Roll: 3
+['3', 'Fortunate date: Missile fire attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 3
+['3', 'Fortunate date: Missile fire attack rolls']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 3
+['3.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 4
+['4.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['2.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 1-2: Luck Score	Roll: 17
+['17', 'Lucky sign: Saving throws']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 2
+['2', 'The bull: Melee attack rolls']
+
+Table 1-2: Luck Score	Roll: 3
+['3', 'Fortunate date: Missile fire attack rolls']
+
+Table 1-2: Luck Score	Roll: 1
+['1', 'Harsh winter: All attack rolls']
+
+Table 1-2: Luck Score	Roll: 3
+['3', 'Fortunate date: Missile fire attack rolls']
+
+Table 4-2: Fumbles	Roll: 4
+['3.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['1.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 4
+['3.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['1.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 2
+['1.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 3
+['2.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 2
+['1.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 3
+['2.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['2.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 4
+['3.', 'Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll.']
+
+Table 4-2: Fumbles	Roll: 2
+['1.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 4-2: Fumbles	Roll: 6
+['5.', 'You trip and fall, wasting this action. You are prone and must use an action to stand next round.']
+
+Table 4-2: Fumbles	Roll: 5
+['4.', 'Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now.']
+
+Table 4-2: Fumbles	Roll: 3
+['2.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 3
+['2.', 'You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone.']
+
+Table 4-2: Fumbles	Roll: 2
+['1.', 'Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage.']
+
+Table 3-1: Weapons	Roll: 3
+Weapon: Club	Damage: 1d4	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Table 3-1: Weapons	Roll: 3
+Weapon: Club	Damage: 1d4	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 3
+Weapon: Club	Damage: 1d4	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 3
+Weapon: Club	Damage: 1d4	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	
+
+Table 3-1: Weapons	Roll: 1
+Weapon: Blackjack†	Damage: 1d3/2d6***	Range: -	Cost (gp): 3	
+
+Table 3-1: Weapons	Roll: 2
+Weapon: Blowgun†	Damage: 1d3/1d5	Range: 20/40/60	Cost (gp): 6	

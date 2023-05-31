@@ -1248,52 +1248,52 @@
             "Roll", "Result"
          ],
          [
-            "1.", "You miss wildly but miraculously cause no other damage."
+            "0.", "You miss wildly but miraculously cause no other damage."
          ],
          [
-            "2.", "Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage."
+            "1.", "Your incompetent blow makes you the laughingstock of the party but otherwise causes no damage."
          ],
          [
-            "3.", "You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone."
+            "2.", "You trip but may recover with a DC 10 Ref save; otherwise, you must spend the next round prone."
          ],
          [
-            "4.", "Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll."
+            "3.", "Your weapon comes loose in your hand. You quickly grab it, but your grip is disrupted. You take a -2 penalty on your next attack roll."
          ],
          [
-            "5.", "Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now."
+            "4.", "Your weapon is damaged: a bowstring breaks, a sword hilt falls off, or a crossbow firing mechanism jams. The weapon can be repaired with 10 minutes of work but is useless for now."
          ],
          [
-            "6.", "You trip and fall, wasting this action. You are prone and must use an action to stand next round."
+            "5.", "You trip and fall, wasting this action. You are prone and must use an action to stand next round."
          ],
          [
-            "7.", "Your weapon becomes entangled in your armor. You must spend your next round untangling them. In addition, your armor bonus is reduced by 1 until you spend 10 minutes refitting the tangled buckles and straps."
+            "6.", "Your weapon becomes entangled in your armor. You must spend your next round untangling them. In addition, your armor bonus is reduced by 1 until you spend 10 minutes refitting the tangled buckles and straps."
          ],
          [
-            "8.", "You drop your weapon. You must retrieve it or draw a new one on your next action."
+            "7.", "You drop your weapon. You must retrieve it or draw a new one on your next action."
          ],
          [
-            "9.", "You accidentally smash your weapon against a solid, unyielding object (a rock, a wall, even the ground). Mundane weapons are ruined; magical weapons are not affected."
+            "8.", "You accidentally smash your weapon against a solid, unyielding object (a rock, a wall, even the ground). Mundane weapons are ruined; magical weapons are not affected."
          ],
          [
-            "10.", "You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll."
+            "9.", "You stumble and leave yourself wide open to attack. The next enemy that attacks you receives a +2 bonus on its attack roll."
          ],
          [
-            "11.", "You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected."
+            "10.", "You should have maintained your armor! The joints of your armor seize up, freezing you in place. You cannot move or make an attack for 1d3 rounds. Unarmored characters are not affected."
          ],
          [
-            "12.", "Your wild swing leaves you off balance. You take a -4 penalty to your next attack roll."
+            "11.", "Your wild swing leaves you off balance. You take a -4 penalty to your next attack roll."
          ],
          [
-            "13.", "You inadvertently swing at one randomly determined ally within range. Make an attack roll against that ally using the same attack die you just attempted to use."
+            "12.", "You inadvertently swing at one randomly determined ally within range. Make an attack roll against that ally using the same attack die you just attempted to use."
          ],
          [
-            "14.", "You trip badly. You fall hard, suffering 1d3 damage in the process. You are prone and must use your next round to stand."
+            "13.", "You trip badly. You fall hard, suffering 1d3 damage in the process. You are prone and must use your next round to stand."
          ],
          [
-            "15.", "Like a turtle on its back, you slip and land upside down, flailing about and unable to right yourself. You must fight from a prone position for the next round before you can recover your balance and rise."
+            "14.", "Like a turtle on its back, you slip and land upside down, flailing about and unable to right yourself. You must fight from a prone position for the next round before you can recover your balance and rise."
          ],
          [
-            "16.", "You somehow manage to wound yourself, taking normal damage."
+            "15.", "You somehow manage to wound yourself, taking normal damage."
          ],
          [
             "16+", "You accidentally strike yourself for normal damage plus an extra 1 point. In addition, you fall on your back and are unable to right yourself until you make a DC 16 Agility check."

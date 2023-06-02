@@ -720,28 +720,6 @@
          "*** Roll 1d6 to determine what’s in the cart: (1) tomatoes, (2) nothing, (3) straw, (4) your dead, (5) dirt, (6) rocks."
       ]
    },
-   "Another Table":{
-      "table":[
-         [
-            "Column 1",
-            "Column 2",
-            "Column 3"
-         ],
-         [
-            "Value 1",
-            "Value 2",
-            "Value 3"
-         ],
-         [
-            "Value 4",
-            "Value 5",
-            "Value 6"
-         ]
-      ],
-      "footnotes":[
-         "Additional footnote"
-      ]
-   },
    "Table 3-1: Weapons":{
       "table":[
          {
@@ -1303,6 +1281,137 @@
          "Start at" : "1"
       }
    },
+   "Table 4-4: Turn Unholy Result by HD":{
+      "table": [
+         [
+            "Check",
+            "Turn Range",
+            "Holy Smite",
+            "1 HD",
+            "2 HD",
+            "3-4 HD",
+            "5-6 HD",
+            "7-8 HD",
+            "9-10 HD",
+            "11-12 HD"
+         ],
+         [
+            "1-11",
+            "-",
+            "-",
+            "NE",
+            "NE",
+            "NE",
+            "NE",
+            "NE",
+            "NE",
+            "NE"
+         ],
+         [
+            "12-13",
+            "30'",
+            "-",
+            "T1",
+            "NE",
+            "NE",
+            "NE",
+            "NE",
+            "NE",
+            "NE"
+         ],
+         [
+            "14-17",
+            "30'",
+            "-",
+            "T1d3+CL",
+            "NE",
+            "NE",
+            "NE",
+            "NE",
+            "NE",
+            "NE"
+         ],
+         [
+            "18-19",
+            "30'",
+            "-",
+            "T1d4+CL",
+            "T1",
+            "NE",
+            "NE",
+            "NE",
+            "NE",
+            "NE"
+         ],
+         [
+            "20-23",
+            "60'",
+            "-",
+            "T1d6+CL",
+            "T1d3+CL",
+            "T1",
+            "NE",
+            "NE",
+            "NE",
+            "NE"
+         ],
+         [
+            "24-27",
+            "60'",
+            "60' Beam, 1d3 dmg",
+            "T1d8+CL, D1d4 (no save)",
+            "T1d4+CL",
+            "T1d3+CL",
+            "T1",
+            "NE",
+            "NE",
+            "NE"
+         ],
+         [
+            "28-29",
+            "60'",
+            "30' Cone, 1d4 dmg",
+            "T2d6+CL, D1d4 (no save)",
+            "T1d6+CL",
+            "T1d4+CL",
+            "T1d3+CL",
+            "T1",
+            "NE",
+            "NE"
+         ],
+         [
+            "30-31",
+            "120'",
+            "60' Cone, 1d5 dmg",
+            "K1d8+CL, (no save)",
+            "T1d8+CL, D1d4 (no save)",
+            "T1d6+CL",
+            "T1d4+CL",
+            "T1d3+CL",
+            "T1",
+            "NE"
+         ],
+         [
+            "32+",
+            "240'",
+            "120' Cone, 1d6 dmg",
+            "K2d6+CL (no save)",
+            "T2d6+CL, D1d4 (no save)",
+            "T1d8+CL, D1d4",
+            "T1d6+CL",
+            "T1d4+CL",
+            "T1d3+CL",
+            "T1"
+         ]
+      ],
+      "footnotes":[
+         "NE = No Effect.",
+         "T = Creatures up to this HD are turned in a quantity indicated. For example, “T1” means one creature is turned; “T1d4+CL” means a number of creatures of this HD are turned equal to 1d4 + caster level. Unless indicated, turned creatures receive a saving throw (Will vs. turn check DC). A turned creature moves away from the cleric at maximum speed or cowers if unable to retreat. A turned creature continues to flee for 3d10 minutes.",
+         "D = Creatures are turned, and they take the indicated damage on the first round of turning. For example, T1d4+CL, D1d4 means the cleric can turn a number of creatures of this HD equal to 1d4+CL, and those creatures also take 1d4 damage.",
+         "K = Creatures are automatically killed. The number of creatures killed is indicated after the K. For example, K1d8+CL means the cleric kills a number of creatures of that HD equal to 1d8 + caster level.",
+         "Holy Smite = At high levels, a cleric’s turn attempt produces holy energy that smites unholy creatures in close prox- imity. This is in addition to the turning effect and can be directed in the same direction as the cleric’s line-of-sight for the turning attempt. The effect and range varies, as described below, and all unholy creatures affected take the indicated damage automatically with no save. The damage occurs once per turn attempt; another turn check is required the following round to attempt again. Beam: a concentrated ray of light that the cleric can direct against one target within 60’. Cone: a cone 30’ long and 30’ wide at its end."
+      ]
+   },
    "Crit Table I: All 0-Level Characters":{
       "table":[
          [
@@ -1506,128 +1615,2118 @@
             "Strike through heart! Inflict +3d6 damage with this strike, and the foe must make a Fort save (DC 20 + PC level) or die instantly."
          ]
       ],
-      "meta":{
+      "footnotes":[
+         "* Magical weapons never break due to critical fumbles. The target is disarmed instead, the weapon landing 1d10+5 feet away.",
+         "** A PC overcome by battle rage may temporarily expend points of his Personality or Intelligence score to enhance the damage on his critical hit. For every ability point he expends, he adds +1d12 to his damage roll.",
+         "Ability scores lost in this way return as the warrior heals. Each day thereafter where he does not succumb to battle rage, he recovers 1 point of the affected ability score. This rate is doubled if the character rests."
+      ],
+      "meta": {
          "Start at" : "1"
       }
    },
    "Crit Table III: Clerics, Halflings, Level 1-2 Warriors, and Level 1-3 Dwarves":{
-   "table":[
-      [
-         "0 or less",
-         "Battle rage makes friend and foe indistinguishable. Foe is hit for +1d12 damage, and the ally nearest him is also hit by a rebounding blow for 1d4 damage.**"
+      "table":[
+         [
+            "0 or less",
+            "Battle rage makes friend and foe indistinguishable. Foe is hit for +1d12 damage, and the ally nearest him is also hit by a rebounding blow for 1d4 damage.**"
+         ],
+         [
+            "1",
+            "Savage attack! Inflict +1d6 damage with this strike."
+         ],
+         [
+            "2",
+            "Attack sweeps foe off his feet. Next round, the enemy is prone."
+         ],
+         [
+            "3",
+            "Foe steps into attack. Inflict +1d8 damage with this strike."
+         ],
+         [
+            "4",
+            "Powerful strike hammers foe to his knees. Make another attack."
+         ],
+         [
+            "5",
+            "Smash foe’s nose in an explosion of blood. Inflict +1d6 damage with this strike, and the foe loses his sense of smell for 1d4 hours."
+         ],
+         [
+            "6",
+            "Brutal strike to torso. Inflict +1d8 damage with this strike, and the foe suffers multiple broken ribs."
+         ],
+         [
+            "7",
+            "Strike to hand knocks weapon into the air. The weapon lands 1d20+5’ away."
+         ],
+         [
+            "8",
+            "Blow caroms off skull, deafening foe for 1d6 days. Inflict +1d6 damage with this strike."
+         ],
+         [
+            "9",
+            "Strike to leg splinters femur. Inflict +2d6 damage with this strike and foe loses 10’ of movement until healed."
+         ],
+         [
+            "10",
+            "Sunder foe’s weapon! Shards of metal fill the air.*"
+         ],
+         [
+            "11",
+            "Strike hammers foe’s belly causing massive internal bleeding. Unless he receives magical healing, the foe dies in 1d5 hours."
+         ],
+         [
+            "12",
+            "Blow to cranium staggers foe. The foe must make a Fort save (10 + PC level) or sink to floor, unconscious."
+         ],
+         [
+            "13",
+            "Strike breaks foe’s jaw. Blood and shattered teeth ooze down the foe’s face. Inflict +1d8 damage with this strike."
+         ],
+         [
+            "14",
+            "Attack hammers foe’s torso. Inflict +2d8 damage with this strike."
+         ],
+         [
+            "15",
+            "Strike dislocates shoulder! Inflict +1d8 damage and shield arm hangs loosely by muscle and skin; no AC bonus from shield."
+         ],
+         [
+            "16",
+            "Attack reduces foe’s attack hand to formless tissue; -4 penalty to future attacks."
+         ],
+         [
+            "17",
+            "Furious blows hammer target prone. Make another attack."
+         ],
+         [
+            "18",
+            "Blow hammers shards of bone into foe’s fore-brain; gray matter oozes out. Inflict +1d8 damage with this strike, and the foe suffers 1d4 points of Int and Per loss."
+         ],
+         [
+            "19",
+            "Devastating strike to the chest. Inflict +2d8 damage with this strike."
+         ],
+         [
+            "20",
+            "Chest strike stuns foe for 1d3 rounds. Inflict +1d8 damage with this strike"
+         ],
+         [
+            "21",
+            "Strike to leg shatters femur, knocking foe to the ground. Foe’s movement drops by half. Inflict +2d8 damage with this strike and make another attack."
+         ],
+         [
+            "22",
+            "Weapon arm sundered by strike. The weapon is lost along with any chance of making an attack with this arm."
+         ],
+         [
+            "23",
+            "Blow craters skull. Inflict +2d8 damage with this strike, and the target permanently loses 1d4 Int and Per."
+         ],
+         [
+            "24",
+            "Masterful strike to throat. Inflict +2d8 damage with this strike and the foe staggers about gasping for air for 1d4 rounds."
+         ],
+         [
+            "25",
+            "Attack punches shattered ribs through lungs. Foe loses 50% of his remaining hit points and vomits copious amounts of blood."
+         ],
+         [
+            "26",
+            "Attack shatters foe’s face, destroying both eyes. Inflict +2d8 damage with this strike, and the foe is permanently blinded."
+         ],
+         [
+            "27",
+            "Crushing blow hammers chest. Inflict +3d8 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or be knocked unconscious."
+         ],
+         [
+            "28+",
+            "Blow destroys spinal column. Inflict +3d8 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or suffer paralysis."
+         ]
       ],
-      [
-         "1",
-         "Savage attack! Inflict +1d6 damage with this strike."
+      "footnotes":[
+         "* Magical weapons never break due to critical fumbles. The target is disarmed instead, the weapon landing 1d10+5 feet away.",
+         "** A PC overcome by battle rage may temporarily expend points of his Personality or Intelligence score to enhance the damage on his critical hit. For every ability point he expends, he adds +1d12 to his damage roll.",
+         "Ability scores lost in this way return as the warrior heals. Each day thereafter where he does not succumb to battle rage, he recovers 1 point of the affected ability score. This rate is doubled if the character rests."
       ],
-      [
-         "2",
-         "Attack sweeps foe off his feet. Next round, the enemy is prone."
+      "meta": {
+         "Start at" : "1"
+      }
+   },
+   "Crit Table IV: Level 3-4 Warriors, and Level 4+ Dwarves": {
+      "table": [
+         [
+            "0 or less",
+            "Battle rage makes friend and foe indistinguishable. Foe is hit for +2d8 damage, and the ally nearest him is also hit by a rebounding blow for 1d4 damage.**"
+         ],
+         [
+            "1",
+            "Herculean blow. Inflict +2d12 damage with this strike."
+         ],
+         [
+            "2",
+            "Ferocious strike leaves foe’s weapon hand dangling from the stump of a wrist. Inflict +1d12 damage with this strike."
+         ],
+         [
+            "3",
+            "Strike sweeps foe to the ground. Inflict +1d12 damage with this strike and make another attack on prone enemy."
+         ],
+         [
+            "4",
+            "Hammering blow drives nose cartilage into brain. Inflict +1d12 damage with this strike, and the foe suffers 1d6 Int loss."
+         ],
+         [
+            "5",
+            "Foe’s weapon shattered.* If the foe has no weapon, inflict +2d12 damage with this strike."
+         ],
+         [
+            "6",
+            "Strike shatters foe’s breastbone. The foe must make a Fort save (DC 15 + PC level) or fall unconscious as his internal organs collapse."
+         ],
+         [
+            "7",
+            "Foe driven back by furious assault. Inflict +2d12 damage with this strike, and the foe forgoes his next attack."
+         ],
+         [
+            "8",
+            "Concussive strike leaves foe dazed. Inflict +1d8 damage with this strike and make a second attack."
+         ],
+         [
+            "9",
+            "Blow to throat carries through to spinal column, reducing everything in between to pasty mush. Inflict +2d12 damage with this strike, and the foe loses speech for 1d4 weeks."
+         ],
+         [
+            "10",
+            "Blow craters temple. The foe must make a Fort save (DC 15 + PC level) or be blinded by pain and blood for 1d4 rounds."
+         ],
+         [
+            "11",
+            "Strike reduces face to a formless mass of flesh and bone fragments. Inflict +2d12 damage with this strike, and the foe has trouble making hard consonants."
+         ],
+         [
+            "12",
+            "You see red! Inflict +1d12 damage with this strike as you are overcome by battle rage!**"
+         ],
+         [
+            "13",
+            "Hammering strike to torso crushes lesser organs into paste. Inflict +2d12 damage with this strike."
+         ],
+         [
+            "14",
+            "Blow to spinal column numbs lower limbs. The foe suffers a -4 penalty to AC as he learns to walk again."
+         ],
+         [
+            "15",
+            "Fearsome strike drives enemy to the bloodsplattered floor. Foe cowers in fear, prone, for 1d4 rounds."
+         ],
+         [
+            "16",
+            "Blow shatters shield. Inflict +2d12 damage with this strike. If the foe has no shield, he is stunned by pain for 1d4 rounds."
+         ],
+         [
+            "17",
+            "Foe’s kneecap explodes into red mist. Foe’s movement drops to 0’, and you make another attack."
+         ],
+         [
+            "18",
+            "Frontal lobotomy. Inflict +1d12 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or suffer amnesia. The foe is stunned for 1d4 rounds, regardless."
+         ],
+         [
+            "19",
+            "Strike to weapon arm. Foe takes triple damage from his own weapon as it is hammered into his face. Foe drops weapon in dumbfounded awe."
+         ],
+         [
+            "20",
+            "Blow crushes spinal cord. Inflict +3d12 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or suffer permanent paralysis."
+         ],
+         [
+            "21",
+            "Blow reduces internal organs to jelly. Death is inevitable in 1d8 rounds."
+         ],
+         [
+            "22",
+            "Target is disemboweled, spilling his entrails onto the ground. The foe dies of shock in 1d6 rounds."
+         ],
+         [
+            "23",
+            "Strike to chest explodes heart. Inflict +3d12 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or die instantly."
+         ],
+         [
+            "24+",
+            "Skull crushed like a melon. Inflict +3d12 damage with this strike, and the foe must make a Fort save (DC 20 + PC level) or die in 1d3 rounds."
+         ]
       ],
-      [
-         "3",
-         "Foe steps into attack. Inflict +1d8 damage with this strike."
+      "footnotes":[
+         "* Magical weapons never break due to critical fumbles. The target is disarmed instead, the weapon landing 1d10+5 feet away.",
+         "** A PC overcome by battle rage may temporarily expend points of his Personality or Intelligence score to enhance the damage on his critical hit. For every ability point he expends, he adds +1d12 to his damage roll.",
+         "Ability scores lost in this way return as the warrior heals. Each day thereafter where he does not succumb to battle rage, he recovers 1 point of the affected ability score. This rate is doubled if the character rests."
       ],
-      [
-         "4",
-         "Powerful strike hammers foe to his knees. Make another attack."
+      "meta": {
+         "Start at" : "1"
+      }
+   },
+   "Crit Table V: Level Warriors":{
+      "table":[
+         [
+            "0 or less",
+            "Battle rage makes friend and foe indistinguishable. Foe is hit for +3d8 damage, and the ally nearest him is also hit by a rebounding blow for 1d4 damage."
+         ],
+         [
+            "1",
+            "Foe’s weapon shattered.* If the foe has no weapon, inflict +3d12 damage with this strike."
+         ],
+         [
+            "2",
+            "Furious assault hurls foe back 1d10’. Any adjacent foes accidentally strike the target for damage."
+         ],
+         [
+            "3",
+            "Blow to skull destroys ear. Inflict +1d12 damage with this strike, and the foe suffers permanent deafness."
+         ],
+         [
+            "4",
+            "Strike to gut! The foe must make a Fort save (DC 20 + PC level) or spend the next 2 rounds retching bile from a ruptured stomach."
+         ],
+         [
+            "5",
+            "Foe casts weapon away and wails for mercy. Inflict +1d12 damage with this strike and make another attack."
+         ],
+         [
+            "6",
+            "Strike scalps foe. Blood courses down his face, and the foe is effectively blinded until healed."
+         ],
+         [
+            "7",
+            "Foe entangled on your weapon, reducing his AC by -6 while caught. Make another attack."
+         ],
+         [
+            "8-12",
+            "You see red! Inflict +1d12 damage with this strike as you are overcome by battle rage!**"
+         ],
+         [
+            "13-14",
+            "Strike to weapon arm. Foe takes quadruple damage from his own weapon as it is hammered into his face. Foe drops weapon in dumbfounded awe."
+         ],
+         [
+            "15",
+            "Blow sunders shield. Inflict +2d12 damage with this strike. If the foe has no shield, he must make a Fort save (DC 20 + PC level) or be knocked unconscious from the pain."
+         ],
+         [
+            "16",
+            "Strike to top of skull shortens spinal column, shortening foe by 6”. Resulting nerve damage reduces foe’s AC by -4."
+         ],
+         [
+            "17",
+            "Target is disemboweled, spilling his entrails onto the ground. Foe dies instantly of shock."
+         ],
+         [
+            "18",
+            "Blow destroys target’s face. Foe is immediately rendered blind and deaf and is now capable of only wet, gurgling sounds."
+         ],
+         [
+            "19",
+            "Strike removes crown of target’s skull. Foe dies from exposed brain matter in 3d3 rounds."
+         ],
+         [
+            "20",
+            "Blow severs shield arm. Inflict +2d12 damage with this strike. Foe’s hopes of two-handed weapon mastery dashed."
+         ],
+         [
+            "21",
+            "Godly attack. Inflict +3d12 damage with this strike. If the target dies, move up to 10’ and make another attack on any foe within 10’."
+         ],
+         [
+            "22",
+            "Blow severs leg. Inflict +2d12 damage with this strike, and the foe’s movement drops to zero. Foe does nothing but wail in agony for 1d4 rounds."
+         ],
+         [
+            "23",
+            "Strike to skull stuns foe for 1d4+1 rounds and permanently reduces Int by 1d12. Make another attack on your inert foe."
+         ],
+         [
+            "24",
+            "Strike severs weapon arm. Inflict +2d12 damage with this strike, and the foe is disarmed, literally and figuratively."
+         ],
+         [
+            "25",
+            "Devastating strike to torso voids foe’s bowels and crushes organs into paste. Foe loses 50% of current hit points and all dignity."
+         ],
+         [
+            "26",
+            "Strike crushes throat. Foe begins drowning in his own blood and expires in 1d4 rounds."
+         ],
+         [
+            "27",
+            "Crippling blow to spine. Inflict +4d12 damage with this strike, and the foe suffers permanent paralysis."
+         ],
+         [
+            "28+",
+            "Foe decapitated with a single strike. You are Death incarnate. Continue to make attacks against any foes within 10’ until you miss."
+         ]
       ],
-      [
-         "5",
-         "Smash foe’s nose in an explosion of blood. Inflict +1d6 damage with this strike, and the foe loses his sense of smell for 1d4 hours."
+      "footnotes":[
+         "* Magical weapons never break due to critical fumbles. The target is disarmed instead, the weapon landing 1d10+5 feet away.",
+         "** A PC overcome by battle rage may temporarily expend points of his Personality or Intelligence score to enhance the damage on his critical hit. For every ability point he expends, he adds +1d12 to his damage roll.",
+         "Ability scores lost in this way return as the warrior heals. Each day thereafter where he does not succumb to battle rage, he recovers 1 point of the affected ability score. This rate is doubled if the character rests."
       ],
-      [
-         "6",
-         "Brutal strike to torso. Inflict +1d8 damage with this strike, and the foe suffers multiple broken ribs."
+      "meta": {
+         "Start at" : "1"
+      }
+   },
+   "Table 5-8: Wizard Spells (with page number)":{
+      "table":[
+         [
+            "1st Level",
+            "2nd Level",
+            "3rd Level",
+            "4th Level",
+            "5th Level"
+         ],
+         [
+            "Animal summoning 129",
+            "Arcane affinity 162",
+            "Binding* 270",
+            "Control fire 238",
+            "Hepsoj’s fecund summoning 129"
+         ],
+         [
+            "Cantrip 130",
+            "Detect evil* 259",
+            "Breathe life 202",
+            "Control ice 239",
+            "Lokerimon’s unerring hunter 249"
+         ],
+         [
+            "Charm person 131",
+            "Detect invisible 165",
+            "Consult spirit 204",
+            "Lokerimon’s orderly assistance 241",
+            "Magic bulwark 251"
+         ],
+         [
+            "Chill touch 133",
+            "ESP 166",
+            "Demon summoning 206",
+            "Polymorph 243",
+            "Mind purge 252"
+         ],
+         [
+            "Choking cloud 134",
+            "Fire resistance 169",
+            "Dispel magic 208",
+            "Transmute Earth 244",
+            "Replication 253"
+         ],
+         [
+            "Color spray 135",
+            "Forget 170",
+            "Eldritch hound 211",
+            "Wizard sense 245",
+            ""
+         ],
+         [
+            "Comprehend languages 136",
+            "Invisibility 172",
+            "Emirikol’s entropic maelstrom 213",
+            "",
+            ""
+         ],
+         [
+            "Detect magic* 260",
+            "Invisible companion 173",
+            "Eternal champion 214",
+            "",
+            ""
+         ],
+         [
+            "Ekim’s mystical mask 137",
+            "Enlarge 139",
+            "Levitate 176",
+            "Fly 217",
+            ""
+         ],
+         [
+            "Find familiar 141",
+            "Magic mouth 180",
+            "Haste 221",
+            "",
+            ""
+         ],
+         [
+            "Flaming hands 142",
+            "Mirror image 182",
+            "Lightning bolt 222",
+            "",
+            ""
+         ],
+         [
+            "Force manipulation 143",
+            "",
+            "",
+            "",
+            ""
+         ],
+         [
+            "Invoke patron** 144",
+            "Nythuul’s porcupine coat 186",
+            "",
+            "",
+            ""
+         ],
+         [
+            "Magic missile 144",
+            "Phantasm 187",
+            "Planar step 225",
+            "",
+            ""
+         ],
+         [
+            "Magic shield 146",
+            "Ray of enfeeblement 190",
+            "Runic alphabet, fey mortal 227",
+            "",
+            ""
+         ],
+         [
+            "Mending 147",
+            "Scare 191",
+            "Slow 228",
+            "",
+            ""
+         ],
+         [
+            "Patron bond** 148",
+            "Scorching ray 192",
+            "Sword magic 229",
+            "",
+            ""
+         ],
+         [
+            "Read magic 152",
+            "Shatter 193",
+            "Transference 232",
+            "",
+            ""
+         ],
+         [
+            "Ropework 153",
+            "Spider web 196",
+            "Turn to stone 233",
+            "",
+            ""
+         ],
+         [
+            "Runic alphabet, mortal 154",
+            "Strength 198",
+            "Water breathing 235",
+            "",
+            ""
+         ],
+         [
+            "Sleep 155",
+            "Wizard staff 199",
+            "Write magic 236",
+            "",
+            ""
+         ],
+         [
+            "Spider climb 156",
+            "(Patron spell)***",
+            "(Patron spell)***",
+            "",
+            ""
+         ],
+         [
+            "Ventriloquism 158",
+            "",
+            "",
+            "",
+            ""
+         ],
+         [
+            "Ward portal 160",
+            "",
+            "",
+            "",
+            ""
+         ],
+         [
+            "(Patron spell)***",
+            "",
+            "",
+            "",
+            ""
+         ]
       ],
-      [
-         "7",
-         "Strike to hand knocks weapon into the air. The weapon lands 1d20+5’ away."
-      ],
-      [
-         "8",
-         "Blow caroms off skull, deafening foe for 1d6 days. Inflict +1d6 damage with this strike."
-      ],
-      [
-         "9",
-         "Strike to leg splinters femur. Inflict +2d6 damage with this strike and foe loses 10’ of movement until healed."
-      ],
-      [
-         "10",
-         "Sunder foe’s weapon! Shards of metal fill the air.*"
-      ],
-      [
-         "11",
-         "Strike hammers foe’s belly causing massive internal bleeding. Unless he receives magical healing, the foe dies in 1d5 hours."
-      ],
-      [
-         "12",
-         "Blow to cranium staggers foe. The foe must make a Fort save (10 + PC level) or sink to floor, unconscious."
-      ],
-      [
-         "13",
-         "Strike breaks foe’s jaw. Blood and shattered teeth ooze down the foe’s face. Inflict +1d8 damage with this strike."
-      ],
-      [
-         "14",
-         "Attack hammers foe’s torso. Inflict +2d8 damage with this strike."
-      ],
-      [
-         "15",
-         "Strike dislocates shoulder! Inflict +1d8 damage and shield arm hangs loosely by muscle and skin; no AC bonus from shield."
-      ],
-      [
-         "16",
-         "Attack reduces foe’s attack hand to formless tissue; -4 penalty to future attacks."
-      ],
-      [
-         "17",
-         "Furious blows hammer target prone. Make another attack."
-      ],
-      [
-         "18",
-         "Blow hammers shards of bone into foe’s fore-brain; gray matter oozes out. Inflict +1d8 damage with this strike, and the foe suffers 1d4 points of Int and Per loss."
-      ],
-      [
-         "19",
-         "Devastating strike to the chest. Inflict +2d8 damage with this strike."
-      ],
-      [
-         "20",
-         "Chest strike stuns foe for 1d3 rounds. Inflict +1d8 damage with this strike"
-      ],
-      [
-         "21",
-         "Strike to leg shatters femur, knocking foe to the ground. Foe’s movement drops by half. Inflict +2d8 damage with this strike and make another attack."
-      ],
-      [
-         "22",
-         "Weapon arm sundered by strike. The weapon is lost along with any chance of making an attack with this arm."
-      ],
-      [
-         "23",
-         "Blow craters skull. Inflict +2d8 damage with this strike, and the target permanently loses 1d4 Int and Per."
-      ],
-      [
-         "24",
-         "Masterful strike to throat. Inflict +2d8 damage with this strike and the foe staggers about gasping for air for 1d4 rounds."
-      ],
-      [
-         "25",
-         "Attack punches shattered ribs through lungs. Foe loses 50% of his remaining hit points and vomits copious amounts of blood."
-      ],
-      [
-         "26",
-         "Attack shatters foe’s face, destroying both eyes. Inflict +2d8 damage with this strike, and the foe is permanently blinded."
-      ],
-      [
-         "27",
-         "Crushing blow hammers chest. Inflict +3d8 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or be knocked unconscious."
-      ],
-      [
-         "28+",
-         "Blow destroys spinal column. Inflict +3d8 damage with this strike, and the foe must make a Fort save (DC 15 + PC level) or suffer paralysis."
+      "footnotes": [
+         "* \tAs per cleric spell of same name. Because the wizard version of the spell is a different spell level, the wizard receives a -2 penalty to spell checks when casting it. For example, binding is a level 2 cleric spell but a level 3 wizard spell; therefore, when rolling on the spell table, the wizard applies a -2 penalty to spell checks. On a result of natural 1, the wizard suffers a 50% chance of major corruption or misfire, rolling on the generic tables as appropriate.",
+         "** \tIf either patron bond or invoke patron is rolled, the wizard receives both of these spells, but they count as only one spell slot.",
+         "*** \tIgnore this result if the wizard does not have the spell patron bond. If the wizard has that spell, he also gains the appropriate patron spell. Consult your judge for more information."
       ]
-   ]
+   },
+   "Table 5-9: Cleric Spells (with page number)":{
+      "table":[
+         [
+            "1st Level",
+            "2nd Level",
+            "3rd Level",
+            "4th Level",
+            "5th Level"
+         ],
+         [
+            "Blessing 255",
+            "Banish 269",
+            "Animate dead 285",
+            "Affliction of the Righteous gods 295",
+            "Righteous fire 301"
+         ],
+         [
+            "Darkness 258",
+            "Binding 270",
+            "Bolt from the blue 287",
+            "Cause earthquake 296",
+            "Weather control 302"
+         ],
+         [
+            "Detect evil 259",
+            "Cure paralysis 272",
+            "Exorcise 288",
+            "Sanctify / desecrate 296",
+            "Whirling doom 298"
+         ],
+         [
+            "Detect magic 260",
+            "Curse 273",
+            "Remove curse 289",
+            "Vermin blight 300",
+            ""
+         ],
+         [
+            "Food of the gods 262",
+            "Divine symbol 275",
+            "Speak with the dead 290",
+            "",
+            ""
+         ],
+         [
+            "Holy sanctuary 263",
+            "Lotus stare 276",
+            "Spiritual weapon 291",
+            "",
+            ""
+         ],
+         [
+            "Paralysis 264",
+            "Neutralize poison or disease 277",
+            "True name 293",
+            "",
+            ""
+         ],
+         [
+            "Protection from evil 265",
+            "Restore vitality 278",
+            "",
+            "",
+            ""
+         ],
+         [
+            "Resist cold or heat 266",
+            "Snake charm 280",
+            "",
+            "",
+            ""
+         ],
+         [
+            "Word of command 268",
+            "Wood wyrding 284",
+            "",
+            "",
+            ""
+         ]
+      ]
+   },
+   "Table 9-10: Monster Critical Hit Matrix":{
+      "table":[
+         [
+            "Monster HD",
+            "Humanoids w/ Weapons*",
+            "Dragons",
+            "Demons",
+            "Giants",
+            "Un-dead",
+            "All Other"
+         ],
+         [
+            "Less than 1",
+            "III/d4",
+            "DR/d4",
+            "DN/d3",
+            "-",
+            "U/d4",
+            "M/d4"
+         ],
+         [
+            "1",
+            "III/d6",
+            "DR/d6",
+            "DN/d4",
+            "-",
+            "U/d6",
+            "M/d6"
+         ],
+         [
+            "2",
+            "III/d8",
+            "DR/d8",
+            "DN/d4",
+            "-",
+            "U/d6",
+            "M/d8"
+         ],
+         [
+            "3",
+            "III/d8",
+            "DR/d10",
+            "DN/d4",
+            "-",
+            "U/d8",
+            "M/d8"
+         ],
+         [
+            "4",
+            "III/d10",
+            "DR/d12",
+            "DN/d4",
+            "G/d4",
+            "U/d8",
+            "M/d10"
+         ],
+         [
+            "5",
+            "III/d10",
+            "DR/d14",
+            "DN/d6",
+            "G/d4",
+            "U/d10",
+            "M/d10"
+         ],
+         [
+            "6",
+            "IV/d12",
+            "DR/d16",
+            "DN/d6",
+            "G/d4",
+            "U/d10",
+            "M/d12"
+         ],
+         [
+            "7",
+            "IV/d12",
+            "DR/d20",
+            "DN/d8",
+            "G/d4",
+            "U/d12",
+            "M/d12"
+         ],
+         [
+            "8",
+            "IV/d14",
+            "DR/d20",
+            "DN/d8",
+            "G/d4",
+            "U/d12",
+            "M/d14"
+         ],
+         [
+            "9",
+            "IV/d14",
+            "DR/d24",
+            "DN/d10",
+            "G/d4",
+            "U/d14",
+            "M/d14"
+         ],
+         [
+            "10",
+            "IV/d16",
+            "DR/d24",
+            "DN/d10",
+            "G/d4",
+            "U/d14",
+            "M/d16"
+         ],
+         [
+            "11",
+            "V/d16",
+            "DR/2d14",
+            "DN/d12",
+            "G/d4",
+            "U/d16",
+            "M/d16"
+         ],
+         [
+            "12",
+            "V/d20",
+            "DR/2d14",
+            "DN/d12",
+            "G/d6",
+            "U/d16",
+            "M/d20"
+         ],
+         [
+            "13",
+            "V/d20",
+            "DR/d30",
+            "DN/d14",
+            "G/d6",
+            "U/d20",
+            "M/d20"
+         ],
+         [
+            "14",
+            "V/2d10",
+            "DR/d30",
+            "DN/d14",
+            "G/d7",
+            "U/d20",
+            "M/d20"
+         ],
+         [
+            "15",
+            "V/2d10",
+            "DR/2d16",
+            "DN/d16",
+            "G/d7",
+            "U/d24",
+            "M/d20"
+         ],
+         [
+            "16",
+            "V/2d12",
+            "DR/2d16",
+            "DN/d16",
+            "G/d8",
+            "U/d24",
+            "M/d24"
+         ],
+         [
+            "17",
+            "V/2d12",
+            "DR/2d20",
+            "DN/d20",
+            "G/d8",
+            "U/d30",
+            "M/d24"
+         ],
+         [
+            "18",
+            "V/2d14",
+            "DR/2d20",
+            "DN/d20",
+            "G/d10",
+            "U/d30",
+            "M/d24"
+         ],
+         [
+            "19",
+            "V/2d14",
+            "DR/3d20",
+            "DN/d24",
+            "G/d10",
+            "U/d30",
+            "M/d30"
+         ],
+         [
+            "20",
+            "V/3d10",
+            "DR/3d20",
+            "DN/d24",
+            "G/d12",
+            "U/d30",
+            "M/d30"
+         ],
+         [
+            "21+",
+            "V/3d10",
+            "DR/4d20",
+            "DN/d30",
+            "G/d12",
+            "U/d30",
+            "M/d30"
+         ]
+      ],
+      "footnotes":[
+         "* Includes orcs, kobolds, goblins, bugbears, lizardmen, etc."
+      ]
+   },
+   "Critical Hit Results - Dragons (Crit Table DR)":{
+      "table":[
+         [
+            "Roll",
+            "Result"
+         ],
+         [
+            "1 or less",
+            "Dragon rakes target with its spiny hide. This attack inflicts +1d6 damage."
+         ],
+         [
+            "2",
+            "Dragon crushes PC’s head between its jaws! The PC is stunned and falls to the bottom of the initiative count for remainder of battle."
+         ],
+         [
+            "3",
+            "Dragon smashes the PC’s legs, knocking the PC prone. The character suffers -5’ speed until healed."
+         ],
+         [
+            "4",
+            "Dragon targets the character’s weapon. The character takes half damage, but must make an opposed Strength check against the dragon. Treat dragon as Strength equal to 10 + HD. If the check fails, dragon grabs weapon and hurls it 3d10x10’ feet away."
+         ],
+         [
+            "5",
+            "Blow to shield arm! Normal damage and the shield is destroyed. If no shield, this attack inflicts +1d6 damage."
+         ],
+         [
+            "6",
+            "Scale, tooth, or claw lodged in the PC’s chest! This attack inflicts +2d6 damage, plus an additional 1d6 damage next round."
+         ],
+         [
+            "7",
+            "Breath weapon splash! Spittle laced with dragon’s breath weapon causes an additional 1d8 damage and any other side effects of breath weapon (poison, sleep, etc.) if appropriate."
+         ],
+         [
+            "8",
+            "Arm ripped from socket! Dragon hurls the arm away. This attack inflicts +1d12 damage, and the arm is forever useless unless recovered and magically healed."
+         ],
+         [
+            "9",
+            "Tail-sling! Dragon wraps its tail around the PC and slingshots him into the distance. The character is flung 3d6x10’ away in a random direction. If a wall or other obstruction is in the way, the character slams into it. The PC takes normal damage from the blow plus an additional 1d4 damage per 30’ (or portion thereof) he is thrown, plus an additional 1d6 if he hits a wall or obstruction."
+         ],
+         [
+            "10",
+            "Combination strike! Normal damage and the dragon follows up with a second attack of same type."
+         ],
+         [
+            "11",
+            "Claw through the throat! The PC can’t speak until healed and spends the next round struggling to breathe (unable to act)."
+         ],
+         [
+            "12",
+            "Dragon targets the PC’s kneecap. PC’s movement cut by half and this attack inflicts +1d10 damage."
+         ],
+         [
+            "13",
+            "Awe-inspiring blow! This attack inflicts +1d12 damage, and all nearby retainers and henchmen are forced to make a morale check. Additionally, PCs must make a Will save (vs. DC of 10 + dragon’s HD) or take a -2 penalty to their remaining attacks this round."
+         ],
+         [
+            "14",
+            "Breath weapon combo attack! Dragon unleashes a tiny fraction of its power against the character. This does not count against its daily breath weapon use. The PC takes normal damage plus a breath weapon strike at half normal damage—in most cases this means half damage on a failed save and quarter damage on a save."
+         ],
+         [
+            "15",
+            "Dragon spears the PC with one of its leg spines, then moves away. The PC flails about trying to free himself from impalement. This attack inflicts +2d12 damage, and the PC can only free himself with a DC 16 Agility check. The PC can take no actions until freed, and moves with the dragon while impaled."
+         ],
+         [
+            "16",
+            "Dragon finishes its strike with a mighty head-butt! The character is sent flying 2d4x10’ away from the dragon and takes an additional +3d6 damage from the head-butt and subsequent fall."
+         ],
+         [
+            "17",
+            "Dragon bends back the PC’s leg in a way it was never meant to, snapping the leg in half. The character’s movement is reduced by half, and he takes an extra 2d6 damage."
+         ],
+         [
+            "18",
+            "Dragon pins the character down with one claw before slashing with another. Dragon inflicts +1d6 damage and gets a bonus claw attack at +4 to hit."
+         ],
+         [
+            "19",
+            "Rag doll smash! Dragon locks onto the character’s ankle, swings him up, and smashes him to the ground head-first. This attack inflicts +1d16 damage, and the PC must make a Fort save (DC 15 + HD) or fall unconscious."
+         ],
+         [
+            "20",
+            "Dragon’s spines pierce the character in 1d7 places. Long, sharp, lance-like dragon scales emerge from the character’s back, piercing multiple important organs. The character takes double damage, and if he survives, he is automatically reduced to 1 Strength and 1 Agility as his organs fail one by one. However, the character is now stuck to the dragon (its head, claw, wing, or whatever part the dragon attacked with). The dragon must spend its next attack with that limb prying off the bleeding PC before it can use that attack mode again. Once the PC is pried off, he takes 1d8 damage per round from massive hemorrhaging. Only magical healing can arrest the bleeding and prevent death."
+         ],
+         [
+            "21",
+            "Dragon hooks the PC with its wing and does a lift-and-smash. The character takes an additional +2d8 damage and is automatically stunned for 1d4 rounds."
+         ],
+         [
+            "22",
+            "Dragon captures the PC with its tail and begins constricting like an anaconda. The PC automatically takes an extra 1d8 crushing damage. Additionally, the PC is held in place and begins suffocating. The character must make a Fort save each round thereafter (DC equals 10 + dragon’s HD) or die of suffocation. The PC cannot escape (or move in any way) until he succeeds on an opposed Strength check (treat dragon as 10 + HD). The dragon cannot use its tail to attack while holding PC."
+         ],
+         [
+            "23",
+            "Dragon uses one claw to hold down the PC while it rips his limbs off with the other. The character loses 1d3+1 limbs, taking an extra 1d14 damage for each limb lost. The result is probably a paraplegic or quadriplegic PC. The dragon proceeds to swallow the limbs. Limbs can only be restored if they are recovered from the dragon’s gullet and then magically reattached."
+         ],
+         [
+            "24",
+            "Dragon embeds its claw/tooth/spine in the PC and shreds the character’s internal organs. The character takes an additional 1d16 damage and is pinned in place, unable to take any action. On the following round, the dragon finishes this attack by ripping out the character’s guts. The character is disemboweled. The character automatically dies in 1d4 rounds as he bleeds out. The dragon proceeds to hurl the character’s internal organs at another opponent, forcing a DC 20 morale check."
+         ],
+         [
+            "25",
+            "With staggering precision, the dragon plucks out both the character’s eyes in a single strike. The character takes no additional damage but is permanently blinded. The dragon flings the eyeballs back at the PC, who, in his now-sightless state, fails to see them go rolling out of reach."
+         ],
+         [
+            "26",
+            "The dragon swallows the character whole in a single massive bite. The character takes normal damage and is now trapped in the dragon’s gullet. The character automatically takes an additional 3d8 damage each round thereafter from suffocation, constriction, and stomach acids. If the character succeeds in a DC 22 Strength check he can force his hands to move against the crushing strength of the dragon’s stomach, allowing an attack of some kind (e.g., drawing a dagger to try to cut his way out), but he cannot be freed until the dragon is killed and he is cut out."
+         ],
+         [
+            "27",
+            "The dragon’s razor-sharp talons (or teeth or spines, as appropriate) slash the character in perfect synchronicity, rendering the character’s body into equal thirds. Instant death!"
+         ],
+         [
+            "28",
+            "Practicing a difficult draconic maneuver, the dragon executes a “reverse breath weapon,” breathing out in a short burst then immediately inhaling. This focused attack does not count against the dragon’s daily breath weapon use. The PC takes normal damage, plus a full breath weapon hit (with a normal save allowed). There is no area of effect, as the dragon immediately cuts off the breath weapon after a microsecond of attack."
+         ],
+         [
+            "29",
+            "The dragon pins the character down, cracks his rib cage open, reaches into his chest cavity, and rips out his heart. The character dies instantly. Brandishing the heart as a bludgeoning weapon, the dragon then makes one free claw attack against the nearest ally of the PC, splattering the character’s heart on the ally."
+         ],
+         [
+            "30+",
+            "The dragon explodes the character’s head into splinters with an incredible blow, causing instant death. Everyone who witnesses the attack must make a morale check vs. DC 25 or flee (for retainers) or remain stunned and motionless on their next round (for PCs). The dragon makes a free claw attack against the nearest PC, and may continue making additional claw attacks until it misses."
+         ]
+      ]
+
+   },
+   "Critical Hit Results - Devils and Demons":{
+      "table":[
+         [
+            "Roll",
+            "Result"
+         ],
+         [
+            "1 or less",
+            "Piercing blow. The character takes an additional 1d8 damage."
+         ],
+         [
+            "2",
+            "Life burn. The character permanently loses an additional 2 hit points."
+         ],
+         [
+            "3",
+            "Head strike. The character takes an additional 1d10 damage."
+         ],
+         [
+            "4",
+            "Major life burn. The character permanently loses an additional 4 hit points."
+         ],
+         [
+            "5",
+            "Corruption. Character takes on corruption, similar to a wizard casting spells. Roll 1d10 on a corruption table. If the demon has 5 HD or less, use the minor corruption table; if 6-10 HD, use the major corruption table; if 11+ HD, use the greater corruption table."
+         ],
+         [
+            "6",
+            "Aging. The character ages 1d10 years instantly. If cumulative aging from this and other effects exceeds 20 years, the character suffers a -1 penalty to all physical ability scores."
+         ],
+         [
+            "7",
+            "Infernal weakening I. The PC loses 1d4 points of ability score for one week. Determine randomly: (roll 1d5) (1) Strength, (2) Agility, (3) Stamina, (4) Intelligence, (5) Personality."
+         ],
+         [
+            "8",
+            "Soul wound. The character loses 1 XP from the soul-burning touch of the demon."
+         ],
+         [
+            "9",
+            "Soul trade. The character’s soul is swapped with that of a soul already owned by the demon. The demon takes possession of the character’s soul while his body is now controlled by another life force. The character’s physical stats remain unchanged, but re-roll the character’s new Intelligence, Personality, and Luck with 3d6. The character loses all his normal memories and takes on the memories of the soul now in his body, including its most recent memories of infernal brimstone. He retains his class abilities and other training, but his new mental statistics may change the skill with which he uses his abilities. The character can recover his stolen soul only by journeying to the demon’s home plane and recovering it. The judge is encouraged to come up with a new history for the soul now in his body."
+         ],
+         [
+            "10",
+            "Double corruption! The PC takes on corruption twice, similar to a wizard casting spells. Roll 1d10 twice on a corruption table. If the demon has 5 HD or less, use the minor corruption table; if 6-10 HD, use the major corruption table; if 11+ HD, use the greater corruption table."
+         ],
+         [
+            "11",
+            "Infernal weakening II. The PC loses 1 point of one ability score permanently. Determine randomly: (roll 1d5) (1) Strength, (2) Agility, (3) Stamina, (4) Intelligence, (5) Personality."
+         ],
+         [
+            "12",
+            "Luck burn. The touch of the demon brings bad luck upon the character! He loses 1 point of Luck. A halfling or thief can recover this loss through normal class means."
+         ],
+         [
+            "13",
+            "Severe soul wound. The character loses 3 XP from the demon’s soul-searing touch."
+         ],
+         [
+            "14",
+            "Astral drift. The character’s soul is sent adrift on the astral plane! The character drops to the ground, catatonic, and cannot be revived until his soul is located and returned to his body."
+         ],
+         [
+            "15",
+            "Confinement. The demon’s strike breaks the magic bonds holding it on this plane and confines the character to the demon’s current location. The character sees a burning circle of flame appear around him, sputtering black with dark energy. The circle is approximately 5 feet in diameter and traps the character within. It is considered powerful magic (treat as spell check 25 to dispel). The character cannot pass through it by any means until it is dispelled or the character is freed or “banished” back to his native free state. The demon, on the other hand, is now freed from any confinement or banishment to this plane and can return to its home plane at will."
+         ],
+         [
+            "16+",
+            "Banishment. The demon’s strike banishes the character to the demon’s home plane! The character vanishes from sight as he is instantly transported back to the demon’s home. For all intents and purposes, the character is out of the game unless his allies immediately follow to save him."
+         ]
+      ]
+   },
+   "Critical Hit Results - Giants":{
+      "table":[
+         [
+            "Roll",
+            "Result"
+         ],
+         [
+            "1 or less",
+            "Crushing blow. This attack inflicts +1d8 damage, and the character’s spine is compressed. The PC permanently loses 1d6” of height."
+         ],
+         [
+            "2",
+            "Broken arm. This attack inflicts +1d10 damage and one arm is crippled. The character suffers permanent loss of 1 Strength (arm never heals back to original position properly), and the arm cannot be used until healed."
+         ],
+         [
+            "3",
+            "Broken leg. This attack inflicts +1d10 damage and one leg is crippled. The PC suffers permanent loss of 5’ of speed (leg never heals properly) and moves at half speed until healed."
+         ],
+         [
+            "4",
+            "Crushed chest. This attack inflicts +1d12 damage and chest is caved in. Until completely healed, any sort of exertion (including combat, running, swimming, jumping, etc.) requires DC 6 Fort save. Failure indicates permanent loss of 1 Stamina (due to several organ damage; e.g., heart attack, lung failure, etc.)."
+         ],
+         [
+            "5",
+            "Flattened. The PC is literally flattened into the ground by the sheer force of the blow, with multiple broken bones and several shattered ribs. The character takes an additional 1d12 damage and permanently loses 1 Stamina."
+         ],
+         [
+            "6",
+            "Ricochet blow. The giant’s staggering attack sends the target hurling through the air up to 3d30’ to collide with another victim (randomly determined). Both the original target and the secondary target take 1d10 damage from the collision (in addition to the giant’s normal damage against the first target)."
+         ],
+         [
+            "7",
+            "Colossal head strike. This attack inflicts +2d6 damage and the PC permanently loses 1 point of Intelligence. In addition, there is a 25% chance the character forgets the last 24 hours of his life."
+         ],
+         [
+            "8",
+            "Weapon smash. The giant’s massive blow causes an additional 1d8 damage and splinters the character’s weapons and equipment. The PC’s weapons and equipment each have a 50% chance of being destroyed; roll for each item: armor is busted loose (straps broken and plates dented), shields are shattered, weapons splintered or cracked, etc. Magic items are destroyed only 10% of the time instead of 50%."
+         ],
+         [
+            "9",
+            "Sweeping blow. The giant’s strike bowls over the character, and he takes an extra 1d8 damage and is knocked prone (must spend his next activation to stand). In addition, the giant can make another attack as long as it is directed against a different target, who must be within melee range and adjacent to the first target. If this second attack hits, the giant can attack another target, up to five in total, as it sweeps through its opponents."
+         ],
+         [
+            "10",
+            "Legs crushed into ground. The giant’s blow hits the PC square on the head, driving him into the earth like a nail into a board. The character takes an additional 2d8 damage, and both his legs are broken as he is propelled 1d4 feet into the earth (reduced to 1d4 inches if the surface is stone). The character suffers a permanent loss of 10’ of speed and 1 Agility (legs never heal properly) and is temporarily reduced to a speed of 1’ (yes, one foot per round) until his two broken legs are healed."
+         ],
+         [
+            "11",
+            "Roll again twice."
+         ],
+         [
+            "12",
+            "Roll again three times."
+         ]
+      ]
+   },
+   "Critical Hit Results - Undead":{
+      "table":[
+         [
+            "Roll",
+            "Result"
+         ],
+         [
+            "1 or less",
+            "Unnatural boils sprout spontaneously around the wound. These are extremely painful to the touch, and automatically inflict 1 point of damage in any round where the character exerts himself physically (such as running, jumping, and fighting). The boils can only be healed with magical healing."
+         ],
+         [
+            "2",
+            "The cold touch of un-death spreads across the wound. This attack inflicts +1d4 damage and the PC gets the chills, chattering his teeth noisily until magically healed."
+         ],
+         [
+            "3",
+            "The numbness of death spreads around the wounded area. This attack inflicts +1d4 damage and the PC slowly loses sensation. On the next round, he must make a Fort save against DC 2. Failure means he is paralyzed. This first save is easy, but he must make another save against DC 3 on the next round, then against DC 4, then DC 5, and so on. If he makes every save to DC 20, he shakes off the numbness and is unaffected. If a single save is failed, the PC is paralyzed—he is insensitive to any sensation and completely numb and unable to move. The paralysis can be cured by any magical healing."
+         ],
+         [
+            "4",
+            "The horrifying visage of life after death infects the PC’s thoughts as the un-dead leers into his eyes with its attack. The PC must make a DC 15 Fort save or be shaken and unable to move or attack for the next 1d4 rounds."
+         ],
+         [
+            "5",
+            "The character is cursed from beyond the grave! Depending on his actions and the intelligence of the un-dead creature, the curse may have specific terms associated with the wishes of the un-dead (judge’s discretion; see Appendix C). Alternately, the curse causes a -1 penalty to Luck and all dice rolls until lifted."
+         ],
+         [
+            "6",
+            "The wound blackens immediately and a horrid infection from beyond the grave begins to spread. The character must make a DC 10 Fort save or temporarily lose 1d4 Stamina. The infection continues to attack each day, forcing another DC 10 Fort save each morning (failure results in the loss of another 1d4 Stamina) until the infection is magically expunged. The character does not heal while infected."
+         ],
+         [
+            "7",
+            "Supernatural frost spreads out from the wound in a lacy web, causing an additional 1d8 damage and intense pain. The frost dissipates on the next round but until the next full moon, the PC takes an extra 1 point of damage from all cold-based attacks."
+         ],
+         [
+            "8",
+            "Necrotic energies leap from the un-dead in a sizzling flash, enervating the character. The PC loses 2d4 Stamina temporarily."
+         ],
+         [
+            "9",
+            "Faced with the very real prospect of unnatural un-death, the PC becomes unhinged. He immediately loses 1d4 Personality and goes temporarily insane, behaving erratically and strangely until the next new moon. The controlling player must make a percentile roll before any action, and on 01-10 the character makes an insane action (as determined by the judge) instead of what was intended. On 11-00 the intended action occurs."
+         ],
+         [
+            "10",
+            "The visage of rotting un-death brings the horror of the grave to the character’s thoughts. He must make a DC 16 Fort save or be shaken with fear, unable to attack or do anything except quake in fear for 1d4 rounds."
+         ],
+         [
+            "11",
+            "Strange electrical sparks leap from the attacking un-dead, causing an additional 1d10 damage."
+         ],
+         [
+            "12",
+            "The attack is imbued with some unnatural remnant of un-dead slumber. The character must make a DC 16 Fort save or fall asleep, instantly and deeply. He will not awaken for 1d7 hours or until shaken violently."
+         ],
+         [
+            "13",
+            "The attack is infused with powerful necromantic energies which cause the character’s skin to flake and rot! His flesh begins to fall off in large chunks, exposing the muscle and bone below. This is extremely painful and debilitating. The character loses an extra 1d8 hit points and 1 point of Personality immediately and again every morning thereafter as his flesh slowly rots. He dies when his Personality reaches 0. The rot can be arrested only by powerful magical healing."
+         ],
+         [
+            "14",
+            "The strike of un-death saps the PC’s energy. The character temporarily loses 1d4 Str and must make a DC 12 Fort save or lose an additional 1d4 Str."
+         ],
+         [
+            "15",
+            "Strange spectral energies arc to the PC’s body, making him temporarily incorporeal for 1d4 rounds. The PC cannot grasp physical objects. He cannot speak, make noise, attack, or be seen in bright light. He can fly at his normal movement rate and can pass through solid objects at half speed. He is considered un-dead while incorporeal. There is a 1% chance the transition is permanent."
+         ],
+         [
+            "16",
+            "A disgusting grave rot immediately spreads around the wound, causing an additional 2d6 damage and forcing a DC 16 Fort save. Failure on the save causes an additional temporary loss of 1d4 Stamina. The rot gets progressively worse until magically cured, forcing another save each morning against the loss of another 1d4 Stamina."
+         ],
+         [
+            "17",
+            "The brief brush with death affects the PC's memory. He loses all memory of the last 24 hours and must make a DC 16 Fort save or also lose memories of the past 1d7 days."
+         ],
+         [
+            "18",
+            "The blow smashes against the PC's temple and gives him a glimpse of his own death sometime in the future. This brush with death paralyzes the PC with fear for 1d6 rounds."
+         ],
+         [
+            "19",
+            "The wound immediately turns a deep yellow color, and a dizzying madness infects the character. He temporarily loses 1d6 Intelligence and 1d6 Personality."
+         ],
+         [
+            "20",
+            "The wound takes the shape of an unholy mark. The character takes an additional 1d6 damage and is marked. Undead creatures are attracted to the PC from miles around. He cannot hide from undead, and they relentlessly hound him. The mark can only be removed by a blessing, holy cleansing, exorcism, or the like."
+         ],
+         [
+            "21",
+            "The character's soul is scarred by un-death. He permanently loses 1 point of Luck."
+         ],
+         [
+            "22",
+            "The wound erupts in a disgusting infestation of maggots. They cause an additional 2d6 damage plus an ongoing 1d6 damage per round until the wound is healed via magical means."
+         ],
+         [
+            "23",
+            "The undead's intensely concentrated aura of unholiness infects the PC with an unholy aura. Any magical blessings or similar effects are automatically canceled, and the character takes 1d4 points of temporary Personality loss."
+         ],
+         [
+            "24",
+            "Grave rot! The wound bubbles and festers like a thing not from this earth. The rot causes an additional 1d12 damage and 1d6 Strength loss immediately, and the wound will not heal naturally. The damage and Strength loss can only be recovered via magical healing."
+         ],
+         [
+            "25",
+            "In a supernatural display, flesh melts away from the wound, revealing the bones beneath and causing an additional 1d6 damage and 1 point of Stamina loss. Each round thereafter, the radius of melted flesh expands, causing an additional 1d6 damage and 1 point of Stamina loss. The melting flesh continues to expand until the PC dies. It can only be suspended via magical healing with a spell check of 20 or greater."
+         ],
+         [
+            "26",
+            "Death rattle! The stench of un-death chokes the character, who collapses in a fit of gagging that slowly begins to suffocate him. He must make a DC 20 Fort save or lose 1d4 points of Stamina. If he fails the Fort save, he must make another save on the next round. If that fails, he takes additional Stamina damage and must make another save. The pattern continues until he makes a save or dies."
+         ],
+         [
+            "27",
+            "The un-dead creature sucks life force from the character. The PC takes an additional 1d20 damage, and the un-dead creature heals that same amount (not to exceed its original total hit points)."
+         ],
+         [
+            "28",
+            "The wizening. The character immediately ages 1d20 years. If the result is 15 or more, he permanently loses 1 point of Strength, Agility, and Stamina as his body weakens."
+         ],
+         [
+            "29",
+            "The end is always dust: the wounded area crumbles to dust, inflicting an extra 2d12 damage and permanently disfiguring the character. He loses the use of that arm, leg, hand, or whatever area was struck. On the following round, the area adjacent to the wound in turn crumbles to dust, inflicting an additional 1d6 damage. The radius of dust transformation continues to expand, inflicting an additional 1d6 damage each round until the character is dead. The transformation to dust can only be stopped by very powerful magic."
+         ],
+         [
+            "30",
+            "Un-death seeks un-death: in a flash of thick black smoke, the un-dead creature expends some of the necromantic energies that sustain it to transform the PC into un-death. The un-dead attacker automatically loses 1d6 hit points and may be killed as a result. The PC collapses in a state of apparent death, only to arise 1d6 rounds later as an un-dead creature under the control of the judge. Roll 1d8 to determine the type of creature that arises: (1-4) zombie, (5-6) skeleton, (7) ghoul, (8) ghost."
+         ]
+      ]
+   },
+   "Critical Hit Results - Monsters":{
+      "table":[
+         [
+            "Roll",
+            "Result"
+         ],
+         [
+            "1 or less",
+            "Strike to chest, breaking ribs. This attack inflicts +1d6 damage."
+         ],
+         [
+            "2",
+            "Stunning blow! The PC falls to the bottom of the initiative count for the remainder of the battle."
+         ],
+         [
+            "3",
+            "Legs knocked out from beneath the character, knocking him prone."
+         ],
+         [
+            "4",
+            "PC disarmed. Weapon lands 1d12+5’ away."
+         ],
+         [
+            "5",
+            "Blow to shield arm! If no shield, this attack inflicts +1d6 damage."
+         ],
+         [
+            "6",
+            "Weapon lodged in PC’s chest! This attack inflicts +2d6 damage and an additional 1d6 damage next round."
+         ],
+         [
+            "7",
+            "Blow to jaw! The PC loses 1d8 hp and the same number of teeth."
+         ],
+         [
+            "8",
+            "Blow shatters PC’s forearm. This attack inflicts +1d6 damage, and the arm is useless until healed."
+         ],
+         [
+            "9",
+            "Strike to helm! If no helmet, this attack inflicts +1d8 damage and forces a Fort save (DC 10 + HD). On a failed save, the PC falls unconscious."
+         ],
+         [
+            "10",
+            "Stunning blow! The world spins as the fell monster makes a second attack!"
+         ],
+         [
+            "11",
+            "Strike to throat! The PC can’t speak until healed and spends the next round struggling to breathe."
+         ],
+         [
+            "12",
+            "Blow smashes PC’s kneecap. The character’s movement is cut by half and this attack inflicts +1d10 damage."
+         ],
+         [
+            "13",
+            "Crushing blow! This attack inflicts +1d12 damage."
+         ],
+         [
+            "14",
+            "PC’s weapon sundered in the violent assault."
+         ],
+         [
+            "15",
+            "Strike to torso crushes internal organs. This attack inflicts +1d12 damage and forces the PC to make a Fort save (DC 15 + HD) to remain conscious through the pain."
+         ],
+         [
+            "16",
+            "Devastating strike! This attack inflicts +1d16 damage."
+         ],
+         [
+            "17",
+            "PC’s Achilles tendon is torn, snapping back into his thigh. The character’s movement drops to 5’ and the screaming can be heard for leagues."
+         ],
+         [
+            "18",
+            "Monster seizes PC by the neck. This attack inflicts +1d12 damage and the monster makes a second attack at +4 to hit."
+         ],
+         [
+            "19",
+            "Blow to cranium! This attack inflicts +1d16 damage and the PC must make a Fort save (DC 15 + HD) or fall unconscious."
+         ],
+         [
+            "20",
+            "Terrifying blow pierces several important organs. The PC spends the next 1d4 days dying a slow, painful death. Powerful magic (healing by a cleric of level 3 or higher) can arrest the dying."
+         ],
+         [
+            "21",
+            "Strike crushes skull, destroying the optic nerve and resulting in instant, permanent blindness."
+         ],
+         [
+            "22",
+            "PC’s leg is shorn from his body. The character cannot move. This attack inflicts +2d12 damage."
+         ],
+         [
+            "23",
+            "Both the PC’s arms are torn from his body. This attack inflicts +3d12 damage. Exceptionally cruel monsters may proceed to use PC’s arms as weapons."
+         ],
+         [
+            "24",
+            "PC is disemboweled. Bloody guts spill to the ground. The PC spends the next 8 rounds dying as he futilely tries to feed the spooling intestines back into his body."
+         ],
+         [
+            "25",
+            "Attack craters PC’s skull. This attack inflicts 1d8 Intelligence and Personality damage and puts the PC into an instant coma."
+         ],
+         [
+            "26",
+            "Strike crushes throat. The PC drowns in his own blood for 6 rounds."
+         ],
+         [
+            "27",
+            "Attack snaps the PC’s spinal column like a twig. The attack causes permanent paralysis, and the PC watches the remainder of the battle from the floor."
+         ],
+         [
+            "28",
+            "Throat torn asunder. The panicked PC gargles wetly as blood gouts down his chest. He dies in 4 rounds."
+         ],
+         [
+            "29",
+            "Terrible blow to the chest explodes the PC’s heart. Immediate and instantaneous death."
+         ],
+         [
+            "30+",
+            "Attack rends PC’s head from his torso. Blood gouts from the collapsing body, and the monster moves on to the next foe, making attacks until it misses."
+         ]
+      ],
+      "footnotes":[
+         "* Magical weapons never break due to critical fumbles. The target is disarmed instead, the weapon landing 1d10+5 feet away."
+      ]
+   },
+   "Languages":{
+      "table":[
+         [ "Language", "0-Level Human", "Halfling", "Elf", "Dwarf" ],
+         [ "Alignment tongue*","1-20","1-25","1-20","1-20" ],
+         [ "Chaos**","-","-","21-25","-" ],
+         [ "Law**","-","-","26-30","-" ],
+         [ "Neutrality**","-","-","31-35","-" ],
+         [ "Dwarf","21-30","26-35","36-40","-" ],
+         [ "Elf","31-35","36-40","-","21-25" ],
+         [ "Halfling","36-40","-","41-45","26-35" ],
+         [ "Gnome","41-45","41-50","-","36-40" ],
+         [ "Bugbear","46-47","51-55","-","41-45" ],
+         [ "Goblin","48-57","56-70","46-48","46-55" ],
+         [ "Gnoll","58-60","-","49-50","56-60" ],
+         [ "Harpy","-","-","51-52","-" ],
+         [ "Hobgoblin","61-65","71-80","53-54","61-65" ],
+         [ "Kobold","66-75","81-90","55-57","66-75" ],
+         [ "Lizard man","76-80","-","58","-" ],
+         [ "Minotaur","81","-","59","76" ],
+         [ "Ogre","82-83","-","60","77-81" ],
+         [ "Orc","84-93","-","61-63","82-86" ],
+         [ "Serpent-man","-","-","64","-" ],
+         [ "Troglodyte","94-99","-","65","87-91" ],
+         [ "Angelic (a.k.a. Celestial)","-","-","66-70","-" ],
+         [ "Centaur","-","-","71-75","-" ],
+         [ "Demonic (a.k.a. Infernal/Abyssal)","-","-","76-80","-" ],
+         [ "Doppelganger","-","-","-","-" ],
+         [ "Dragon","-","-","81-85","92-93" ],
+         [ "Pixie","-","91-93","86-90","-" ],
+         [ "Giant","100","-","-","94-97" ],
+         [ "Griffon","-","-","-","-" ],
+         [ "Naga","-","-","91-92","-" ],
+         [ "Bear","-","-","-","98" ],
+         [ "Eagle","-","-","93-94","-" ],
+         [ "Ferret","-","94-98","-","-" ],
+         [ "Horse","-","-","95-96","-" ],
+         [ "Wolf","-","-","-","-" ],
+         [ "Spider","-","-","-","-" ],
+         [ "Undercommon","-","99-100","97-100","99-100" ]
+      ]
+   },
+   "Appendix S: Sobriquets":{
+  "table": [
+  [
+    "d%",
+    "Wizards & Clerics",
+    "Warriors & Thieves",
+    "Fantastic Creatures",
+    "Humanoids"
+  ],
+    [
+      "1",
+      "Absalom",
+      "Akurion",
+      "Abathon",
+      "Agzan"
+    ],
+    [
+      "2",
+      "Adompha",
+      "Alveric",
+      "Ahriman",
+      "Arwoor"
+    ],
+    [
+      "3",
+      "Afgorkon",
+      "Amalric",
+      "Alagraada",
+      "Athbelny"
+    ],
+    [
+      "4",
+      "Akivasha",
+      "Angarth",
+      "Anana",
+      "Atzul"
+    ],
+    [
+      "5",
+      "Alcemides",
+      "Anuk",
+      "Ang'qua'iash",
+      "Beloso"
+    ],
+    [
+      "6",
+      "Anector",
+      "Aram",
+      "Aphelis",
+      "Bokrug"
+    ],
+    [
+      "7",
+      "Anuradhapura",
+      "Argosa",
+      "Ariston",
+      "Bunda"
+    ],
+    [
+      "8",
+      "Argaphrax",
+      "Athelstane",
+      "Astreas",
+      "Chand"
+    ],
+    [
+      "9",
+      "Argelibichus",
+      "Camballio",
+      "Athle",
+      "Chuu"
+    ],
+    [
+      "10",
+      "Ariadne",
+      "Carmac",
+      "Atost-rad",
+      "Cykranosh"
+    ],
+    [
+      "11",
+      "Azgelasgus",
+      "Cashius",
+      "Avalonia",
+      "Dejah"
+    ],
+    [
+      "12",
+      "Baithorion",
+      "Cathfytz",
+      "Ayodhya",
+      "Domnos"
+    ],
+    [
+      "13",
+      "Bypeld",
+      "Cerngoth",
+      "Bashan",
+      "Eibon"
+    ],
+    [
+      "14",
+      "Calindonadrius",
+      "Cobart",
+      "Becar",
+      "Emumen"
+    ],
+    [
+      "15",
+      "Caliph",
+      "Constantius",
+      "Brytoraugh",
+      "Eumar"
+    ],
+    [
+      "16",
+      "Cardoxicus",
+      "Cormoran",
+      "Carthoris",
+      "Feethos"
+    ],
+    [
+      "17",
+      "Chongrilar",
+      "Cromlek",
+      "Chemnis",
+      "Galan"
+    ],
+    [
+      "18",
+      "Dagozai",
+      "Cushara",
+      "Chiron",
+      "Gazal"
+    ],
+    [
+      "19",
+      "Darunzadar",
+      "Cyntrom",
+      "Chorondzon",
+      "Gebal"
+    ],
+    [
+      "20",
+      "Dweb",
+      "Draupnir",
+      "Chryseis",
+      "Glosoli"
+    ],
+    [
+      "21",
+      "Dwerulas",
+      "Dugar",
+      "Djebel",
+      "Gobir"
+    ],
+    [
+      "22",
+      "Ebanoose",
+      "Evadare",
+      "Dwalka",
+      "Goromé"
+    ],
+    [
+      "23",
+      "Ebbonly",
+      "Faraad",
+      "Enion",
+      "Grox"
+    ],
+    [
+      "24",
+      "Eibur",
+      "Ganelon",
+      "Erohye",
+      "Guhic"
+    ],
+    [
+      "25",
+      "Erasmus",
+      "Ghor",
+      "Fryx",
+      "Gurko"
+    ],
+    [
+      "26",
+      "Galendil",
+      "Gondelor",
+      "Ganebon",
+      "Gwyn"
+    ],
+    [
+      "27",
+      "Habruztish",
+      "Gug",
+      "Gathol",
+      "Hoom"
+    ],
+    [
+      "28",
+      "Hadrathus",
+      "Harnam",
+      "Gelka",
+      "Iblix"
+    ],
+    [
+      "29",
+      "Hasthar",
+      "Hoaraph",
+      "Gonlex",
+      "Iqqua"
+    ],
+    [
+      "30",
+      "Hekkador",
+      "Istrobian",
+      "Gothan",
+      "Ischiros"
+    ],
+    [
+      "31",
+      "Ib",
+      "Jadawin",
+      "Haade",
+      "Jargo"
+    ],
+    [
+      "32",
+      "Ildawir",
+      "Japthon",
+      "Haalor",
+      "Kadabra"
+    ],
+    [
+      "33",
+      "Iminix",
+      "Jeddak",
+      "Hadrubar",
+      "Kalu"
+    ],
+    [
+      "34",
+      "Iomagoth",
+      "Kadatheron",
+      "Hoje",
+      "Kordofo"
+    ],
+    [
+      "35",
+      "Iquanux",
+      "Kalikalides",
+      "Horphe",
+      "Krug"
+    ],
+    [
+      "36",
+      "Ishgadona",
+      "Kerkadel",
+      "Hruengar",
+      "Kuruz"
+    ],
+    [
+      "37",
+      "Izdrel",
+      "Khavran",
+      "Ilarnek",
+      "Liennray"
+    ],
+    [
+      "38",
+      "Jaspondar",
+      "Kishtu",
+      "Ishtar",
+      "Loford"
+    ],
+    [
+      "39",
+      "Khumbanigesh",
+      "Kothar",
+      "Ispazar",
+      "Loischa"
+    ],
+    [
+      "40",
+      "Leniqua",
+      "Krallides",
+      "Kajak",
+      "Manus"
+    ],
+    [
+      "41",
+      "Maal",
+      "Kulan",
+      "Kerim",
+      "Mnar"
+    ],
+    [
+      "42",
+      "Marquanos",
+      "Llambichus",
+      "Kryth",
+      "Naat"
+    ],
+    [
+      "43",
+      "Matai",
+      "Llulch",
+      "Kuruz",
+      "Nargis"
+    ],
+    [
+      "44",
+      "Mewick",
+      "Loden",
+      "Lirazel",
+      "Narl"
+    ],
+    [
+      "45",
+      "Mhu",
+      "Maldivius",
+      "Lloigor",
+      "Narthos"
+    ],
+    [
+      "46",
+      "Moloch",
+      "Matsognir",
+      "Lobon",
+      "Nehic"
+
+
+ ],
+    [
+      "47",
+      "Nambaloth",
+      "Minoc",
+      "Mandilip",
+      "Niemm"
+    ],
+    [
+      "48",
+      "Naroob",
+      "Mocair",
+      "Marentina",
+      "Obexah"
+    ],
+    [
+      "49",
+      "Nichiddor",
+      "Morghi",
+      "Memphor",
+      "Og"
+    ],
+    [
+      "50",
+      "Nimed",
+      "Mors",
+      "Mhu",
+      "Olgerd"
+    ],
+    [
+      "51",
+      "Ningorus",
+      "Narthos",
+      "Mikaded",
+      "Ollub"
+    ],
+    [
+      "52",
+      "Norovus",
+      "Nerelon",
+      "Mindus",
+      "Oth"
+    ],
+    [
+      "53",
+      "Okar",
+      "Noureddin",
+      "Modeca",
+      "Peshkhauri"
+    ],
+    [
+      "54",
+      "Olloothy",
+      "Oberon",
+      "Mornoth",
+      "Pnoth"
+    ],
+    [
+      "55",
+      "Orastes",
+      "Oggon",
+      "Murcot",
+      "Quanga"
+    ],
+    [
+      "56",
+      "Oryx",
+      "Ominor",
+      "Nacaal",
+      "Rafe"
+    ],
+    [
+      "57",
+      "Palamabron",
+      "Ommum-vog",
+      "Namirrha",
+      "Rika"
+    ],
+    [
+      "58",
+      "Pergamoy",
+      "Ompallios",
+      "Nimer",
+      "Rintrak"
+    ],
+    [
+      "59",
+      "Pharnoc",
+      "Orillibus",
+      "Niv",
+      "Rokol"
+    ],
+    [
+      "60",
+      "Phenquor",
+      "Pallantides",
+      "Nouph",
+      "Romm"
+    ],
+    [
+      "61",
+      "Philisia",
+      "Pallensus",
+      "Omthal",
+      "Roska"
+    ],
+    [
+      "62",
+      "Polarion",
+      "Poliarion",
+      "Opphus",
+      "Rubalsa"
+    ],
+    [
+      "63",
+      "Ptarth",
+      "Prospero",
+      "Ouphaloc",
+      "Sakumbe"
+    ],
+    [
+      "64",
+      "Quilian",
+      "Publio",
+      "Phlesco",
+      "Shull"
+    ],
+    [
+      "65",
+      "Rom",
+      "Rannok",
+      "Pithaim",
+      "Sipril"
+    ],
+    [
+      "66",
+      "Salome",
+      "Rolff",
+      "Pommernar",
+      "Soinough"
+    ],
+    [
+      "67",
+      "Sarnath",
+      "Sabdon",
+      "Puthuum",
+      "Sorar"
+    ],
+    [
+      "68",
+      "Scarabus",
+      "Satampra",
+      "Quamosmor",
+      "Storbon"
+    ],
+    [
+      "69",
+      "Segovian",
+      "Scaviolus",
+      "Rakeban",
+      "Sybaros"
+    ],
+    [
+      "70",
+      "Shang",
+      "Sigur",
+      "Rayat-hin",
+      "Taramus"
+    ],
+    [
+      "71",
+      "Somiator",
+      "Simban",
+      "Ryth",
+      "Tartarus"
+    ],
+    [
+      "72",
+      "Sorbo",
+      "Sinara",
+      "Sangre",
+      "Thasma"
+    ],
+    [
+      "73",
+      "Sot",
+      "Solveg",
+      "Sanyeshk",
+      "Tic"
+    ],
+    [
+      "74",
+      "Ssendam",
+      "Sorcerat",
+      "Serpentarius",
+      "Tis"
+    ],
+    [
+      "75",
+      "Taligaron",
+      "Sulath",
+      "Siltar",
+      "Toskur"
+    ],
+    [
+      "76",
+      "Tambis",
+      "Tarascus",
+      "Sphingor",
+      "Trok"
+    ],
+    [
+      "77",
+      "Tanandricus",
+      "Teloc-vovim",
+      "Sras",
+      "Umla"
+    ],
+    [
+      "78",
+      "Tarsha",
+      "Tith",
+      "Sugrog",
+      "Uslar"
+    ],
+    [
+      "79",
+      "Thalanes",
+      "Tlitobus",
+      "Syyl",
+      "Vaklu"
+    ],
+    [
+      "80",
+      "Thalibis",
+      "Tonotar",
+      "Tamvaasa",
+      "Vengim"
+    ],
+    [
+      "81",
+      "Thand",
+      "Theseus",
+      "Threl",
+      "Turlogh"
+    ],
+    [
+      "82",
+      "Uldor",
+      "Thremnim",
+      "Thuloneah",
+      "Uccastrog"
+    ],
+    [
+      "83",
+      "Urizen",
+      "Thulan",
+      "Thyllu",
+      "Ummaos"
+    ],
+    [
+      "84",
+      "Vala",
+      "Thuvan",
+      "Tilutan",
+      "Unggo"
+    ],
+    [
+      "85",
+      "Valbroso",
+      "Thyl",
+      "Ulassa",
+      "Urukush"
+    ],
+    [
+      "86",
+      "Vallardine",
+      "Tiglari",
+      "Vandacia",
+      "Usk"
+    ],
+    [
+      "87",
+      "Vathek",
+      "Tirouv",
+      "Vandy",
+      "Vand"
+    ],
+    [
+      "88",
+      "Veezi",
+      "Tonunt",
+      "Voormish",
+      "Vannax"
+    ],
+    [
+      "89",
+      "Volphotux",
+      "Tortha",
+      "Votalp",
+      "Vetch"
+    ],
+    [
+      "90",
+      "Vyldabec",
+      "Tredegar",
+      "Xicarph",
+      "Vladisav"
+    ],
+    [
+      "91",
+      "Waxenesi",
+      "Turmus",
+      "Xorex",
+      "Vulpanomi"
+    ],
+    [
+      "92",
+      "Weekapaug",
+      "Ujuk",
+      "Yandro",
+      "Xixthur"
+    ],
+    [
+      "93",
+      "Xaltotun",
+      "Valannus",
+      "Yasmina",
+      "Yar"
+    ],
+    [
+      "94",
+      "Xergal",
+      "Valerius",
+      "Ydheem",
+      "Yhoundeh"
+    ],
+    [
+      "95",
+      "Zapranoth",
+      "Vanator",
+      "Zdim",
+      "Yoros"
+    ],
+    [
+      "96",
+      "Zelthura",
+      "Vixeela",
+      "Zenobia",
+      "Zang"
+    ],
+    [
+      "97",
+      "Ziroonderel",
+      "Vos",
+      "Zermish",
+      "Zehbeh"
+    ],
+    [
+      "98",
+      "Zorathus",
+      "Xylac",
+      "Zo-kalar",
+      "Zeiros"
+    ],
+    [
+      "99",
+      "Zordanir",
+      "Yachpina",
+      "Zokkar",
+      "Zend"
+    ],
+    [
+      "100",
+      "Zotulla",
+      "Zobol",
+      "Zomar",
+      "Zhaibar"
+    ]
+  ]
 }
+
 }

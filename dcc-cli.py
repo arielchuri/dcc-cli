@@ -32,7 +32,7 @@ def display_welcome():
     print("[black on violet] +++++++++++++++++++++++++++++++++++++++++++++ [/black on violet]")
     print(" ")
     print("Some commands write to a text file in the current folder.")
-    print("type 'tail dcc-log.md' in another terminal window to follow it.")
+    print("type 'tail -f dcc-log.md' in another terminal window to follow it.")
 def display_instructions():
     """Display the initial instructions with available commands."""
     print(" ")
@@ -121,6 +121,8 @@ class FirstApp(cmd2.Cmd):
         char = {}
         occupation_data = []
         roll = random.randint(1, 100)
+        print(f"occu {roll}")
+        # find 'roll' in ranges of rows
         for i in range(1, len(tables['Table 1-3: Occupation']['table'])):
             if '-' in tables['Table 1-3: Occupation']['table'][i][0]:
                 numbers = tables['Table 1-3: Occupation']['table'][i][0].split('-')
@@ -130,6 +132,7 @@ class FirstApp(cmd2.Cmd):
             elif int(tables['Table 1-3: Occupation']['table'][i][0]) == roll:
                 occupation_data = tables['Table 1-3: Occupation']['table'][i]
                 break
+        # types of farmers/carts
         if roll in range(39,48):
             occupation_data[3] = occupation_data[3].strip('*')
             farmers = ['Potato','Wheat','Turnip','Corn','Rice','Parsnip','Radish','Rutabaga']
@@ -181,6 +184,9 @@ class FirstApp(cmd2.Cmd):
             if char['HP'] < 1:
                 char['HP'] = 1
         char['Trained Weapon'] = occupation_data[2]
+        roll = random.randint(1,24)
+        print(f"equip {roll}")
+        char['Equipment'] = tables['Table 3-4: Equipment']['table'][roll][1]
         char['Trade Goods'] = occupation_data[3]
         if 'Dwarven' in char['Occupation'] or 'Halfling' in char['Occupation']:
             char['Speed'] = 20
@@ -195,13 +201,15 @@ class FirstApp(cmd2.Cmd):
         char['Treasure'] = {}
         char['Treasure']['cp'] = roll_multiple('5d12')
         birth_auger_roll = random.randint(1,30)
+        num_lang = 0
         char['Birth Auger'] = tables['Table 1-2: Luck Score']['table'][birth_auger_roll][1]
         if char['Luck Modifier'] != 0:
             char['Birth Auger'] += f" ({char['Luck Modifier']:+})"
             if birth_auger_roll == 30:
                 char['Speed'] += int(char['Luck Modifier']) * 5
             elif birth_auger_roll == 29:
-                print('languages')
+                print('bird song languages')
+                num_lang += int(char['Luck Modifier'])
             elif birth_auger_roll == 25:
                 char['HP'] += int(char['Luck Modifier'])
                 if char['HP'] < 1:
@@ -220,7 +228,42 @@ class FirstApp(cmd2.Cmd):
                 char['Reflex'] += int(char['Luck Modifier'])
                 char['Fortitude'] += int(char['Luck Modifier'])
                 char['Will'] += int(char['Luck Modifier'])
-        # need do have campaign name set for file name.
+        # language
+        char['Languages'] = ["Common"]
+        num_lang += int(char['Intelligence Modifier'])
+        if 'Halfling' in char['Occupation']:
+            print('hobbit')
+            lang_col = 2
+            char['Languages'].append('Halfling')
+        elif 'Elven' in char['Occupation']:
+            print('elf')
+            lang_col = 3
+            char['Languages'].append('Elven')
+        elif 'Dwarven' in char['Occupation']:
+            print('dwarf')
+            lang_col = 4
+            char['Languages'].append('Dwarven')
+        else:
+            print('human')
+            lang_col = 1
+        print(f"num_lang {num_lang}")
+        for n in range(num_lang):
+            roll = random.randint(1, 100)
+            print(f"lang {roll}")
+            print(f"n num_lang {num_lang}")
+            for i in range(1, len(tables['Languages']['table'])):
+                if tables['Languages']['table'][i][lang_col] != '-':
+                    if '-' in tables['Languages']['table'][i][lang_col]:
+                        numbers = tables['Languages']['table'][i][lang_col].split('-')
+                        print(f"numbers {numbers}")
+                        if roll in range(int(numbers[0]),int(numbers[1])+1):
+                            char['Languages'].append(tables['Languages']['table'][i][0])
+                            break
+                    elif int(tables['Languages']['table'][i][lang_col]) == roll:
+                        print(f"single {tables['Languages']['table'][i][1]}")
+                        char['Languages'].append(tables['Languages']['table'][i][0])
+                        break
+        # end language
         with open('dcc-log.md', 'a') as f:
             f.write('\n')
             f.write('\n')
@@ -237,13 +280,13 @@ class FirstApp(cmd2.Cmd):
             f.write(f"AC: {char['AC']}; HP:{char['HP']}   \n")
             f.write(f"Weapon: {char['Trained Weapon']}   \n")
             f.write(f"Speed: {char['Speed']}; Init:{char['Initiative']}; Ref: {char['Reflex']:+}; Fort: {char['Fortitude']:+}; Will: {char['Will']:+}   \n")
-            # equipment
+            f.write('   \n')
+            f.write(f"Equipment: {char['Equipment']}   \n")
             f.write(f"Trade good: {char['Trade Goods']}   \n")
             f.write(f"Starting Funds: {char['Treasure']['cp']} cp   \n")
             f.write(f"Lucky sign: {char['Birth Auger']}   \n")
+            f.write(f"Languages: {char['Languages']}   \n")
             f.write('-------------------------------------------\n')
-            # languages
-        # table = Table("one","two",title="Peasant", show_header=False, show_lines=True, show_edge=False)
         print()
         table = Table(title="Peasant", show_header=False, show_lines=True, show_edge=False, title_justify="left", title_style="red on white")
         table.add_column("one", justify="right", style="cyan", no_wrap=True)

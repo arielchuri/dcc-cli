@@ -40,7 +40,7 @@
 This is python script for quickly accessing tables used in the [Dungeon Crawl Classics](https://goodman-games.com/blog/2022/06/25/free-printed-dcc-quick-start-rules/) role-playing game.
 
 To use this script, download the zip archive from the _code_ button above.
-Extract the archive and move the folder to whichever location you want to keep it.
+Extract the archive and move the folder to whichever location you want.
 
 Inside the extracted directory is the _dcc-cli.py_ file that needs to be run with python.
 On Mac or Linux you can use the application _Terminal_.
@@ -56,7 +56,15 @@ I can see the contents of the current folder by typing the <code>ls</code> comma
 
 Once the terminal is in the correct directory, you can type <code>python dcc-cli.py</code> to run the program.
 
+On Windows you should be able to type <code>python dcc-cli.py</code> in the _command promt_ (untested).
+
 In addition to viewing tables, dcc-cli can roll dice, generate 0-levels, and keep a journal which is saved to a text file.
+
+## Screenshots
+
+![](title.png)
+![](table.png)
+![](roll.png)
 
 ## Available tables:
 1. Table 1-1: Ability Score Modifiers

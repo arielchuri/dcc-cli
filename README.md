@@ -43,6 +43,7 @@ To use this script, download the zip archive from the _code_ button above.
 Extract the archive and move the folder to whichever location you want.
 
 Inside the extracted directory is the _dcc-cli.py_ file that needs to be run with python.
+You may need to install [python](https://www.python.org/downloads/).
 On Mac or Linux you can use the application _Terminal_.
 You will need to navigate into the directory with the script using the <code>cd</code> command.
 

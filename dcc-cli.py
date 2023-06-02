@@ -121,7 +121,6 @@ class FirstApp(cmd2.Cmd):
         char = {}
         occupation_data = []
         roll = random.randint(1, 100)
-        print(f"occu {roll}")
         # find 'roll' in ranges of rows
         for i in range(1, len(tables['Table 1-3: Occupation']['table'])):
             if '-' in tables['Table 1-3: Occupation']['table'][i][0]:
@@ -185,7 +184,6 @@ class FirstApp(cmd2.Cmd):
                 char['HP'] = 1
         char['Trained Weapon'] = occupation_data[2]
         roll = random.randint(1,24)
-        print(f"equip {roll}")
         char['Equipment'] = tables['Table 3-4: Equipment']['table'][roll][1]
         char['Trade Goods'] = occupation_data[3]
         if 'Dwarven' in char['Occupation'] or 'Halfling' in char['Occupation']:
@@ -232,38 +230,48 @@ class FirstApp(cmd2.Cmd):
         char['Languages'] = ["Common"]
         num_lang += int(char['Intelligence Modifier'])
         if 'Halfling' in char['Occupation']:
-            print('hobbit')
             lang_col = 2
             char['Languages'].append('Halfling')
         elif 'Elven' in char['Occupation']:
-            print('elf')
             lang_col = 3
-            char['Languages'].append('Elven')
+            char['Languages'].append('Elf')
         elif 'Dwarven' in char['Occupation']:
-            print('dwarf')
             lang_col = 4
-            char['Languages'].append('Dwarven')
+            char['Languages'].append('Dwarf')
         else:
-            print('human')
             lang_col = 1
-        print(f"num_lang {num_lang}")
-        for n in range(num_lang):
+        n = 0
+        while n < num_lang:
             roll = random.randint(1, 100)
-            print(f"lang {roll}")
-            print(f"n num_lang {num_lang}")
             for i in range(1, len(tables['Languages']['table'])):
                 if tables['Languages']['table'][i][lang_col] != '-':
-                    if '-' in tables['Languages']['table'][i][lang_col]:
-                        numbers = tables['Languages']['table'][i][lang_col].split('-')
-                        print(f"numbers {numbers}")
-                        if roll in range(int(numbers[0]),int(numbers[1])+1):
-                            char['Languages'].append(tables['Languages']['table'][i][0])
+                    numbers = tables['Languages']['table'][i][lang_col].split('-')
+                    if len(numbers) == 1:
+                        numbers.append(numbers[0])
+                    if roll in range(int(numbers[0]),int(numbers[1])+1):
+                        if tables['Languages']['table'][i][0] in char['Languages']:
                             break
-                    elif int(tables['Languages']['table'][i][lang_col]) == roll:
-                        print(f"single {tables['Languages']['table'][i][1]}")
-                        char['Languages'].append(tables['Languages']['table'][i][0])
-                        break
-        # end language
+                        else:
+                            char['Languages'].append(tables['Languages']['table'][i][0])
+                            n += 1
+                            # break
+        #             elif int(tables['Languages']['table'][i][lang_col]) == roll:
+        #                 print(f"single {tables['Languages']['table'][i][1]}")
+        #                 char['Languages'].append(tables['Languages']['table'][i][0])
+        #                 break
+        # #     for i in range(1, len(tables['Languages']['table'])):
+        #         if tables['Languages']['table'][i][lang_col] != '-':
+        #             if '-' in tables['Languages']['table'][i][lang_col]:
+        #                 numbers = tables['Languages']['table'][i][lang_col].split('-')
+        #                 print(f"numbers {numbers}")
+        #                 if roll in range(int(numbers[0]),int(numbers[1])+1):
+        #                     char['Languages'].append(tables['Languages']['table'][i][0])
+        #                     break
+        #             elif int(tables['Languages']['table'][i][lang_col]) == roll:
+        #                 print(f"single {tables['Languages']['table'][i][1]}")
+        #                 char['Languages'].append(tables['Languages']['table'][i][0])
+        #                 break
+        # # end language
         with open('dcc-log.md', 'a') as f:
             f.write('\n')
             f.write('\n')

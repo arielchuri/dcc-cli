@@ -1412,6 +1412,49 @@
          "Holy Smite = At high levels, a cleric’s turn attempt produces holy energy that smites unholy creatures in close prox- imity. This is in addition to the turning effect and can be directed in the same direction as the cleric’s line-of-sight for the turning attempt. The effect and range varies, as described below, and all unholy creatures affected take the indicated damage automatically with no save. The damage occurs once per turn attempt; another turn check is required the following round to attempt again. Beam: a concentrated ray of light that the cleric can direct against one target within 60’. Cone: a cone 30’ long and 30’ wide at its end."
       ]
    },
+   "Lay on Hands":{
+      "table":[
+         [
+            "Spell check", "Same", "Adjacent", "Opposed"
+         ],
+         [
+            "1-11", "Failure", "Failure", "Failure"
+         ],
+         [
+            "12-13", "2 dice", "1 die", "1 die"
+         ],
+         [
+            "14-19", "3 dice", "2 dice", "1 die"
+         ],
+         [
+            "20-21", "4 dice", "3 dice", "2 dice"
+         ],
+         [
+            "22+", "5 dice", "4 dice", "3 dice"
+         ],
+         [
+            "", "", "", ""
+         ],
+         [
+            "Broken limbs", "", "1 die", ""
+         ],
+         [
+            "Organ damage", "", "2 dice", ""
+         ],
+         [
+            "Disease", "", "2 dice", ""
+         ],
+         [
+            "Paralysis", "", "3 dice", ""
+         ],
+         [
+            "Poison", "", "3 dice", ""
+         ],
+         [
+            "Blindess", "Deafness", "4 dice", ""
+         ]
+      ]
+   },
    "Crit Table I: All 0-Level Characters":{
       "table":[
          [
